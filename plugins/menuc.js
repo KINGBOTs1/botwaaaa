@@ -141,7 +141,7 @@ let handler = async (m, {
                 return header.replace(/%category/g, tags[tag]) + '\n' + [
                     ...help.filter(menu => menu.tags && menu.tags.includes(tag) && menu.help).map(menu => {
                         return menu.help.map(help => {
-                            return body.replace(/%cmd/g, menu.prefix ? help : '' + help)
+                            return body.replace(/%cmd/g, menu.prefix ? help : '.' + help)
                                 .replace(/%islimit/g, menu.limit ? '(Limit)' : '')
                                 .replace(/%isPremium/g, menu.premium ? '(Premium)' : '')
                                 .trim()
