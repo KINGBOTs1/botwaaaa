@@ -177,7 +177,7 @@ await conn.sendMessage(m.chat, tio,m)
 }
 handler.help = ['menu', '?']
 handler.tags = ['main'] 
-handler.customPrefix = /^menu|m$/i // ketik bot (tanpa prefix)
+handler.customPrefix = /^menu$/i // ketik bot (tanpa prefix)
 handler.command = new RegExp
 
 
