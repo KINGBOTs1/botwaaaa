@@ -9,4 +9,4 @@ handler.help= ['hentaipic']
 handler.tags = ['hentai']
 
 handler.command = /^hentai(pic)?$/i
-module.exports = handler
+export default handler
