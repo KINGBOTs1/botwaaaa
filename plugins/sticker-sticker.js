@@ -40,7 +40,8 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
 }
 handler.help = ['stiker (caption|reply media)', 'stiker <url>', 'stikergif (caption|reply media)', 'stikergif <url>']
 handler.tags = ['sticker']
-handler.command = /^s(tic?ker)?(gif)?(wm)?$/i
+andler.customPrefix = /^s|stiker|sticker$/i // ketik bot (tanpa prefix)
+handler.command = new RegExp
 
 export default handler
 
