@@ -40,9 +40,8 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
 }
 handler.help = ['stiker (caption|reply media)', 'stiker <url>', 'stikergif (caption|reply media)', 'stikergif <url>']
 handler.tags = ['sticker']
-andler.customPrefix = /^s|stiker|sticker$/i // ketik bot (tanpa prefix)
+handler.customPrefix = /^sticker|stiker|s$/i // ketik bot (tanpa prefix)
 handler.command = new RegExp
-
 export default handler
 
 const isUrl = (text) => {
