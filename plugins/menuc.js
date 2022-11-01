@@ -221,7 +221,7 @@ let handler = async (m, {
         let tio = {
             caption: text.trim(),
             image: {
-                url: "https://telegra.ph/file/f4063ab3071f5c4af765a.png"
+                url: "https://1.bp.blogspot.com/-tqNtRLLT2CM/YLWmgbg_G_I/AAAAAAAAIg8/2TKDFLfxYFsiitpGYoyFOlpQuWl686ONwCLcBGAsYHQ/s1080/logo-pdp.png"
             },
             footer: date,
             templateButtons: templateButtons,
