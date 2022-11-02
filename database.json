@@ -1,7 +1,7 @@
 {
   "users": {
     "6285172081982@s.whatsapp.net": {
-      "exp": 28,
+      "exp": 38,
       "limit": 200,
       "lastclaim": 0,
       "registered": false,
@@ -1152,7 +1152,7 @@
       "self": false,
       "autoread": true,
       "restrict": false,
-      "status": 1667015324466
+      "status": 1667360678700
     }
   }
 }
