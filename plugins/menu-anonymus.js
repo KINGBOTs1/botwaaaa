@@ -217,9 +217,9 @@ let handler = async (m, {
         let ownernya = nomorown + '@s.whatsapp.net'
         let tek = `
 ┏━━❉ *ANONYMOUS CHAT* ❉━━┓
-┣⊱*start*
-┣⊱*leave*
-┣⊱*next*
+┣⊱ *start*
+┣⊱ *leave*
+┣⊱ *next*
 ┗━━━━━━━━━━━━━━
 `
         const listMessage = {

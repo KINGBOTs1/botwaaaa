@@ -217,29 +217,29 @@ let handler = async (m, {
         let ownernya = nomorown + '@s.whatsapp.net'
         let tek = `
 ┏━━❉ *GROUP* ❉━━┓
-┣⊱*demote* @tag
-┣⊱*enable* <option>
-┣⊱*disable* <option>
-┣⊱*infogrup*
-┣⊱*linkgroup*
-┣⊱*leavegc*
-┣⊱*leavegcall*
-┣⊱*leavegroup*
-┣⊱*pengumuman* [teks]
-┣⊱*announce* [teks]
-┣⊱*hidetag* [teks]
-┣⊱*group* *open / close*
-┣⊱*tagall*
-┣⊱*kick*
-┣⊱*add*
-┣⊱*bannedlist*
-┣⊱*join*  (Premium)
-┣⊱*listprem*
-┣⊱*promote* @tag
-┣⊱*setgcpp*
-┣⊱*setppgcpanjang*
-┣⊱*tagadmin*
-┣⊱*getbio* @tag
+┣⊱ *demote* @tag
+┣⊱ *enable* <option>
+┣⊱ *disable* <option>
+┣⊱ *infogrup*
+┣⊱ *linkgroup*
+┣⊱ *leavegc*
+┣⊱ *leavegcall*
+┣⊱ *leavegroup*
+┣⊱ *pengumuman* [teks]
+┣⊱ *announce* [teks]
+┣⊱ *hidetag* [teks]
+┣⊱ *group* *open / close*
+┣⊱ *tagall*
+┣⊱ *kick*
+┣⊱ *add*
+┣⊱ *bannedlist*
+┣⊱ *join*  (Premium)
+┣⊱ *listprem*
+┣⊱ *promote* @tag
+┣⊱ *setgcpp*
+┣⊱ *setppgcpanjang*
+┣⊱ *tagadmin*
+┣⊱ *getbio* @tag
 ┗━━━━━━━━━━━━━━
 `
         const listMessage = {

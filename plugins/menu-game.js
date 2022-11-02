@@ -217,14 +217,14 @@ let handler = async (m, {
         let ownernya = nomorown + '@s.whatsapp.net'
         let tek = `
 ┏━━❉ *GAME* ❉━━┓
-┣⊱*math* <mode>
-┣⊱*tictactoe* [custom room name]
-┣⊱*ttt* [custom room name]
-┣⊱*caklontong*
-┣⊱*family100*
-┣⊱*siapakahaku*
-┣⊱*tebakgambar*
-┣⊱*tebakkata*
+┣⊱ *math* <mode>
+┣⊱ *tictactoe* [custom room name]
+┣⊱ *ttt* [custom room name]
+┣⊱ *caklontong*
+┣⊱ *family100*
+┣⊱ *siapakahaku*
+┣⊱ *tebakgambar*
+┣⊱ *tebakkata*
 ┗━━━━━━━━━━━━━━
 `
         const listMessage = {
