@@ -129,19 +129,19 @@ global.sections = [{
       description: `📹Webzone Menu`
     },
     {
-      title: "Downloader",
+      title: "DOWNLOADER",
       rowId: `mdownloader`,
       description: `📥Downloader Menu`
     },
     {
-      title: "Search",
-      rowId: `msearch`,
-      description: `🔍Search Menu`
+      title: "TOOLS",
+      rowId: `mtools`,
+      description: `🛠️Tools Menu`
     },
     {
-      title: "Random",
-      rowId: `randomimage`,
-      description: `❔Random Menu`
+      title: "INFO",
+      rowId: `minfo`,
+      description: `❔Info Menu`
     },
     {
       title: "Text Pro",
@@ -159,7 +159,7 @@ global.sections = [{
       description: `🗳Ephoto Menu`
     },
     {
-      title: "Fun",
+      title: "FUN",
       rowId: `mfun`,
       description: `🔫Fun Menu`
     },
@@ -210,8 +210,8 @@ global.sections = [{
     },
     {
       title: "OWNER",
-      rowId: `.owner`,
-      description: `🎟Owner Menu`
+      rowId: `mowner`,
+      description: `👑Owner Menu`
     }
   ]
 }, ]
