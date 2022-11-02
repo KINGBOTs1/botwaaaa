@@ -208,7 +208,7 @@ let handler = async (m, {
                 title: "ALL MENU",
                 rows: [{
                     title: "All Menu",
-                    rowId: `allmenu`,
+                    rowId: `.menuall`,
                     description: `📕All Menu`
                 }, ]
             }, {
