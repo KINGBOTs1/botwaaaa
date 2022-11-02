@@ -103,12 +103,8 @@ global.hsquere = ['⛶','❏','⫹⫺']
 global.fsizedoc = '1'.repeat(10)
 global.fpagedoc = '1'.repeat(10)
 global.thumbdoc = 'https://telegra.ph/file/6e45318d7c76f57e4a8bd.jpg'
-// Wm untuk stiker dan autobio
-global.tio = 'DENI'
-global.packname = '© KING'
-global.author = 'DENI'
 global.sections = [{
-  title: "ALL MENU",
+title: "ALL MENU",
   rows: [{
     title: "All Menu",
     rowId: `allmenu`,
@@ -196,18 +192,16 @@ global.sections = [{
       rowId: `mislamic`,
       description: `🕌Islamic Menu`
     },
-    {
-      title: "Voice",
-      rowId: `mvoice`,
-      description: `🎶Voice Menu`
-    },
-    {
-      title: "Owner",
-      rowId: `mowner`,
-      description: `🎟Owner Menu`
-    }
-  ]
-}, ]
+     {
+       title: "VOICE",
+       rowId: `mvoice`,
+       description: `🎶Voice Menu`
+     }, {
+       title: "OWNER",
+       rowId: `mowner`,
+       description: `👑Owner Menu`
+     }]
+     }, ]
 
 global.multiplier = 70 // Semakin Tinggi levelmu semakin naik
 
