@@ -216,10 +216,10 @@ let handler = async (m, {
         let wktuwib = `${wibh} H ${wibm} M ${wibs} S`
         let ownernya = nomorown + '@s.whatsapp.net'
         let tek = `
-┏━━❉ Anonymous Chat ❉━━┓
-┣⊱.start
-┣⊱.leave
-┣⊱.next
+┏━━❉ *Anonymous Chat* ❉━━┓
+┣⊱*.start*
+┣⊱*.leave*
+┣⊱*.next*
 ┗━━━━━━━━━━━━━━
 `
         const listMessage = {
