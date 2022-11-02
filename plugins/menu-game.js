@@ -216,15 +216,15 @@ let handler = async (m, {
         let wktuwib = `${wibh} H ${wibm} M ${wibs} S`
         let ownernya = nomorown + '@s.whatsapp.net'
         let tek = `
-┏━━❉ Game ❉━━┓
-┣⊱*.math* <mode>
-┣⊱*.tictactoe* [custom room name]
-┣⊱*.ttt* [custom room name]
-┣⊱*.caklontong*
-┣⊱*.family100*
-┣⊱*.siapakahaku*
-┣⊱*.tebakgambar*
-┣⊱*.tebakkata*
+┏━━❉ *GAME* ❉━━┓
+┣⊱* .math* <mode>
+┣⊱* .tictactoe* [custom room name]
+┣⊱* .ttt* [custom room name]
+┣⊱* .caklontong*
+┣⊱* .family100*
+┣⊱* .siapakahaku*
+┣⊱* .tebakgambar*
+┣⊱* .tebakkata*
 ┗━━━━━━━━━━━━━━
 `
         const listMessage = {

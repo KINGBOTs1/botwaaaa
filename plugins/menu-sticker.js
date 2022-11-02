@@ -216,24 +216,24 @@ let handler = async (m, {
         let wktuwib = `${wibh} H ${wibm} M ${wibs} S`
         let ownernya = nomorown + '@s.whatsapp.net'
         let tek = `
-┏━━❉ *Sticker* ❉━━┓
-┣⊱*.getexif*
-┣⊱*.toimg* (reply)
-┣⊱*.trigger* (Limit)
-┣⊱*.smeme* <teks1>|<teks2>
-┣⊱*stiker* (caption|reply media)
-┣⊱*stiker* <url>
-┣⊱*stikergif* (caption|reply media)
-┣⊱*stikergif* <url>
-┣⊱*.toimg2* (reply)
-┣⊱*.ttp* (Limit)
-┣⊱*.ttp2* -> ttp6 (Limit)
-┣⊱*.attp* (Limit)
-┣⊱*.attp2* (Limit)
-┣⊱*.attp3* (Limit)
-┣⊱*.ttp* <teks>
-┣⊱*.wm* <packname>|<author>
-┣⊱*.stikerline* <url> (Limit)
+┏━━❉ *STICKER* ❉━━┓
+┣⊱* .getexif*
+┣⊱* .toimg* (reply)
+┣⊱* .trigger* (Limit)
+┣⊱* .smeme* <teks1>|<teks2>
+┣⊱* stiker* (caption|reply media)
+┣⊱* stiker* <url>
+┣⊱* stikergif* (caption|reply media)
+┣⊱* stikergif* <url>
+┣⊱* .toimg2* (reply)
+┣⊱* .ttp* (Limit)
+┣⊱* .ttp2* -> ttp6 (Limit)
+┣⊱* .attp* (Limit)
+┣⊱* .attp2* (Limit)
+┣⊱* .attp3* (Limit)
+┣⊱* .ttp* <teks>
+┣⊱* .wm* <packname>|<author>
+┣⊱* .stikerline* <url> (Limit)
 ┗━━━━━━━━━━━━━━
 `
         const listMessage = {
