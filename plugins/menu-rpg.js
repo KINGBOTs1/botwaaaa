@@ -216,15 +216,22 @@ let handler = async (m, {
         let wktuwib = `${wibh} H ${wibm} M ${wibs} S`
         let ownernya = nomorown + '@s.whatsapp.net'
         let tek = `
-┏━━❉ Game ❉━━┓
-┣⊱.math <mode>
-┣⊱.tictactoe [custom room name]
-┣⊱.ttt [custom room name]
-┣⊱.caklontong
-┣⊱.family100
-┣⊱.siapakahaku
-┣⊱.tebakgambar
-┣⊱.tebakkata
+┏━━❉ RPG Games ❉━━┓
+┣⊱.judi [jumlah]
+┣⊱.adventure
+┣⊱.petualang
+┣⊱.berpetualang
+┣⊱.mulung
+┣⊱.heal
+┣⊱.inventory
+┣⊱.inv
+┣⊱.monthly
+┣⊱.open [crate] [count]
+┣⊱.gacha [crate] [count]
+┣⊱.buy [item] [count]
+┣⊱.sell [item] [count]
+┣⊱.transfer [type] [jumlah] [@tag]
+┣⊱.tf [type] [jumlah] [@tag]
 ┗━━━━━━━━━━━━━━
 `
         const listMessage = {
@@ -637,9 +644,9 @@ let handler = async (m, {
         throw e
     }
 }
-handler.help = ['mgame']
+handler.help = ['mrpg']
 handler.tags = ['menu']
-handler.customPrefix = /^mgame$/i // ketik bot (tanpa prefix)
+handler.customPrefix = /^mrpg$/i // ketik bot (tanpa prefix)
 handler.command = new RegExp
 
 

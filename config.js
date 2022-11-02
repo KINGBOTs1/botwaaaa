@@ -181,7 +181,12 @@ global.sections = [{
     {
       title: "Game",
       rowId: `mgame`,
-      description: `💾Game Menu`
+      description: `🎮Game Menu`
+    },
+    {
+      title: "RPG",
+      rowId: `mrpg`,
+      description: `🤴🏻RPG Menu`
     },
     {
       title: "Database",

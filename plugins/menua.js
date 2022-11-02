@@ -205,7 +205,7 @@ let handler = async (m, {
         }
         let mpt = clockString(_mpt)
         //section
-        let section = global.sections
+        const sections = global.sections
         let usrs = db.data.users[m.sender]
         /**************************** TIME *********************/
         let wib = moment.tz('Asia/Jakarta').format('HH:mm:ss')
@@ -240,7 +240,7 @@ let handler = async (m, {
             text: tek,
             mentions: await conn.parseMention(tek),
             buttonText: `LIST MENU`,
-            section
+            sections
         }
         if (teks == '404') {
             return conn.sendMessage(m.chat, listMessage, {
