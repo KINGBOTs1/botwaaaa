@@ -158,8 +158,8 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
 	const templateButtons = [
-  {index: 1, quickReplyButton: {displayText: 'MENU', id: 'help'}},
-  {index: 2, quickReplyButton: {displayText: 'OWNER', id: '.owner'}},
+  {index: 1, quickReplyButton: {displayText: 'Menu', id: 'help'}},
+  {index: 2, quickReplyButton: {displayText: 'Owner', id: '.owner'}},
 ]
 
 let tio = {
