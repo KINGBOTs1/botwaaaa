@@ -1,6 +1,37 @@
 import { watchFile, unwatchFile } from 'fs'
 import chalk from 'chalk'
 import { fileURLToPath } from 'url'
+import moment from 'moment-timezone'
+import fetch from 'node-fetch'
+
+/*⫘⫘⫘⫘ WAKTU ⫘⫘⫘⫘⫘*/
+global.wibh = moment.tz('Asia/Jakarta').format('HH')
+global.wibm = moment.tz('Asia/Jakarta').format('mm')
+global.wibs = moment.tz('Asia/Jakarta').format('ss')
+global.wib = moment.tz('Asia/Jakarta').format('HH:mm:ss')
+global.wktuwib = `${global.wibh} H ${global.wibm} M ${global.wibs} S`
+
+let d = new Date(new Date + 3600000)
+let locale = 'id'
+// d.getTimeZoneOffset()
+// Offset -420 is 18.00
+// Offset    0 is  0.00
+// Offset  420 is  7.00
+let weton = ['Pahing', 'Pon', 'Wage', 'Kliwon', 'Legi'][Math.floor(d / 84600000) % 5]
+let week = d.toLocaleDateString(locale, {
+  weekday: 'long'
+})
+let date = d.toLocaleDateString(locale, {
+  day: 'numeric',
+  month: 'long',
+  year: 'numeric'
+})
+/*⫘⫘⫘⫘ GLOBAL NOMOR ⫘⫘⫘⫘⫘*/
+global.nomorbot = '6285172081982' //Nomor Bot mu
+global.nomorown2 = '82144323683' //Nomormu
+global.nomorown = '6282144323683' //Nomormu
+global.namebot = 'King' //Nama bot mu
+global.nameown = 'DENI' //Nama mu
 
 global.owner = [
   ['6282144323683', 'DENI', true]
@@ -21,6 +52,57 @@ global.APIKeys = { // APIKey Here
   'https://violetics.pw': '0a97-8713-11dc'
 }
 
+
+global.fla = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextType=1&fillTextPattern=Warning!&text='
+//global.fla Jangan di ganti
+/*⫘⫘⫘⫘ LOADING ⫘⫘⫘⫘⫘*/
+global.wait = '```[ ! ] wait...```'
+global.eror = '⸨Acsess Danied⸩'
+
+/*⫘⫘⫘⫘ DOCUMENT ⫘⫘⫘⫘⫘*/
+global.dpptx = 'application/vnd.openxmlformats-officedocument.presentationml.presentation'
+global.ddocx = 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'
+global.dxlsx = 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'
+global.dpdf = 'application/pdf'
+global.drtf = 'text/rtf'
+
+/*⫘⫘⫘⫘ FAKE SIZE ⫘⫘⫘⫘⫘*/
+global.fsizedoc = '99999999999999' // 10TB
+global.fpagedoc = '999' //Gausah di ganti.
+
+/*⫘⫘⫘⫘ BIO OWNER ⫘⫘⫘⫘⫘*/
+global.nameowner = 'King'
+global.umurowner = '14'
+global.asalowner = 'suaran, Kalimantan timur'
+global.nomorowner = 'wa.me/6282144323683'
+global.pacarowner = 'INISIAL Q'
+/*⫘⫘⫘⫘ HIASAN ⫘⫘⫘⫘⫘*/
+// DEFAULT MENU
+global.dmenut = '┏━━❉' //top
+global.dmenub = '┣⊱ ۪' //body
+global.dmenub2 = '┃' //body for info cmd on Default menu
+global.dmenuf = '𝙏𝙃𝘼𝙉𝙆𝙎 𝙏𝙊\n\n◐ Fokus ID\n◐FangzXD\n◐The.sad.boy01\n◐Kanna\n◐Nurutomo\n◐Bochilgaming\n◐Amirul\n◐Ilham\n◐Rasel\n◐Pemakai bot ini\n◐I love you\n\n© https://bit.ly/3QJOy9F' //footer
+
+// COMMAND MENU
+global.cmenut = '┏━━❉' //top
+global.cmenuh = '❉━━┓' //header
+global.cmenub = '┣⊱ ' //body
+global.cmenuf = '┗━━━━━━━━━━━━━━' //footer
+global.cmenua = '┣━━━━━━━━━━━━━━' //after
+global.pmenus = '┣⊱ ' //pembatas menu selector
+
+global.htki = '┏━━❉' // Hiasan Titile (KIRI)
+global.htka = '❉━━┓' // Hiasan Title  (KANAN)
+global.lopr = '🅟' //LOGO PREMIUM ON MENU.JS
+global.lolm = '🅛' //LOGO FREE ON MENU.JS
+global.htjava = 'இ'    //hiasan Doang :v
+global.hsquere = ['⛶','❏','⫹⫺']
+
+
+/*⫘⫘⫘⫘ FAKE NYA ⫘⫘⫘⫘⫘*/
+global.fsizedoc = '1'.repeat(10)
+global.fpagedoc = '1'.repeat(10)
+global.thumbdoc = 'https://telegra.ph/file/6e45318d7c76f57e4a8bd.jpg'
 // Wm untuk stiker dan autobio
 global.tio = 'DENI'
 global.packname = '© KING'
