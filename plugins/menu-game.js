@@ -204,8 +204,108 @@ let handler = async (m, {
             }) * 1000
         }
         let mpt = clockString(_mpt)
-        //section
-        let section = global.sections
+        const sections = [{
+            title: "ALL MENU",
+            rows: [{
+                title: "All Menu",
+                rowId: `.menuall`,
+                description: `📕All Menu`
+            }, ]
+        }, {
+            title: "CHANGE MENU BOT",
+            rows: [{
+                    title: "Group",
+                    rowId: `mgroup`,
+                    description: `👥Group Menu`
+                },
+                {
+                    title: "Webzone",
+                    rowId: `mwebzone`,
+                    description: `📹Webzone Menu`
+                },
+                {
+                    title: "Downloader",
+                    rowId: `mdownloader`,
+                    description: `📥Downloader Menu`
+                },
+                {
+                    title: "Search",
+                    rowId: `msearch`,
+                    description: `🔍Search Menu`
+                },
+                {
+                    title: "Random",
+                    rowId: `randomimage`,
+                    description: `❔Random Menu`
+                },
+                {
+                    title: "Text Pro",
+                    rowId: `mtextpro`,
+                    description: `❇Text Pro Menu`
+                },
+                {
+                    title: "Photo Oxy",
+                    rowId: `mphotooxy`,
+                    description: `♻️Photo Oxy Menu`
+                },
+                {
+                    title: "Ephoto",
+                    rowId: `mephoto`,
+                    description: `🗳Ephoto Menu`
+                },
+                {
+                    title: "Fun",
+                    rowId: `mfun`,
+                    description: `🔫Fun Menu`
+                },
+                {
+                    title: "Kerang Ajaib",
+                    rowId: `mkaj`,
+                    description: `🐚Kerang Ajaib Menu`
+                },
+                {
+                    title: "Primbon",
+                    rowId: `mprimbon`,
+                    description: `😂Primbon Menu`
+                },
+                {
+                    title: "Convert",
+                    rowId: `mconvert`,
+                    description: `🛠Convert Menu`
+                },
+                {
+                    title: "Main",
+                    rowId: `mmain`,
+                    description: `💾Main Menu`
+                },
+                {
+                    title: "Database",
+                    rowId: `mdatabase`,
+                    description: `📁Database Menu`
+                },
+                {
+                    title: "Anonymous",
+                    rowId: `manonymous`,
+                    description: `🎭Anonymous Menu`
+                },
+                {
+                    title: "Islamic",
+                    rowId: `mislamic`,
+                    description: `🕌Islamic Menu`
+                },
+                {
+                    title: "Voice",
+                    rowId: `mvoice`,
+                    description: `🎶Voice Menu`
+                },
+                {
+                    title: "Owner",
+                    rowId: `mowner`,
+                    description: `🎟Owner Menu`
+                }
+            ]
+        }, ]
+
         let usrs = db.data.users[m.sender]
         /**************************** TIME *********************/
         let wib = moment.tz('Asia/Jakarta').format('HH:mm:ss')
@@ -217,30 +317,22 @@ let handler = async (m, {
         let wktuwib = `${wibh} H ${wibm} M ${wibs} S`
         let ownernya = nomorown + '@s.whatsapp.net'
         let tek = `
-┏━━❉ *PROFIL* ❉━━┓
-┃  *NAMA  \t: ${await conn.getName(m.sender)}*
-┃  *LIMIT \t\t\t: ${usrs.premiumTime >=1? '♾Infinity' : `〽️${db.data.users[m.sender].limit}`}* 
-┃  *PREM \t\t: ${usrs.premiumTime >=1 ? '✅' : `❌`}* 
-┃  *STATUS\t: ${m.sender.split`@`[0] ==nomorown ? 'Owner' : (usrs.premiumTime >= 1 ? 'Premium User' : 'Free User')}* 
-┗━━━━━━━━━━━━━━
-┏━━❉ *OWNER* ❉━━┓
-┣⊱ *OWNER : @${ownernya.split('@')[0]}*
-┣━━❀ *RUNTIME* ❀━━
-┣⊱ *HARI : ${new Date().toLocaleDateString()}*
-┣⊱ *JAM : ${wita}*
-┣━━❀ *USER* ❀━━
-┣⊱ *BAN : ${Object.values(db.data.users).filter(user => user.banned == true).length}*
-┣⊱ *REGISITER : ${Object.values(db.data.users).filter(user => user.registered == true).length}*
-┣⊱ *UNREG : ${Object.keys(db.data.users).length}*
-┣━━━━━━━━━━━━━━
-┃    *BOT BY DENI*
+┏━━❉ Game ❉━━┓
+┣⊱.math <mode>
+┣⊱.tictactoe [custom room name]
+┣⊱.ttt [custom room name]
+┣⊱.caklontong
+┣⊱.family100
+┣⊱.siapakahaku
+┣⊱.tebakgambar
+┣⊱.tebakkata
 ┗━━━━━━━━━━━━━━
 `
         const listMessage = {
             text: tek,
             mentions: await conn.parseMention(tek),
             buttonText: `LIST MENU`,
-            section
+            sections
         }
         if (teks == '404') {
             return conn.sendMessage(m.chat, listMessage, {
@@ -646,9 +738,9 @@ let handler = async (m, {
         throw e
     }
 }
-handler.help = ['menu', 'help', '?']
-handler.tags = ['main']
-handler.customPrefix = /^help$/i // ketik bot (tanpa prefix)
+handler.help = ['mgame']
+handler.tags = ['menu']
+handler.customPrefix = /^mgame$/i // ketik bot (tanpa prefix)
 handler.command = new RegExp
 
 

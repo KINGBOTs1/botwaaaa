@@ -109,6 +109,107 @@ global.packname = '© KING'
 global.author = 'DENI'
 
 global.multiplier = 70 // Semakin Tinggi levelmu semakin naik
+global.sections = [{
+  title: "ALL MENU",
+  rows: [{
+    title: "All Menu",
+    rowId: `.menuall`,
+    description: `📕All Menu`
+  }, ]
+}, {
+  title: "CHANGE MENU BOT",
+  rows: [{
+      title: "Group",
+      rowId: `mgroup`,
+      description: `👥Group Menu`
+    },
+    {
+      title: "Webzone",
+      rowId: `mwebzone`,
+      description: `📹Webzone Menu`
+    },
+    {
+      title: "Downloader",
+      rowId: `mdownloader`,
+      description: `📥Downloader Menu`
+    },
+    {
+      title: "Search",
+      rowId: `msearch`,
+      description: `🔍Search Menu`
+    },
+    {
+      title: "Random",
+      rowId: `randomimage`,
+      description: `❔Random Menu`
+    },
+    {
+      title: "Text Pro",
+      rowId: `mtextpro`,
+      description: `❇Text Pro Menu`
+    },
+    {
+      title: "Photo Oxy",
+      rowId: `mphotooxy`,
+      description: `♻️Photo Oxy Menu`
+    },
+    {
+      title: "Ephoto",
+      rowId: `mephoto`,
+      description: `🗳Ephoto Menu`
+    },
+    {
+      title: "Fun",
+      rowId: `mfun`,
+      description: `🔫Fun Menu`
+    },
+    {
+      title: "Kerang Ajaib",
+      rowId: `mkaj`,
+      description: `🐚Kerang Ajaib Menu`
+    },
+    {
+      title: "Primbon",
+      rowId: `mprimbon`,
+      description: `😂Primbon Menu`
+    },
+    {
+      title: "Convert",
+      rowId: `mconvert`,
+      description: `🛠Convert Menu`
+    },
+    {
+      title: "Game",
+      rowId: `mgame`,
+      description: `💾Game Menu`
+    },
+    {
+      title: "Database",
+      rowId: `mdatabase`,
+      description: `📁Database Menu`
+    },
+    {
+      title: "Anonymous",
+      rowId: `manonymous`,
+      description: `🎭Anonymous Menu`
+    },
+    {
+      title: "Islamic",
+      rowId: `mislamic`,
+      description: `🕌Islamic Menu`
+    },
+    {
+      title: "Voice",
+      rowId: `mvoice`,
+      description: `🎶Voice Menu`
+    },
+    {
+      title: "Owner",
+      rowId: `mowner`,
+      description: `🎟Owner Menu`
+    }
+  ]
+}, ]
 
 global.rpg = {
   emoticon(string) {
