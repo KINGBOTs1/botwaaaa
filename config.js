@@ -107,19 +107,17 @@ global.thumbdoc = 'https://telegra.ph/file/6e45318d7c76f57e4a8bd.jpg'
 global.tio = 'DENI'
 global.packname = '© KING'
 global.author = 'DENI'
-
-global.multiplier = 70 // Semakin Tinggi levelmu semakin naik
 global.sections = [{
   title: "ALL MENU",
   rows: [{
     title: "All Menu",
-    rowId: `.menuall`,
+    rowId: `allmenu`,
     description: `📕All Menu`
   }, ]
 }, {
-  title: "MENU BOT",
+  title: "CHANGE MENU BOT",
   rows: [{
-      title: "GROUP",
+      title: "Group",
       rowId: `mgroup`,
       description: `👥Group Menu`
     },
@@ -129,19 +127,19 @@ global.sections = [{
       description: `📹Webzone Menu`
     },
     {
-      title: "DOWNLOADER",
+      title: "Downloader",
       rowId: `mdownloader`,
       description: `📥Downloader Menu`
     },
     {
-      title: "TOOLS",
-      rowId: `mtools`,
-      description: `🛠️Tools Menu`
+      title: "Search",
+      rowId: `msearch`,
+      description: `🔍Search Menu`
     },
     {
-      title: "INFO",
-      rowId: `minfo`,
-      description: `❔Info Menu`
+      title: "Random",
+      rowId: `randomimage`,
+      description: `❔Random Menu`
     },
     {
       title: "Text Pro",
@@ -149,9 +147,9 @@ global.sections = [{
       description: `❇Text Pro Menu`
     },
     {
-      title: "STICKER",
-      rowId: `msticker`,
-      description: `🏵️Sticker Menu`
+      title: "Photo Oxy",
+      rowId: `mphotooxy`,
+      description: `♻️Photo Oxy Menu`
     },
     {
       title: "Ephoto",
@@ -159,7 +157,7 @@ global.sections = [{
       description: `🗳Ephoto Menu`
     },
     {
-      title: "FUN",
+      title: "Fun",
       rowId: `mfun`,
       description: `🔫Fun Menu`
     },
@@ -179,22 +177,17 @@ global.sections = [{
       description: `🛠Convert Menu`
     },
     {
-      title: "GAME",
-      rowId: `mgame`,
-      description: `🎮Game Menu`
+      title: "Main",
+      rowId: `mmain`,
+      description: `💾Main Menu`
     },
     {
-      title: "RPG",
-      rowId: `mrpg`,
-      description: `🤴🏻RPG Menu`
-    },
-    {
-      title: "DATABASE",
+      title: "Database",
       rowId: `mdatabase`,
       description: `📁Database Menu`
     },
     {
-      title: "ANONYMOUS",
+      title: "Anonymous",
       rowId: `manonymous`,
       description: `🎭Anonymous Menu`
     },
@@ -204,17 +197,19 @@ global.sections = [{
       description: `🕌Islamic Menu`
     },
     {
-      title: "VOICE",
+      title: "Voice",
       rowId: `mvoice`,
       description: `🎶Voice Menu`
     },
     {
-      title: "OWNER",
+      title: "Owner",
       rowId: `mowner`,
-      description: `👑Owner Menu`
+      description: `🎟Owner Menu`
     }
   ]
 }, ]
+
+global.multiplier = 70 // Semakin Tinggi levelmu semakin naik
 
 global.rpg = {
   emoticon(string) {
