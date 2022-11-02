@@ -235,8 +235,7 @@ let handler = async (m, {
 }
 handler.help = ['help', '?']
 handler.tags = ['main']
-handler.customPrefix = /^help$/i // ketik bot (tanpa prefix)
-handler.command = new RegExp
+handler.command = /^menuall?$/i
 
 export default handler
 
