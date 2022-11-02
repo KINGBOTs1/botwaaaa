@@ -239,7 +239,7 @@ let handler = async (m, {
             text: tek,
             footer: '*Prefix = .*',
             mentions: await conn.parseMention(tek),
-            buttonText: `LIST MENU`,
+            buttonText: `*MENU*`,
             sections
         }
         if (teks == '404') {

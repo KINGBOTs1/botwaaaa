@@ -239,7 +239,7 @@ let handler = async (m, {
         const listMessage = {
             text: tek,
             mentions: await conn.parseMention(tek),
-            buttonText: `LIST MENU`,
+            buttonText: `*MENU*`,
             sections
         }
         if (teks == '404') {
