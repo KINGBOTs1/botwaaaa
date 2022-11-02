@@ -110,16 +110,16 @@ global.author = 'DENI'
 
 global.multiplier = 70 // Semakin Tinggi levelmu semakin naik
 global.sections = [{
-  title: "ALL MENU",
+  title: "*ALL MENU*",
   rows: [{
-    title: "All Menu",
+    title: "*All Menu*",
     rowId: `.menuall`,
     description: `📕All Menu`
   }, ]
 }, {
-  title: "CHANGE MENU BOT",
+  title: "*MENU BOT*",
   rows: [{
-      title: "Group",
+      title: "*GROUP*",
       rowId: `mgroup`,
       description: `👥Group Menu`
     },
@@ -149,7 +149,7 @@ global.sections = [{
       description: `❇Text Pro Menu`
     },
     {
-      title: "Sticker",
+      title: "*STICKER*",
       rowId: `msticker`,
       description: `🏵️Sticker Menu`
     },
@@ -179,22 +179,22 @@ global.sections = [{
       description: `🛠Convert Menu`
     },
     {
-      title: "Game",
+      title: "*GAME*",
       rowId: `mgame`,
       description: `🎮Game Menu`
     },
     {
-      title: "RPG",
+      title: "*RPG*",
       rowId: `mrpg`,
       description: `🤴🏻RPG Menu`
     },
     {
-      title: "Database",
+      title: "*DATABASE",
       rowId: `mdatabase`,
       description: `📁Database Menu`
     },
     {
-      title: "Anonymous",
+      title: "*ANONYMOUS*",
       rowId: `manonymous`,
       description: `🎭Anonymous Menu`
     },
@@ -209,8 +209,8 @@ global.sections = [{
       description: `🎶Voice Menu`
     },
     {
-      title: "Owner",
-      rowId: `mowner`,
+      title: "*OWNER*",
+      rowId: `.owner`,
       description: `🎟Owner Menu`
     }
   ]
