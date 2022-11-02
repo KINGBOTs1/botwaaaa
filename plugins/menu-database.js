@@ -217,18 +217,19 @@ let handler = async (m, {
         let ownernya = nomorown + '@s.whatsapp.net'
         let tek = `
 ┏━━❉ *DATABASE* ❉━━┓
-┣⊱* .delcmd* <teks>
-┣⊱* .listcmd*
-┣⊱* .setcmd* <teks>
-┣⊱* .unlockcmd*
-┣⊱* .lockcmd*
-┣⊱* .delmsg* <teks>
-┣⊱* .listmsg*
-┣⊱* .addmsg *<teks>
+┣⊱*delcmd* <teks>
+┣⊱*listcmd*
+┣⊱*setcmd* <teks>
+┣⊱*unlockcmd*
+┣⊱*lockcmd*
+┣⊱*delmsg* <teks>
+┣⊱*listmsg*
+┣⊱*addmsg *<teks>
 ┗━━━━━━━━━━━━━━
 `
         const listMessage = {
             text: tek,
+            footer: prefix,
             mentions: await conn.parseMention(tek),
             buttonText: `LIST MENU`,
             sections
