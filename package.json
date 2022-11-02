@@ -1,6 +1,6 @@
 
 {
-    "name": "botcahx",
+    "name": "KINGBOT",
     "version": "2.1.0.6",
     "description": "",
     "main": "index.js",
@@ -20,7 +20,7 @@
     ],
     "homepage": "https://github.com/BOTCAHX/RT-X-MD",
     "author": {
-        "name": "tio"
+        "name": "Deni"
     },
     "repository": {
         "type": "git",
