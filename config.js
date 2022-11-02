@@ -204,7 +204,7 @@ global.sections = [{
       description: `🕌Islamic Menu`
     },
     {
-      title: "Voice",
+      title: "VOICE",
       rowId: `mvoice`,
       description: `🎶Voice Menu`
     },
