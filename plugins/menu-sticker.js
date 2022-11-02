@@ -217,27 +217,28 @@ let handler = async (m, {
         let ownernya = nomorown + '@s.whatsapp.net'
         let tek = `
 ┏━━❉ *STICKER* ❉━━┓
-┣⊱* .getexif*
-┣⊱* .toimg* (reply)
-┣⊱* .trigger* (Limit)
-┣⊱* .smeme* <teks1>|<teks2>
-┣⊱* stiker* (caption|reply media)
-┣⊱* stiker* <url>
-┣⊱* stikergif* (caption|reply media)
-┣⊱* stikergif* <url>
-┣⊱* .toimg2* (reply)
-┣⊱* .ttp* (Limit)
-┣⊱* .ttp2* -> ttp6 (Limit)
-┣⊱* .attp* (Limit)
-┣⊱* .attp2* (Limit)
-┣⊱* .attp3* (Limit)
-┣⊱* .ttp* <teks>
-┣⊱* .wm* <packname>|<author>
-┣⊱* .stikerline* <url> (Limit)
+┣⊱*getexif*
+┣⊱*toimg* (reply)
+┣⊱*trigger* (Limit)
+┣⊱*smeme* <teks1>|<teks2>
+┣⊱*tiker* (caption|reply media)
+┣⊱*tiker* <url>
+┣⊱*tikergif* (caption|reply media)
+┣⊱*tikergif* <url>
+┣⊱*toimg2* (reply)
+┣⊱*ttp* (Limit)
+┣⊱*ttp2* -> ttp6 (Limit)
+┣⊱*attp* (Limit)
+┣⊱*attp2* (Limit)
+┣⊱*attp3* (Limit)
+┣⊱*ttp* <teks>
+┣⊱*wm* <packname>|<author>
+┣⊱*stikerline* <url> (Limit)
 ┗━━━━━━━━━━━━━━
 `
         const listMessage = {
             text: tek,
+            footer: '*Prefix = .*',
             mentions: await conn.parseMention(tek),
             buttonText: `LIST MENU`,
             sections

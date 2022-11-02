@@ -217,25 +217,26 @@ let handler = async (m, {
         let ownernya = nomorown + '@s.whatsapp.net'
         let tek = `
 ┏━━❉ *RPG* ❉━━┓
-┣⊱* .judi* [jumlah]
-┣⊱* .adventure*
-┣⊱* .petualang*
-┣⊱* .berpetualang*
-┣⊱* .mulung*
-┣⊱* .heal*
-┣⊱* .inventory*
-┣⊱* .inv*
-┣⊱* .monthly*
-┣⊱* .open* [crate] [count]
-┣⊱* .gacha* [crate] [count]
-┣⊱* .buy* [item] [count]
-┣⊱* .sell* [item] [count]
-┣⊱* .transfer* [type] [jumlah] [@tag]
-┣⊱* .tf* [type] [jumlah] [@tag]
+┣⊱*judi* [jumlah]
+┣⊱*adventure*
+┣⊱*petualang*
+┣⊱*berpetualang*
+┣⊱*mulung*
+┣⊱*heal*
+┣⊱*inventory*
+┣⊱*inv*
+┣⊱*monthly*
+┣⊱*open* [crate] [count]
+┣⊱*gacha* [crate] [count]
+┣⊱*buy* [item] [count]
+┣⊱*sell* [item] [count]
+┣⊱*transfer* [type] [jumlah] [@tag]
+┣⊱*tf* [type] [jumlah] [@tag]
 ┗━━━━━━━━━━━━━━
 `
         const listMessage = {
             text: tek,
+            footer: '*Prefix = .*',
             mentions: await conn.parseMention(tek),
             buttonText: `LIST MENU`,
             sections

@@ -224,7 +224,7 @@ let handler = async (m, {
 ┣⊱ *lockcmd*
 ┣⊱ *delmsg* <teks>
 ┣⊱ *listmsg*
-┣⊱ *addmsg *<teks>
+┣⊱ *addmsg* <teks>
 ┗━━━━━━━━━━━━━━
 `
         const listMessage = {
