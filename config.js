@@ -149,9 +149,9 @@ global.sections = [{
       description: `❇Text Pro Menu`
     },
     {
-      title: "Photo Oxy",
-      rowId: `mphotooxy`,
-      description: `♻️Photo Oxy Menu`
+      title: "Sticker",
+      rowId: `msticker`,
+      description: `🏵️Sticker Menu`
     },
     {
       title: "Ephoto",

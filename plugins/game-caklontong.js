@@ -22,8 +22,6 @@ Bonus: ${poin} XP
         }, timeout)
     ]
 }
-handler.help = ['caklontong']
-handler.tags = ['game']
 handler.command = /^caklontong/i
 
 export default handler
