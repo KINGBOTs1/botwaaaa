@@ -103,17 +103,18 @@ global.hsquere = ['⛶','❏','⫹⫺']
 global.fsizedoc = '1'.repeat(10)
 global.fpagedoc = '1'.repeat(10)
 global.thumbdoc = 'https://telegra.ph/file/6e45318d7c76f57e4a8bd.jpg'
+global.multiplier = 70 // Semakin Tinggi levelmu semakin naik
 global.sections = [{
-title: "ALL MENU",
+  title: "ALL MENU",
   rows: [{
     title: "All Menu",
-    rowId: `allmenu`,
+    rowId: `.menuall`,
     description: `📕All Menu`
   }, ]
 }, {
-  title: "CHANGE MENU BOT",
+  title: "MENU BOT",
   rows: [{
-      title: "Group",
+      title: "GROUP",
       rowId: `mgroup`,
       description: `👥Group Menu`
     },
@@ -123,19 +124,19 @@ title: "ALL MENU",
       description: `📹Webzone Menu`
     },
     {
-      title: "Downloader",
+      title: "DOWNLOADER",
       rowId: `mdownloader`,
       description: `📥Downloader Menu`
     },
     {
-      title: "Search",
-      rowId: `msearch`,
-      description: `🔍Search Menu`
+      title: "TOOLS",
+      rowId: `mtools`,
+      description: `🛠️Tools Menu`
     },
     {
-      title: "Random",
-      rowId: `randomimage`,
-      description: `❔Random Menu`
+      title: "INFO",
+      rowId: `minfo`,
+      description: `❔Info Menu`
     },
     {
       title: "Text Pro",
@@ -143,9 +144,9 @@ title: "ALL MENU",
       description: `❇Text Pro Menu`
     },
     {
-      title: "Photo Oxy",
-      rowId: `mphotooxy`,
-      description: `♻️Photo Oxy Menu`
+      title: "STICKER",
+      rowId: `msticker`,
+      description: `🏵️Sticker Menu`
     },
     {
       title: "Ephoto",
@@ -153,7 +154,7 @@ title: "ALL MENU",
       description: `🗳Ephoto Menu`
     },
     {
-      title: "Fun",
+      title: "FUN",
       rowId: `mfun`,
       description: `🔫Fun Menu`
     },
@@ -173,17 +174,22 @@ title: "ALL MENU",
       description: `🛠Convert Menu`
     },
     {
-      title: "Main",
-      rowId: `mmain`,
-      description: `💾Main Menu`
+      title: "GAME",
+      rowId: `mgame`,
+      description: `🎮Game Menu`
     },
     {
-      title: "Database",
+      title: "RPG",
+      rowId: `mrpg`,
+      description: `🤴🏻RPG Menu`
+    },
+    {
+      title: "DATABASE",
       rowId: `mdatabase`,
       description: `📁Database Menu`
     },
     {
-      title: "Anonymous",
+      title: "ANONYMOUS",
       rowId: `manonymous`,
       description: `🎭Anonymous Menu`
     },
@@ -192,19 +198,19 @@ title: "ALL MENU",
       rowId: `mislamic`,
       description: `🕌Islamic Menu`
     },
-     {
-       title: "VOICE",
-       rowId: `mvoice`,
-       description: `🎶Voice Menu`
-     }, {
-       title: "OWNER",
-       rowId: `mowner`,
-       description: `👑Owner Menu`
-     }]
-     }, ]
-
-global.multiplier = 70 // Semakin Tinggi levelmu semakin naik
-
+    {
+      title: "VOICE",
+      rowId: `mvoice`,
+      description: `🎶Voice Menu`
+    },
+    {
+      title: "OWNER",
+      rowId: `mowner`,
+      description: `👑Owner Menu`
+    }
+  ]
+}, ]
+  
 global.rpg = {
   emoticon(string) {
     string = string.toLowerCase()
