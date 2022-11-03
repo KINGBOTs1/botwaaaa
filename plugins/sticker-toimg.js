@@ -1,6 +1,5 @@
 import { spawn } from 'child_process'
 import { format } from 'util'
-
 let handler = async (m, { conn, usedPrefix, command }) => {
     if (!global.support.convert &&
         !global.support.magick &&
@@ -23,8 +22,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
         })
     } else throw notStickerMessage
 }
-handler.help = ['toimg (reply)']
-handler.tags = ['sticker']
-handler.command = /^toimg$/i
+handler.customPrefix = /^toimg$/i // ketik bot (tanpa prefix)
+handler.command = new RegExp
 
 export default handler

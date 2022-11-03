@@ -9,8 +9,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
     let out = await webp2png(media).catch(_ => null) || Buffer.alloc(0)
     await conn.sendFile(m.chat, out, 'out.png', '*DONE*', m)
 }
-handler.help = ['toimg2 (reply)']
-handler.tags = ['sticker']
-handler.command = ['toimg2']
+handler.customPrefix = /^toimg2$/i // ketik bot (tanpa prefix)
+handler.command = new RegExp
 
 export default handler
