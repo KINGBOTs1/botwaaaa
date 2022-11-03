@@ -44,12 +44,43 @@ global.APIs = { // API Prefix
   nrttm: 'https://nurutomo.herokuapp.com',
   xteam: 'https://api.xteam.xyz',
   violetics: 'https://violetics.pw',
-  males: 'https://malesin.xyz'
+  males: 'https://malesin.xyz',
+  rey: 'https://server-api-rey.herokuapp.com',
+  zahir: 'https://zahirr-web.herokuapp.com',
+  lol: 'https://api.lolhuman.xyz',
+  dhnjing: 'https://dhnjing.xyz',
+  neoxr: 'https://neoxr-api.herokuapp.com',
+  zeks: 'https://api.zeks.xyz',
+  pencarikode: 'https://pencarikode.xyz',
+  ana: 'https://anabotofc.herokuapp.com/',
+  amel: 'https://melcanz.com',
+  bsbt: 'https://bsbt-api-rest.herokuapp.com', 
+  hardianto: 'https://hardianto.xyz',
+  botstyle: 'https://botstyle-api.herokuapp.com',
+  adiisus: 'https://adiixyzapi.herokuapp.com',
+  LeysCoder: 'https://leyscoders-api.herokuapp.com',
+  kanx: 'https://kannxapi.herokuapp.com/'
 }
 global.APIKeys = { // APIKey Here
   // 'https://website': 'apikey'
-  'https://api.xteam.xyz': 'NezukoTachibana281207',
-  'https://violetics.pw': '0a97-8713-11dc'
+    'https://violetics.pw': '0a97-8713-11dc',
+    'https://api.xteam.xyz': 'NezukoTachibana281207',
+    'https://anabotofc.herokuapp.com/': 'AnaBot',
+    'https://api.lolhuman.xyz': 'Papah-Chan',
+    'https://zahirr-web.herokuapp.com': 'zahirgans',
+    'https://api.zeks.xyz': 'apivinz',
+    'https://pencarikode.xyz': 'pais',
+    'https://api.neoxr.my.id': '5VC9rvNx',
+    'https://rest-beni.herokuapp.com': 'benniismaelapikey',
+    'https://melcanz.com': 'manHkmst',
+    'https://neoxr-api.herokuapp.com': 'yntkts',
+    'https://server-api-rey.herokuapp.com': 'apirey',
+    'https://botstyle-api.herokuapp.com': 'Fa2GhFnr',
+    'https://bsbt-api-rest.herokuapp.com': 'benniismael',
+    'https://hardianto.xyz': 'hardianto',
+    'https://zenzapis.xyz': 'f9fccfcff1',
+    'https://hardianto-chan.herokuapp.com': 'hardianto',
+    'https://leyscoders-api.herokuapp.com': 'dappakntlll',
 }
 
 
