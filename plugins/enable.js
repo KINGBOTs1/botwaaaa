@@ -21,6 +21,10 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
       }
       chat.welcome = isEnable
       break
+      case 'simi':
+      isUser = true
+      chat.simi = isEnable
+      break
     case 'detect':
       if (!m.isGroup) {
         if (!isOwner) {
@@ -137,7 +141,7 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
       break
     default:
       if (!/[01]/.test(command)) return m.reply(`
-List option: welcome | detect | delete | antidelete | public | antilink | autolevelup | document | whitelistmycontacts | restrict | nyimak | autoread | pconly | gconly | swonly | getmsg
+List option: welcome | simi | detect | delete | antidelete | public | antilink | autolevelup | document | whitelistmycontacts | restrict | nyimak | autoread | pconly | gconly | swonly | getmsg
 Contoh:
 ${usedPrefix}enable welcome
 ${usedPrefix}disable welcome
