@@ -241,7 +241,8 @@ let handler = async (m, {
 ┣⊱ *broadcast* <teks>
 ┣⊱ *bc* <teks>
 ┣⊱ *backup*
-┣⊱ *getsesi*
+┣⊱ *buatgrup*
+┣⊱ *getsesi* 
 ┣⊱ *database*
 ┣⊱ *setbotpp*
 ┗━━━━━━━━━━━━━━

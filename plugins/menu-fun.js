@@ -239,8 +239,8 @@ let handler = async (m, {
 ┣⊱ *dare*
 ┣⊱ *truth*
 ┣⊱ *bucin*
-┣⊱ *dare*
-┣⊱ *truth*
+┣⊱ *simi*
+┣⊱ *simi2*
 ┗━━━━━━━━━━━━━━
 `
         const listMessage = {
