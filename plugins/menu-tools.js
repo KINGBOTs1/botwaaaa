@@ -245,6 +245,7 @@ let handler = async (m, {
 ┣⊱ *removebg*
 ┣⊱ *tourl* (Limit)
 ┣⊱ *emojimix* <1>|<2>
+┣⊱ *zoom* <pass>
 ┣⊱ *igstalk*
 ┣⊱ *gimage* <query>
 ┣⊱ *image* <query>
