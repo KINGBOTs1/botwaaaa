@@ -129,7 +129,8 @@ global.lolm = '🅛' //LOGO FREE ON MENU.JS
 global.htjava = 'இ'    //hiasan Doang :v
 global.hsquere = ['⛶','❏','⫹⫺']
 
-
+global.hiasan = '꒦ ͝ ꒷ ͝ ꒦ ͝ ꒷ ͝ ꒦ ͝ ꒷ ͝ ꒦ ͝ ꒷ ͝ ꒦ ͝ ꒷ ͝ ꒦ ͝ ꒷ ͝ ꒦ ͝ ꒷ ͝ ꒦'
+global.thumbEror = 'https://telegra.ph/file/430b8f1ae35c655bfee93.jpg'
 /*⫘⫘⫘⫘ FAKE NYA ⫘⫘⫘⫘⫘*/
 global.fsizedoc = '1'.repeat(10)
 global.fpagedoc = '1'.repeat(10)

@@ -172,6 +172,10 @@ export async function handler(chatUpdate) {
                     user.lastweekly = 0
                 if (!isNumber(user.lastmonthly))
                     user.lastmonthly = 0
+                if (!isNumber(user.premium))
+                    user.premium = false
+                if (!isNumber(user.premiumTime))
+                    user.premiumTime = 0
             } else
                 db.data.users[m.sender] = {
                     exp: 0,
@@ -241,6 +245,9 @@ export async function handler(chatUpdate) {
                     lasthunt: 0,
                     lastweekly: 0,
                     lastmonthly: 0,
+
+                    premium: false,
+                    premiumTime: 0,
                 }
             let chat = db.data.chats[m.chat]
             if (typeof chat !== 'object')
@@ -266,6 +273,8 @@ export async function handler(chatUpdate) {
                     chat.antiLink = false
                 if (!('viewonce' in chat))
                     chat.viewonce = false
+                if (!('simi' in chat))
+                    chat.simi = false
                 if (!('antiToxic' in chat))
                     chat.antiToxic = false
                 if (!isNumber(chat.expired))
@@ -280,6 +289,7 @@ export async function handler(chatUpdate) {
                     sPromote: '',
                     sDemote: '',
                     delete: true,
+                    simi: false,
                     antiLink: false,
                     viewonce: true,
                     antiToxic: false,
@@ -316,7 +326,7 @@ export async function handler(chatUpdate) {
         const isROwner = [this.decodeJid(this.user.id), ...global.owner.map(([number]) => number)].map(v => v?.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
         const isOwner = isROwner || m.fromMe
         const isMods = isOwner || global.mods.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
-        const isPrems = isROwner || global.prems.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
+        const isPrems = isROwner || db.data.users[m.sender].premiumTime > 0
 
         if (opts['queque'] && m.text && !m.fromMe && !(isMods || isPrems)) {
             const id = m.id
@@ -477,15 +487,15 @@ export async function handler(chatUpdate) {
                 m.isCommand = true
                 let xp = 'exp' in plugin ? parseInt(plugin.exp) : 17 // XP Earning per command
                 if (xp > 200)
-                    m.reply('cheat -_-') // Hehehe
+                    this.sendButton(m.chat, `[❗] *Sepertinya Anda Bermain Curang, Menggunakan Calculator*`, author, null, [['Buy Limit', '/buy limit'], ['Cheat Limit', '/ngechit']] , m)
                 else
                     m.exp += xp
-                if (!isPrems && plugin.limit && db.data.users[m.sender].limit < plugin.limit * 1) {
-                    this.reply(m.chat, `Your limit is up, please buy via *${usedPrefix}buy*`, m)
+                if (!isPrems && plugin.limit && global.db.data.users[m.sender].limit < plugin.limit * 1) {
+                    this.sendButton(m.chat, `[❗] *Limit Anda Habis, Beberapa Command Tidak Bisa Di Akses*`, author, null, [['Buy Limit', '/buy limit'], ['Cheat Limit', '/ngechit']] , m)
                     continue // Limit habis
                 }
                 if (plugin.level > _user.level) {
-                    this.reply(m.chat, `level required ${plugin.level} to use this command. Your level ${_user.level}`, m)
+                    this.sendButton(m.chat, `[💬] Diperlukan level *${plugin.level}* untuk menggunakan perintah ini. Level kamu *${_user.level}🎋*\n*${plugin.level}* level is required to use this command. Your level is *${_user.level}🎋*`, author, null,[['Ok', 'ok']] , m)
                     continue // If the level has not been reached
                 }
                 let extra = {
@@ -849,19 +859,34 @@ Untuk mematikan fitur ini, ketik
 
 
 global.dfail = (type, m, conn) => {
+    let nmsr = `👋 Hai *@${m.sender.split("@")[0]}*, `
     let msg = {
-        rowner: 'This command can only be used by the *Owner!*',
-        owner: 'This command can only be used by _*Owner Bot*_!',
-        mods: 'This command can only be used by _*Moderator*_ !',
-        premium: 'This command is only for _*Premium*_ members!',
-        group: 'This command can only be used in groups!',
-        private: 'This command can only be used in Private Chat!',
-        admin: 'This command is only for *Admin* group!',
-        botAdmin: 'Make bot as *Admin* to use this command!',
-        unreg: 'Please register to use this feature by typing:\n\n*.daftar*',
-        restrict: 'This feature is *disabled*!'
+        rowner: `*${htki} 𝗜𝗡𝗙𝗢 ${htka}*\n
+${nmsr} Perintah ini hanya dapat digunakan oleh *OWWNER* !`,
+        owner: `*${htki} 𝗜𝗡𝗙𝗢 ${htka}*\n
+${nmsr} Perintah ini hanya dapat digunakan oleh *Owner Bot* !`,
+        mods: `*${htki} 𝗜𝗡𝗙𝗢 ${htka}*\n
+${nmsr} Perintah ini hanya dapat digunakan oleh *Moderator* !`,
+        premium: `*${htki} 𝗜𝗡𝗙𝗢 ${htka}*\n
+${nmsr} Perintah ini hanya untuk member *Premium* !`,
+        group: `*${htki} 𝗜𝗡𝗙𝗢 ${htka}*\n
+${nmsr} Perintah ini hanya dapat digunakan di grup !`,
+        private: `*${htki} 𝗜𝗡𝗙𝗢 ${htka}*\n
+${nmsr} Perintah ini hanya dapat digunakan di Chat Pribadi !`,
+        admin: `*${htki} 𝗜𝗡𝗙𝗢 ${htka}*\n
+${nmsr} Perintah ini hanya untuk *Admin* grup !`,
+        botAdmin: `*${htki} 𝗜𝗡𝗙𝗢 ${htka}*\n
+${nmsr} Jadikan bot sebagai *Admin* untuk menggunakan perintah ini !`,
+        unreg: `*${htki} 𝗦𝗘𝗥𝗩𝗘𝗥 ${htka}*\n
+${nmsr} Silahkan daftar ke database terlebih dahulu untuk menggunakan bot ini lebih lanjut *Ketik:*\n\n*#daftar nama.umur*\n\nContoh: *#daftar levi.14*`,
+        nsfw: `*${htki} 𝗜𝗡𝗙𝗢 ${htka}*\n
+${nmsr} NSFW tidak aktif, Silahkan hubungi Team Bot Discussion untuk mengaktifkan fitur ini !`,
+        rpg: `*${htki} 𝗜𝗡𝗙𝗢 ${htka}*\n
+${nmsr} RPG tidak aktif, Silahkan hubungi Team Bot Discussion Untuk mengaktifkan fitur ini !`,
+        restrict: `*${htki} 𝗜𝗡𝗙𝗢 ${htka}*\n
+${nmsr} Fitur ini di *disable* !`
     }[type]
-    if (msg) return m.reply(msg)
+    if (msg) return conn.sendButton(m.chat, hiasan, msg, thumbEror, [['SEWA BOT', '.sewabot'],['OKE', 'Ok'],['SPEED', '.speed']],m)
 }
 
 let file = Helper.__filename(import.meta.url, true)

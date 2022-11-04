@@ -232,6 +232,9 @@ let handler = async (m, {
 ┣⊱ *tagall*
 ┣⊱ *kick*
 ┣⊱ *add*
+┣⊱ *setnamagc*
+┣⊱ *setdesk*
+┣⊱ *groupsetting*
 ┣⊱ *bannedlist*
 ┣⊱ *join*  (Premium)
 ┣⊱ *listprem*
