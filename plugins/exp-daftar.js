@@ -94,7 +94,7 @@ let handler = async function (m, { text, usedPrefix, command,conn }) {
 ┏━━❉ *DATA* ❉━━┓
 ┣⊱  Status = *Sucsess ☑️*
 ┣⊱  Nama = *${name}* 
-┣⊱  Umur =*${age}*                                          
+┣⊱  Umur = *${age}*                                          
 ┗━━━━━━━━━━━━━━
 
 *SYARAT*
