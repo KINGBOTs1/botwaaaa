@@ -1,13 +1,49 @@
 import fetch from 'node-fetch'
+import axios from 'axios'
+import hx from 'hxz-api'
 
-let handler = async (m, { conn, text }) => {
-	if (!text) throw 'Example : .twitter https://twitter.com/fulltosspk/status/1581136238735953921?t=Z0AZixxF2AOD4flfhz6fMA&s=19'
+let handler = async (m, { conn, usedPrefix, text, args, command }) => {
+let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
+let pp = await conn.profilePictureUrl(who).catch(_ => hwaifu.getRandom())
+let name = await conn.getName(who)
+
+if (!text) throw 'Input URL'
+try {
 	let res = await twitterDl(text)
-	await m.reply('_In progress, please wait..._')
 	for (let x = 0; x < res.media.length; x++) {
 		let caption = x === 0 ? res.caption.replace(/https:\/\/t.co\/[a-zA-Z0-9]+/gi, '').trim() : ''
-		conn.sendFile(m.chat, res.media[x].url, '', caption, m)
+  conn.sendButtonVid(m.chat, res.media[x].url, caption, author, 'To mp3', '.tomp3', fpayment, adReply)
 	}
+	} catch {
+	try {
+  if (!text) throw '*Masukkan link*\n Example: https://twitter.com/sosmedkeras/status/1499995651240697859?s=20&t=gBiahHhbBT0FxZ3aVa3bJw'
+let res = await axios('https://violetics.pw/api/downloader/twitter?apikey=beta&url=' + text)
+let json = res.data
+let dapet = json.result.url
+	let row = Object.values(dapet).map((v, index) => ({
+		title: htjava + '📌 Quality: ' + v.name,
+		description: '\n⌚ Host: ' + json.result.hosting + '\n⏲️ Title: ' + json.result.meta.title + '\n📎 URL: ' + v.url + '\n📌 Source: ' + json.result.meta.source,
+		rowId: usedPrefix + 'get ' + v.url
+	}))
+	let button = {
+		buttonText: `☂️ ${command} Search Disini ☂️`,
+		description: `⚡ Hai ${name}, Silakan pilih ${command} Search di tombol di bawah...\n*Teks yang anda kirim:* ${text}\n\nKetik ulang *${usedPrefix + command}* teks anda untuk mengubah teks lagi`,
+		footerText: wm
+	}
+	return conn.sendListM(m.chat, button, row, m)
+	} catch {
+   throw eror 
+     }
+	/* Twit */
+await hx.fbdown(`${text}`)
+            .then(G => {
+            let ten = `${G.HD}`
+            conn.sendButtonVid(m.chat, ten, `*desc* : ${G.desc}
+━━━━━•─────────────── 
+       ⇆ㅤ◁ㅤ ❚❚ㅤ ▷ㅤ↻`, author, 'To mp3', '.tomp3', fpayment, adReply)
+            })
+	}
+	
 }
 handler.help = ['twitter']
 handler.tags = ['downloader']
