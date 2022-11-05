@@ -26,6 +26,9 @@ let date = d.toLocaleDateString(locale, {
   month: 'long',
   year: 'numeric'
 })
+global.fla = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextType=1&fillTextPattern=Warning!&text='
+global.hiasan = '꒦ ͝ ꒷ ͝ ꒦ ͝ ꒷ ͝ ꒦ ͝ ꒷ ͝ ꒦ ͝ ꒷ ͝ ꒦ ͝ ꒷ ͝ ꒦ ͝ ꒷ ͝ ꒦ ͝ ꒷ ͝ ꒦'
+global.thumbEror = 'https://telegra.ph/file/430b8f1ae35c655bfee93.jpg'
 /*⫘⫘⫘⫘ GLOBAL NOMOR ⫘⫘⫘⫘⫘*/
 global.nomorbot = '6285172081982' //Nomor Bot mu
 global.nomorown2 = '82144323683' //Nomormu
@@ -34,9 +37,10 @@ global.namebot = 'King' //Nama bot mu
 global.nameown = 'DENI' //Nama mu
 
 global.owner = [
-  ['6282144323683', 'DENI', true]
-// [owner bukan bot!]
-] // paste nomor di sini
+ //Owner3
+  ['6282144323683', 'King', true] //Ini buat kamu!
+  // [number, dia creator/owner?, dia developer?]
+] // Put your number here // paste nomor di sini
 global.mods = ['6282144323683'] // bantuan?
 global.prems = ['6282144323683'] // user premium limit tanpa batas 
 global.APIs = { // API Prefix
@@ -129,13 +133,15 @@ global.lolm = '🅛' //LOGO FREE ON MENU.JS
 global.htjava = 'இ'    //hiasan Doang :v
 global.hsquere = ['⛶','❏','⫹⫺']
 
-global.hiasan = '꒦ ͝ ꒷ ͝ ꒦ ͝ ꒷ ͝ ꒦ ͝ ꒷ ͝ ꒦ ͝ ꒷ ͝ ꒦ ͝ ꒷ ͝ ꒦ ͝ ꒷ ͝ ꒦ ͝ ꒷ ͝ ꒦'
-global.thumbEror = 'https://telegra.ph/file/430b8f1ae35c655bfee93.jpg'
+
 /*⫘⫘⫘⫘ FAKE NYA ⫘⫘⫘⫘⫘*/
 global.fsizedoc = '1'.repeat(10)
 global.fpagedoc = '1'.repeat(10)
 global.thumbdoc = 'https://telegra.ph/file/6e45318d7c76f57e4a8bd.jpg'
-global.multiplier = 70 // Semakin Tinggi levelmu semakin naik
+// Wm untuk stiker dan autobio
+global.tio = 'DENI'
+global.packname = '© KING'
+global.author = 'DENI'
 global.sections = [{
   title: "ALL MENU",
   rows: [{
@@ -242,7 +248,9 @@ global.sections = [{
     }
   ]
 }, ]
-  
+
+global.multiplier = 70 // Semakin Tinggi levelmu semakin naik
+
 global.rpg = {
   emoticon(string) {
     string = string.toLowerCase()
