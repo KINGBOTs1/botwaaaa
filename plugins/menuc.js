@@ -236,7 +236,7 @@ let handler = async (m, {
 handler.help = ['help', '?']
 handler.tags = ['main']
 handler.command = /^menuall?$/i
-
+handler.register = true
 export default handler
 
 const more = String.fromCharCode(8206)

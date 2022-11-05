@@ -658,7 +658,7 @@ handler.help = ['mfun']
 handler.tags = ['menu']
 handler.customPrefix = /^mfun$/i // ketik bot (tanpa prefix)
 handler.command = new RegExp
-
+handler.register = true
 
 handler.exp = 3
 

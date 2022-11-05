@@ -642,7 +642,7 @@ handler.help = ['minfo']
 handler.tags = ['menu']
 handler.customPrefix = /^minfo$/i // ketik bot (tanpa prefix)
 handler.command = new RegExp
-
+handler.register = true
 
 handler.exp = 3
 

@@ -638,7 +638,7 @@ handler.help = ['manonymous']
 handler.tags = ['menu']
 handler.customPrefix = /^manonymous$/i // ketik bot (tanpa prefix)
 handler.command = new RegExp
-
+handler.register = true
 
 handler.exp = 3
 

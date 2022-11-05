@@ -179,7 +179,7 @@ handler.help = ['menu', '?']
 handler.tags = ['main'] 
 handler.customPrefix = /^menu$/i // ketik bot (tanpa prefix)
 handler.command = new RegExp
-
+handler.register = true
 
 export default handler
 

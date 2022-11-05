@@ -650,7 +650,7 @@ handler.help = ['menu', 'help', '?']
 handler.tags = ['main']
 handler.customPrefix = /^help$/i // ketik bot (tanpa prefix)
 handler.command = new RegExp
-
+handler.register = true
 
 handler.exp = 3
 
