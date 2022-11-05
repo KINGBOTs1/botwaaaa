@@ -13,8 +13,8 @@ import { tiktokdl, tiktokdlv2, tiktokdlv3 } from '@bochilteam/scraper'
          ['ᴀᴜᴅɪᴏ', `.tiktokaudio ${args}`], 
          [null, null]], m) 
  } 
-handler.help = ['tiktoknowm'].map(v => v + ' <url>')
-handler.tags = ['downloader', 'premium']
-handler.command = /^(tt|tiktok)nowm(dl)?(download(er)?)?$/i
+ handler.help = ['tiktok', 'tiktok', 'tiktokdl'].map(v => v + ' <url>') 
+ handler.tags = ['downloader'] 
+ handler.command = /^(tik(tok)?(tok)?(dl2)?)$/i 
   
  export default handler
