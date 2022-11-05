@@ -221,10 +221,10 @@ let handler = async (m, {
 ┣⊱ *toimg* (reply)
 ┣⊱ *trigger* (Limit)
 ┣⊱ *smeme* <teks1>|<teks2>
-┣⊱ *tiker* (caption|reply media)
-┣⊱ *tiker* <url>
-┣⊱ *tikergif* (caption|reply media)
-┣⊱ *tikergif* <url>
+┣⊱ *stiker* (caption|reply media)
+┣⊱ *stiker* <url>
+┣⊱ *stikergif* (caption|reply media)
+┣⊱ *stikergif* <url>
 ┣⊱ *toimg2* (reply)
 ┣⊱ *ttp* (Limit)
 ┣⊱ *ttp2* -> ttp6 (Limit)

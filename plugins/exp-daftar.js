@@ -89,13 +89,12 @@ let handler = async function (m, { text, usedPrefix, command,conn }) {
 ]
   const listMessagee = {
       text: `\n┏━━❉ *BERHASIL* ❉━━┓
- ❖ Terima kasih ${name} Sudah mendaftar
-Di Database kami
+ ❖ Terima kasih ${name} Sudah mendaftar Di Database kami
 
 ┏━━❉ *DATA* ❉━━┓
-┣⊱  *Sucsess ☑️* 】Status
-┣⊱  *${name}* 】Nama
-┣⊱  *${age}* 】Umur/Age                                          
+┣⊱  Status = *Sucsess ☑️*
+┣⊱  Nama = *${name}* 
+┣⊱  Umur =*${age}*                                          
 ┗━━━━━━━━━━━━━━
 
 *SYARAT*

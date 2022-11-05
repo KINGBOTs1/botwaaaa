@@ -7,6 +7,7 @@ import { join } from 'path'
 process.env.TZ = 'Asia/Jakarta'
 import { xpRange } from '../lib/levelling.js'
 import { plugins } from '../lib/plugins.js'
+let ownernya = nomorown + '@s.whatsapp.net'
 let tags = {
   'main': 'Main',
   'game': 'Game',
@@ -37,6 +38,7 @@ let tags = {
   'no category': 'No Category',
   'nsfw': 'Nsfw',
 }
+
 const defaultMenu = {
   before: `
 ┏━━❉ *PROFIL* ❉━━┓
@@ -46,7 +48,7 @@ const defaultMenu = {
 ┃  *XP    \t\t\t: %exp*
 ┗━━━━━━━━━━━━━━
 ┏━━❉ *OWNER* ❉━━┓
-┣⊱ *OWNER* : 
+┣⊱ *OWNER* : @${ownernya.split('@')[0]}
 ┣━━❀ *RUNTIME* ❀━━
 ┣⊱ *TGL : %date*
 ┣⊱ *JAM : %time*
