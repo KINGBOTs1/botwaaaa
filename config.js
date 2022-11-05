@@ -38,7 +38,7 @@ global.nameown = 'DENI' //Nama mu
 
 global.owner = [
  //Owner3
-  ['6282144323683', 'King', true] //Ini buat kamu!
+  ['6282144323683', 'DENI', true] //Ini buat kamu!
   // [number, dia creator/owner?, dia developer?]
 ] // Put your number here // paste nomor di sini
 global.mods = ['6282144323683'] // bantuan?

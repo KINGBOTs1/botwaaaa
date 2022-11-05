@@ -886,7 +886,7 @@ ${nmsr} RPG tidak aktif, Silahkan hubungi Team Bot Discussion Untuk mengaktifkan
         restrict: `*${htki} 𝗜𝗡𝗙𝗢 ${htka}*\n
 ${nmsr} Fitur ini di *disable* !`
     }[type]
-    if (msg) return conn.sendButton(m.chat, hiasan, msg, thumbEror, [['OWNER BOT', '.owner'],['OKE', 'Ok'],['SPEED', '.speed']],m)
+    if (msg) return conn.sendButton(m.chat, hiasan, msg, thumbEror, [['OWNER BOT', '.owner'],['DAFTAR', '.daftar']],m)
 }
 
 let file = Helper.__filename(import.meta.url, true)
