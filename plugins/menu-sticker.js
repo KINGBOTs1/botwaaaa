@@ -225,6 +225,7 @@ let handler = async (m, {
 ┣⊱ *stiker* <url>
 ┣⊱ *stikergif* (caption|reply media)
 ┣⊱ *stikergif* <url>
+┣⊱ *tovideo* (reply)
 ┣⊱ *toimg2* (reply)
 ┣⊱ *ttp* (Limit)
 ┣⊱ *ttp2* -> ttp6 (Limit)
