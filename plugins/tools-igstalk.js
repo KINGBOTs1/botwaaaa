@@ -6,12 +6,12 @@ let handler = async (m, { conn, text }) => {
   let res = await igStalk(text)
   if (!res) throw res
   let caption = `
-👤*Name:* ${res.name}
-📝*Username:* ${res.username}
-💌*Followers:* ${res.followersH}
-❤️*Following:* ${res.followingH}
-📷*Posts:* ${res.postsH}
-📑*Bio:*
+👤 *Name:* ${res.name}
+📝 *Username:* ${res.username}
+💌 *Followers:* ${res.followersH}
+❤️ *Following:* ${res.followingH}
+📷 *Posts:* ${res.postsH}
+📑 *Bio:*
 ${res.description}
 `.trim()
   if (res.profilePic) return conn.sendMessage(m.chat, { image: { url: res.profilePic }, caption }, { quoted: m })
