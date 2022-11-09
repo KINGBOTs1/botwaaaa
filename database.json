@@ -65,7 +65,7 @@
       "premiumTime": 0
     },
     "6285333744697@s.whatsapp.net": {
-      "exp": 10,
+      "exp": 38,
       "limit": 200,
       "lastclaim": 0,
       "registered": false,
@@ -124,7 +124,9 @@
       "lastweekly": 0,
       "lastmonthly": 0,
       "petFood": 0,
-      "catexp": 0
+      "catexp": 0,
+      "premium": false,
+      "premiumTime": 0
     },
     "6282144323683@s.whatsapp.net": {
       "exp": 10000032502,
@@ -315,7 +317,7 @@
       "catexp": 0
     },
     "6285337194341@s.whatsapp.net": {
-      "exp": 5,
+      "exp": 33,
       "limit": 200,
       "lastclaim": 0,
       "registered": false,
@@ -374,7 +376,9 @@
       "lastweekly": 0,
       "lastmonthly": 0,
       "petFood": 0,
-      "catexp": 0
+      "catexp": 0,
+      "premium": false,
+      "premiumTime": 0
     },
     "6282340015801@s.whatsapp.net": {
       "exp": 7,
@@ -499,7 +503,7 @@
       "catexp": 0
     },
     "6282359321306@s.whatsapp.net": {
-      "exp": 972,
+      "exp": 1003,
       "limit": 199,
       "lastclaim": 0,
       "registered": false,
@@ -1460,7 +1464,8 @@
       "antiLink": false,
       "viewonce": true,
       "antiToxic": false,
-      "expired": 0
+      "expired": 0,
+      "simi": false
     },
     "120363042233611625@g.us": {
       "isBanned": false,
@@ -1474,7 +1479,8 @@
       "antiLink": false,
       "viewonce": true,
       "antiToxic": false,
-      "expired": 0
+      "expired": 0,
+      "simi": false
     },
     "120363027448017593@g.us": {
       "isBanned": false,
@@ -1488,7 +1494,8 @@
       "antiLink": false,
       "viewonce": true,
       "antiToxic": false,
-      "expired": 0
+      "expired": 0,
+      "simi": false
     },
     "120363023733732617@g.us": {
       "isBanned": false,
@@ -2002,7 +2009,7 @@
       "self": false,
       "autoread": true,
       "restrict": false,
-      "status": 1667358902873
+      "status": 1667976690299
     }
   }
 }
