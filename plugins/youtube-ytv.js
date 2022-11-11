@@ -6,7 +6,7 @@ let handler = async (m, { conn, args, isPrems, isOwner }) => {
   let chat = db.data.chats[m.chat]
   const isY = /y(es)/gi.test(args[1])
   const { thumbnail, video: _video, title} = await youtubedl(args[0]).catch(async _ => await youtubedlv2(args[0])).catch(async _ => await youtubedlv3(args[0]))
-  const limitedSize = (isPrems || isOwner ? 99 : limit) * 1024
+  const limitedSize = (isPrems || isOwner ? 2000 : limit) * 1024
   let video, source, res, link, lastError, isLimit
   for (let i in _video) {
     try {
