@@ -7,8 +7,8 @@ let handler = async (m, { conn, usedPrefix, text }) => {
     switch (v.type) {
       case 'video': {
         listSections.push([`${v.title}`, [
-          ['Video 🎥', `${usedPrefix}ytv ${v.url} yes`, `download ${v.title} (${v.url})`],
-          ['Audio 🎧', `${usedPrefix}yta ${v.url} yes`, `download ${v.title} (${v.url})`]
+          ['Video 🎥', `${usedPrefix}ytv ${v.url}`, `download ${v.title} (${v.url})`],
+          ['Audio 🎧', `${usedPrefix}yta ${v.url}`, `download ${v.title} (${v.url})`]
         ]])
         return `
 📌 *${v.title}* (${v.url})
