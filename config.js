@@ -65,6 +65,7 @@ global.APIs = { // API Prefix
   LeysCoder: 'https://leyscoders-api.herokuapp.com',
   kanx: 'https://kannxapi.herokuapp.com/'
 }
+global.wm = '' //Wm
 global.APIKeys = { // APIKey Here
   // 'https://website': 'apikey'
     'https://violetics.pw': '0a97-8713-11dc',
