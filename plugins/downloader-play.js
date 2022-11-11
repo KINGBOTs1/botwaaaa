@@ -1,42 +1,34 @@
-// Nyoba downloader hasil recode sendiri ngbab
-// Visit web nya (link): https://botcahx2.ddns.net
-// Penggunaan filter audio dan video
-// Example:
-// filter=videoonly&quality=highestvideo&contenttype=video/mp4
-// filter=audioonly&quality=highestaudio&contenttype=audio/mpeg
-// Akhir hasil :
-// https://botcahx2.ddns.net/?url=${url}&filter=audioonly&quality=highestaudio&contenttype=audio/mpeg
-
-
-
-import fetch from 'node-fetch'
 import { youtubeSearch } from '@bochilteam/scraper'
-
-let handler = async (m, { conn, text, usedPrefix,lagu }) => {
-  if (!text) throw 'Input Query'
-  let vid = (await youtubeSearch(text)).video[0]
-  if (!vid) throw 'Video/Audio Tidak Ditemukan'
-  let { title, description, thumbnail, videoId, durationH, durationS, viewH, publishedTime } = vid
-  let url = 'https://www.youtube.com/watch?v=' + videoId
-  let ytLink = `https://botcahx2.ddns.net/?url=${url}&filter=audioonly&quality=highestaudio&contenttype=audio/mpeg`
-  let capt = `*Title:* ${title}\n*Published:* ${publishedTime}\n*Duration:* ${durationH}\n*Views:* ${viewH}\n*Description:* ${description}\n*Url:* ${url}`
-  let buttons = [
-    { buttonText: { displayText: '🎥 Video' }, buttonId: `${usedPrefix}ytv ${url}` },
-    { buttonText: { displayText: '🎤 Audio' }, buttonId: `${usedPrefix}yta ${url}` }]
-  let msg = await conn.sendMessage(m.chat, { image: { url: thumbnail }, caption: capt, footer: '_Audio on progress..._', buttons }, { quoted: m })
-  //if (durationS > 4000) return conn.sendMessage(m.chat, { text: `*Download:* ${await shortUrl(ytLink)}\n\n_Duration too long..._` }, { quoted: msg })
-  conn.sendMessage(m.chat, { quoted: msg })
+let handler = async (m, { conn, command, text, usedPrefix }) => {
+   if (!text) throw `*ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ᴛᴏ ʀᴇᴛʀɪᴇᴠᴇ ᴀᴜᴅɪᴏ ᴏʀ ᴠɪᴅᴇᴏ ғʀᴏᴍ ʏᴏᴜᴛᴜʙᴇ sᴇʀᴠᴇʀ.* 
+  
+ =========================== 
+ ★ ᴜsᴀɢᴇ: 
+ ${usedPrefix + command} <name/url> 
+  
+ ★ ᴇxᴀᴍᴩʟᴇ: 
+ ${usedPrefix + command} bolenath ji` 
+   let vid = (await youtubeSearch(text)).video[0] 
+   if (!vid) throw 'ᴀᴜᴅɪᴏ ᴏʀ ᴠɪᴅᴇᴏ ɴᴏᴛ ғᴏᴜɴᴅ﹗' 
+   let { title, description, thumbnail, videoId, durationH, viewH, publishedTime } = vid 
+   const url = 'https://www.youtube.com/watch?v=' + videoId 
+   await conn.sendHydrated(m.chat, `*–––––––『 YT PLAY 』–––––––*`, ` 
+ 🔖 ᴛɪᴛʟᴇ: ${title} 
+ 📃 ᴅᴇsᴄʀɪᴩᴛɪᴏɴ: ${description} 
+ 📡 ᴩᴜʙʟɪsʜᴇᴅ: ${publishedTime} 
+ ⌛ ᴅᴜʀᴀᴛɪᴏɴ: ${durationH} 
+ 👀️ ᴠɪᴇᴡs: ${viewH} 
+ `.trim(), thumbnail, url, '📺 ɢᴏ ᴛᴏ ʏᴏᴜᴛᴜʙᴇ﹗', null, null, [ 
+ ['ᴀᴜᴅɪᴏ 🎧', `${usedPrefix}yta ${url}`],
+ ['ᴠɪᴅᴇᴏ 🎥', `${usedPrefix}ytv ${url}`],
+ ['ʏᴏᴜᴛᴜʙᴇ sᴇᴀʀᴄʜ 🔎', `${usedPrefix}yts ${url}`]
+ ], m)
 }
-handler.help = ['play']
-handler.tags = ['downloader']
-handler.command = /^(play)$/i
-handler.exp = 0
-
-export default handler
-
-async function shortUrl(url) {
-  url = encodeURIComponent(url)
-  let res = await fetch(`https://is.gd/create.php?format=simple&url=${url}`)
-  if (!res.ok) throw false
-  return await res.text()
-}
+ handler.help = ['play'].map(v => v + ' <name/url>') 
+ handler.tags = ['YouTube'] 
+ handler.command = /^(play)$/i 
+  
+ handler.exp = 0 
+ handler.limit = false 
+  
+ export default handler
