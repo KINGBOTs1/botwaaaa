@@ -53,7 +53,7 @@ const defaultMenu = {
 ┣⊱ *TGL : %date*
 ┣⊱ *JAM : %time*
 ┣━━❀ *USER* ❀━━
-┣⊱ *PREFIX : [%p]*
+┣⊱ *PREFIX : [ . ]*
 ┣━━━━━━━━━━━━━━
 ┃    *BOT BY DENI*
 ┗━━━━━━━━━━━━━━

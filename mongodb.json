@@ -1,0 +1,435 @@
+{
+    "_id": {
+        "$oid": "6386487339a47627875db41a"
+    },
+    "__v": {
+        "$numberInt": "0"
+    },
+    "data": {
+        "users": {
+            "6282144323683@s.whatsapp.net": {
+                "exp": {
+                    "$numberInt": "99999"
+                },
+                "limit": {
+                    "$numberInt": "200"
+                },
+                "lastclaim": {
+                    "$numberInt": "0"
+                },
+                "registered": true,
+                "name": "😎",
+                "age": {
+                    "$numberInt": "21"
+                },
+                "regTime": {
+                    "$numberDouble": "1.6697447674610E+12"
+                },
+                "afk": {
+                    "$numberInt": "-1"
+                },
+                "afkReason": "",
+                "banned": false,
+                "warn": {
+                    "$numberInt": "0"
+                },
+                "level": {
+                    "$numberInt": "999"
+                },
+                "role": "Warrior V",
+                "autolevelup": true,
+                "money": {
+                    "$numberInt": "99999999"
+                },
+                "health": {
+                    "$numberInt": "99999999"
+                },
+                "potion": {
+                    "$numberInt": "99999999"
+                },
+                "trash": {
+                    "$numberInt": "0"
+                },
+                "wood": {
+                    "$numberInt": "0"
+                },
+                "rock": {
+                    "$numberInt": "0"
+                },
+                "string": {
+                    "$numberInt": "0"
+                },
+                "emerald": {
+                    "$numberInt": "0"
+                },
+                "diamond": {
+                    "$numberInt": "0"
+                },
+                "gold": {
+                    "$numberInt": "0"
+                },
+                "iron": {
+                    "$numberInt": "0"
+                },
+                "common": {
+                    "$numberInt": "99999999"
+                },
+                "uncommon": {
+                    "$numberInt": "99999999"
+                },
+                "mythic": {
+                    "$numberInt": "99999999"
+                },
+                "legendary": {
+                    "$numberInt": "99999999"
+                },
+                "pet": {
+                    "$numberInt": "0"
+                },
+                "horse": {
+                    "$numberInt": "0"
+                },
+                "horseexp": {
+                    "$numberInt": "0"
+                },
+                "cat": {
+                    "$numberInt": "0"
+                },
+                "catngexp": {
+                    "$numberInt": "0"
+                },
+                "fox": {
+                    "$numberInt": "0"
+                },
+                "foxexp": {
+                    "$numberInt": "0"
+                },
+                "dog": {
+                    "$numberInt": "0"
+                },
+                "dogexp": {
+                    "$numberInt": "0"
+                },
+                "horselastfeed": {
+                    "$numberInt": "0"
+                },
+                "catlastfeed": {
+                    "$numberInt": "0"
+                },
+                "foxlastfeed": {
+                    "$numberInt": "0"
+                },
+                "doglastfeed": {
+                    "$numberInt": "0"
+                },
+                "armor": {
+                    "$numberInt": "0"
+                },
+                "armordurability": {
+                    "$numberInt": "99999999"
+                },
+                "sword": {
+                    "$numberInt": "0"
+                },
+                "sworddurability": {
+                    "$numberInt": "99999999"
+                },
+                "pickaxe": {
+                    "$numberInt": "0"
+                },
+                "pickaxedurability": {
+                    "$numberInt": "99999999"
+                },
+                "fishingrod": {
+                    "$numberInt": "0"
+                },
+                "fishingroddurability": {
+                    "$numberInt": "99999999"
+                },
+                "lastadventure": {
+                    "$numberInt": "0"
+                },
+                "lastfishing": {
+                    "$numberInt": "0"
+                },
+                "lastdungeon": {
+                    "$numberInt": "0"
+                },
+                "lastduel": {
+                    "$numberInt": "0"
+                },
+                "lastmining": {
+                    "$numberInt": "0"
+                },
+                "lasthunt": {
+                    "$numberInt": "0"
+                },
+                "lastweekly": {
+                    "$numberInt": "0"
+                },
+                "lastmonthly": {
+                    "$numberInt": "0"
+                },
+                "premium": true,
+                "premiumTime": {
+                    "$numberInt": "1"
+                },
+                "petFood": {
+                    "$numberInt": "0"
+                },
+                "catexp": {
+                    "$numberInt": "0"
+                }
+            },
+            "6285172081982@s.whatsapp.net": {
+                "exp": {
+                    "$numberInt": "0"
+                },
+                "limit": {
+                    "$numberInt": "200"
+                },
+                "lastclaim": {
+                    "$numberInt": "0"
+                },
+                "registered": false,
+                "name": "BOT",
+                "age": {
+                    "$numberInt": "-1"
+                },
+                "regTime": {
+                    "$numberInt": "-1"
+                },
+                "afk": {
+                    "$numberInt": "-1"
+                },
+                "afkReason": "",
+                "banned": false,
+                "warn": {
+                    "$numberInt": "0"
+                },
+                "level": {
+                    "$numberInt": "0"
+                },
+                "role": "Warrior V",
+                "autolevelup": true,
+                "money": {
+                    "$numberInt": "0"
+                },
+                "health": {
+                    "$numberInt": "100"
+                },
+                "potion": {
+                    "$numberInt": "10"
+                },
+                "trash": {
+                    "$numberInt": "0"
+                },
+                "wood": {
+                    "$numberInt": "0"
+                },
+                "rock": {
+                    "$numberInt": "0"
+                },
+                "string": {
+                    "$numberInt": "0"
+                },
+                "emerald": {
+                    "$numberInt": "0"
+                },
+                "diamond": {
+                    "$numberInt": "0"
+                },
+                "gold": {
+                    "$numberInt": "0"
+                },
+                "iron": {
+                    "$numberInt": "0"
+                },
+                "common": {
+                    "$numberInt": "0"
+                },
+                "uncommon": {
+                    "$numberInt": "0"
+                },
+                "mythic": {
+                    "$numberInt": "0"
+                },
+                "legendary": {
+                    "$numberInt": "0"
+                },
+                "pet": {
+                    "$numberInt": "0"
+                },
+                "horse": {
+                    "$numberInt": "0"
+                },
+                "horseexp": {
+                    "$numberInt": "0"
+                },
+                "cat": {
+                    "$numberInt": "0"
+                },
+                "catngexp": {
+                    "$numberInt": "0"
+                },
+                "fox": {
+                    "$numberInt": "0"
+                },
+                "foxexp": {
+                    "$numberInt": "0"
+                },
+                "dog": {
+                    "$numberInt": "0"
+                },
+                "dogexp": {
+                    "$numberInt": "0"
+                },
+                "horselastfeed": {
+                    "$numberInt": "0"
+                },
+                "catlastfeed": {
+                    "$numberInt": "0"
+                },
+                "foxlastfeed": {
+                    "$numberInt": "0"
+                },
+                "doglastfeed": {
+                    "$numberInt": "0"
+                },
+                "armor": {
+                    "$numberInt": "0"
+                },
+                "armordurability": {
+                    "$numberInt": "0"
+                },
+                "sword": {
+                    "$numberInt": "0"
+                },
+                "sworddurability": {
+                    "$numberInt": "0"
+                },
+                "pickaxe": {
+                    "$numberInt": "0"
+                },
+                "pickaxedurability": {
+                    "$numberInt": "0"
+                },
+                "fishingrod": {
+                    "$numberInt": "0"
+                },
+                "fishingroddurability": {
+                    "$numberInt": "0"
+                },
+                "lastadventure": {
+                    "$numberInt": "0"
+                },
+                "lastfishing": {
+                    "$numberInt": "0"
+                },
+                "lastdungeon": {
+                    "$numberInt": "0"
+                },
+                "lastduel": {
+                    "$numberInt": "0"
+                },
+                "lastmining": {
+                    "$numberInt": "0"
+                },
+                "lasthunt": {
+                    "$numberInt": "0"
+                },
+                "lastweekly": {
+                    "$numberInt": "0"
+                },
+                "lastmonthly": {
+                    "$numberInt": "0"
+                },
+                "premium": false,
+                "premiumTime": {
+                    "$numberInt": "0"
+                },
+                "petFood": {
+                    "$numberInt": "0"
+                },
+                "catexp": {
+                    "$numberInt": "0"
+                }
+            }
+        },
+        "chats": {
+            "6282144323683@s.whatsapp.net": {
+                "isBanned": false,
+                "welcome": true,
+                "detect": false,
+                "sWelcome": "",
+                "sBye": "",
+                "sPromote": "",
+                "sDemote": "",
+                "delete": true,
+                "simi": false,
+                "antiLink": false,
+                "viewonce": true,
+                "antiToxic": false,
+                "expired": {
+                    "$numberInt": "0"
+                }
+            }
+        },
+        "stats": {
+            "menu.js": {
+                "total": {
+                    "$numberInt": "2"
+                },
+                "success": {
+                    "$numberInt": "2"
+                },
+                "last": {
+                    "$numberDouble": "1.6697447561050E+12"
+                },
+                "lastSuccess": {
+                    "$numberDouble": "1.6697447561050E+12"
+                }
+            },
+            "exp-daftar.js": {
+                "total": {
+                    "$numberInt": "3"
+                },
+                "success": {
+                    "$numberInt": "3"
+                },
+                "last": {
+                    "$numberDouble": "1.6697447674960E+12"
+                },
+                "lastSuccess": {
+                    "$numberDouble": "1.6697447674960E+12"
+                }
+            },
+            "menua.js": {
+                "total": {
+                    "$numberInt": "2"
+                },
+                "success": {
+                    "$numberInt": "2"
+                },
+                "last": {
+                    "$numberDouble": "1.6697447704620E+12"
+                },
+                "lastSuccess": {
+                    "$numberDouble": "1.6697447704620E+12"
+                }
+            }
+        },
+        "msgs": {},
+        "sticker": {},
+        "settings": {
+            "6285172081982@s.whatsapp.net": {
+                "self": false,
+                "autoread": true,
+                "restrict": false,
+                "status": {
+                    "$numberDouble": "1.6697447704200E+12"
+                }
+            }
+        }
+    }
+}
