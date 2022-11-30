@@ -865,6 +865,7 @@ Untuk mematikan fitur ini, ketik
 
 
 global.dfail = (type, m, conn) => {
+    let imgr = flaaa.getRandom()
     let nmsr = `👋 Hai *@${m.sender.split("@")[0]}*, `
     let msg = {
         rowner: `*${htki} 𝗜𝗡𝗙𝗢 ${htka}*\n
@@ -892,7 +893,7 @@ ${nmsr} RPG tidak aktif, Silahkan hubungi Team Bot Discussion Untuk mengaktifkan
         restrict: `*${htki} 𝗜𝗡𝗙𝗢 ${htka}*\n
 ${nmsr} Fitur ini di *disable* !`
     }[type]
-    if (msg) return conn.sendButton(m.chat, hiasan, msg, thumbEror, [['OWNER BOT', '.owner'],['DAFTAR', '.daftar']],m)
+    if (msg) return conn.sendButton(m.chat, hiasan, msg, `${imgr + 'Accses Danied'}`, [['OWNER BOT', '.owner'],['DAFTAR', '.daftar']],m)
 }
 
 let file = Helper.__filename(import.meta.url, true)
