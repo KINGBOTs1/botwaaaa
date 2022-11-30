@@ -1,12 +1,12 @@
 
 import fetch from 'node-fetch'
-
+import db from '../lib/database.js'
 export async function before(m, { isAdmin, isBotAdmin }) {
 if (m.isBaileys && m.fromMe)
         return !0
     if (!m.isGroup) return !1
-    let chat = global.db.data.chats[m.chat]
-    let bot = global.db.data.settings[this.user.jid] || {}
+    let chat = db.data.chats[m.chat]
+    let bot = db.data.settings[this.user.jid] || {}
     if (chat.autoVn) {
     let sim = await fetch(`https://api.simsimi.net/v2/?text=${m.text}&lc=id`)
     let res = await sim.json()
