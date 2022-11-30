@@ -376,7 +376,7 @@ export async function handler(chatUpdate) {
                     for (let [jid] of global.owner.filter(([number, _, isDeveloper]) => isDeveloper && number)) {
                         let data = (await this.onWhatsApp(jid))[0] || {}
                         if (data.exists)
-                            m.reply(`*Plugin:* ${name}\n*Sender:* ${m.sender}\n*Chat:* ${m.chat}\n*Command:* ${m.text}\n\n\`\`\`${format(e)}\`\`\``.trim(), data.jid)
+                            m.reply(`*🗂️ Plugin:* ${name}\n*📤 Sender:* ${m.sender}\n*🗳️ Chat:* ${m.chat}\n*📑 Command:* ${m.text}\n*⚠️ Logs Eror:*\n\n\`\`\`${format(e)}\`\`\``.trim(), data.jid)
                     }
                 }
             }
