@@ -1,9 +1,9 @@
 import moment from 'moment-timezone';
-
+import db from '../lib/database.js'
 export async function before(m) {
     if (m.chat.endsWith('broadcast') || m.fromMe || m.isGroup) return
 
-    let user = global.db.data.users[m.sender]
+    let user = db.data.users[m.sender]
     let txt = `👋Hai, ${ucapan()}
 
 ${user.banned ? '📮Maaf, kamu dibanned & Tidak bisa menggunakan bot ini lagi' : `💬 Ada yg bisa ${this.user.name} bantu?`}`.trim()
