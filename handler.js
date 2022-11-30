@@ -277,6 +277,10 @@ export async function handler(chatUpdate) {
                     chat.simi = false
                 if (!('antiToxic' in chat))
                     chat.antiToxic = false
+                if (!('nsfw' in chat))
+                    chat.nsfw = false
+                if (!('premnsfw' in chat))
+                    chat.premnsfw = false
                 if (!isNumber(chat.expired))
                     chat.expired = 0
             } else
@@ -293,6 +297,8 @@ export async function handler(chatUpdate) {
                     antiLink: false,
                     viewonce: true,
                     antiToxic: false,
+                    nsfw: false,
+                    premnsfw: false,
                     expired: 0,
                 }
             let settings = db.data.settings[this.user.jid]
