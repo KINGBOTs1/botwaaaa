@@ -1,14 +1,18 @@
 import db from '../lib/database.js'
 
-export async function all(m) {
-    if (!m.isGroup)
-        return
-    let chats = db.data.chats[m.chat]
-    if (!chats.expired)
-        return !0
-    if (+new Date() > chats.expired) {
-        await this.reply(m.chat, 'Bye🖐 bot akan left!!')
-        await this.groupLeave(m.chat)
-        chats.expired = null
+let handler = m => m
+handler.before = async function (m) {
+    if (m.isGroup && db.data.chats[m.chat].expired != 0) {
+        if (new Date() * 1 >= db.data.chats[m.chat].expired) {
+            this.reply(m.chat, `? waktunya *${this.user.name}* untuk meninggalkan grup\n? Jangan lupa sewa lagi ya!`, null).then(() => {
+                this.sendContact(m.chat, owner[0], this.getName(global.owner[0] + '@s.whatsapp.net'), m).then(() => {
+                    this.groupLeave(m.chat).then(() => {
+                        db.data.chats[m.chat].expired = 0
+                    })
+                })
+            })
+        }
     }
 }
+
+export default handler
