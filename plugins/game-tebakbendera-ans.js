@@ -1,6 +1,7 @@
 import similarity from 'similarity'
+import db from '../lib/database.js'
 const threshold = 0.72
-export async function before(m) {
+export async function before(m, {conn}) {
     let id = m.chat
     if (!m.quoted || !m.quoted.fromMe || !m.quoted.isBaileys || !m.text || !/Ketik.*hben/i.test(m.quoted.text) || /.*hben/i.test(m.text))
         return !0
@@ -17,7 +18,7 @@ export async function before(m) {
         let json = JSON.parse(JSON.stringify(this.tebakbendera[id][1]))
         //m.reply(JSON.stringify(json, null, '\t'))
         if (m.text.toLowerCase() == json.name.toLowerCase().trim()) {
-            global.db.data.users[m.sender].exp += this.tebakbendera[id][2]
+            db.data.users[m.sender].exp += this.tebakbendera[id][2]
             conn.sendButton(m.chat, `*Benar!*\n+${this.tebakbendera[id][2]} XP`, author, null, buttontebakbendera, m)
             clearTimeout(this.tebakbendera[id][3])
             delete this.tebakbendera[id]

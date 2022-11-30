@@ -1,4 +1,5 @@
 import similarity from 'similarity'
+import db from '../lib/database.js'
 const threshold = 0.72
 export async function before(m) {
     let id = m.chat
@@ -17,7 +18,7 @@ export async function before(m) {
         let json = JSON.parse(JSON.stringify(this.lengkapikalimat[id][1]))
         // m.reply(JSON.stringify(json, null, '\t'))
         if (m.text.toLowerCase() == json.jawaban.toLowerCase().trim()) {
-            global.db.data.users[m.sender].exp += this.lengkapikalimat[id][2]
+            db.data.users[m.sender].exp += this.lengkapikalimat[id][2]
             conn.sendButton(m.chat, `*Benar!*\n+${this.lengkapikalimat[id][2]} XP`, author, null, buttonlengkapikalimat, m)
             clearTimeout(this.lengkapikalimat[id][3])
             delete this.lengkapikalimat[id]
