@@ -1,5 +1,6 @@
 import fetch from 'node-fetch' 
 import moment from 'moment-timezone'
+import db from '../lib/database.js'
  let handler = async(m, { conn, usedPrefix, args, command }) => { 
      let name = db.data.users[m.sender].name 
  let fload = {
