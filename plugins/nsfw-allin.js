@@ -3,7 +3,7 @@
 //   •-------------•
 // CREDITS ! JANGAN DIUBAH, JANGAN DIHAPUS !!
 
-
+import db from '../lib/database.js'
 //------ FUNCTION & MODULE
 function pickRandom(list) {
 	return list[Math.floor(Math.random() * list.length)]
@@ -24,7 +24,7 @@ let handler = async (m, {
 }) => {
 
 	// ------- OTHER ------
-	if (global.db.data.chats[m.chat].nsfw == false && m.isGroup) return conn.sendButton(m.chat, '📣 Fitur NSFW Belum dinyalakan di group', botdate, null, [
+	if (db.data.chats[m.chat].nsfw == false && m.isGroup) return conn.sendButton(m.chat, '📣 Fitur NSFW Belum dinyalakan di group', botdate, null, [
 		['📛ᴇɴᴀʙʟᴇ', '.on nsfw']
 	], m)
 
