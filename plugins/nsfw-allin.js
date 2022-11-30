@@ -120,127 +120,127 @@ let handler = async (m, {
 	const sections = [{
 		title: 'HENTAI MENU',
 		rows: [{
-				title: `${ ahegao == true ? p : f}` + "A • Ahegao",
-				rowId: ".ahegao"
-			},
-			{
-				title: `${ anal == true ? p:f}` + "A • Anal",
-				rowId: ".anal"
-			},
-			{
-				title: `${ ass == true ? p:f}` + "A • Ass",
-				rowId: ".ass"
-			},
-			{
-				title: `${ blowjob == true ? p:f}` + "B • BlowJob",
-				rowId: ".blowjob"
-			},
-			{
-				title: `${ cums == true ? p:f}` + "C • Cumsluts",
-				rowId: ".cums"
-			},
-			{
-				title: `${ ecchi == true ? p:f}` + "E • Ecchi",
-				rowId: ".ecchi"
-			},
-			{
-				title: `${ ero == true ? p:f}` + "E • Ero",
-				rowId: ".ero"
-			},
-			//{title: `${ erofeet == true ? p:f}` + "E • Ero Feet", rowId: ".erofeet"},
-			{
-				title: `${ erogirl == true ? p:f}` + "E • Ero Girl",
-				rowId: ".erogirl"
-			},
-			{
-				title: `${ holoero == true ? p:f}` + "E • Ero Holo",
-				rowId: ".holoero"
-			},
-			//{title: `${ erokitsune == true ? p:f}` + "E • Ero Kitsune", rowId: ".erokitsune"},
-			//{title: `${ eroneko == true ? p:f}` + "E • Ero Neko", rowId: ".eroneko"},
-			//{title: `${ eroyuri== true ? p:f}` + "E • Ero Yuri", rowId: ".eroyuri"},
-			{
-				title: `${ feet == true ? p:f}` + "F • Feet",
-				rowId: ".feet"
-			},
-			{
-				title: `${ femdom == true ? p:f}` + "F • Femdom",
-				rowId: ".femdom"
-			},
-			//{title: `${ futanari == true ? p:f}` + "F • Futanari", rowId: ".futanari"},
-			//{title: `${ girlsolo == true ? p:f}` + "G • Girl Solo", rowId: ".girlsolo"},
-			{
-				title: `${ hentai == true ? p:f}` + "H • Hentai",
-				rowId: ".hentai"
-			},
-			{
-				title: `${ holo == true ? p:f}` + "H • Holo",
-				rowId: ".holo"
-			},
-			//{title: `${ kitsune == true ? p:f}` + "K • Kitsune", rowId: ".kitsune"},
-			//{title: `${ kuni == true ? p:f}` + "K • Kuni", rowId: ".kuni"},
-			{
-				title: `${ loli == true ? p:f}` + "L • Loli",
-				rowId: ".loli"
-			},
-			{
-				title: `${ manga== true ? p:f}` + "M • Manga",
-				rowId: ".manga"
-			},
-			{
-				title: `${ milf == true ? p:f}` + "M • Milf",
-				rowId: ".milf"
-			},
-			{
-				title: `${ mstrb == true ? p:f}` + "M • Mstrb",
-				rowId: ".mstrb"
-			},
-			{
-				title: `${ neko == true ? p:f}` + "N • Neko",
-				rowId: ".neko"
-			},
-			{
-				title: `${ oppai == true ? p:f}` + "O • Oppai",
-				rowId: ".oppai"
-			},
-			{
-				title: `${ panties == true ? p:f}` + "P • Panties",
-				rowId: ".panties"
-			},
-			{
-				title: `${ pussy == true ? p:f}` + "P • Pussy",
-				rowId: ".pussy"
-			},
-			//{title: `${ spank == true ? p:f}` + "S • Spank", rowId: ".spank"},
-			{
-				title: `${ tentacles == true ? p:f}` + "T • Tentacles",
-				rowId: ".tentacles"
-			},
-			{
-				title: `${ thighs == true ? p:f}` + "T • Thighs",
-				rowId: ".thighs"
-			},
-			//{title: `${ tits == true ? p:f}` + "T • Tits", rowId: ".tits"},
-			{
-				title: `${ trap == true ? p:f}` + "T • Trap",
-				rowId: ".trap"
-			},
-			{
-				title: `${ uniform == true ? p:f}` + "U • Uniform",
-				rowId: ".uniform"
-			},
-			{
-				title: `${ waifu == true ? p:f}` + "W • Waifu",
-				rowId: ".waifu"
-			},
-			{
-				title: `${ yaoi == true ? p:f}` + "Y • Yaoi",
-				rowId: ".yaoi"
-			},
-			{
-				title: `${ yuri == true ? p:f}` + "Y • Yuri",
-				rowId: ".yuri"
-			},
+					title: `${ ahegao == true ? p : f}` + "A • Ahegao",
+					rowId: ".nsfw ahegao"
+				},
+				{
+					title: `${ anal == true ? p:f}` + "A • Anal",
+					rowId: ".nsfw anal"
+				},
+				{
+					title: `${ ass == true ? p:f}` + "A • Ass",
+					rowId: ".nsfw ass"
+				},
+				{
+					title: `${ blowjob == true ? p:f}` + "B • BlowJob",
+					rowId: ".nsfw blowjob"
+				},
+				{
+					title: `${ cums == true ? p:f}` + "C • Cumsluts",
+					rowId: ".nsfw cums"
+				},
+				{
+					title: `${ ecchi == true ? p:f}` + "E • Ecchi",
+					rowId: ".nsfw ecchi"
+				},
+				{
+					title: `${ ero == true ? p:f}` + "E • Ero",
+					rowId: ".nsfw ero"
+				},
+				//{title: `${ erofeet == true ? p:f}` + "E • Ero Feet", rowId: ".nsfw erofeet"},
+				{
+					title: `${ erogirl == true ? p:f}` + "E • Ero Girl",
+					rowId: ".nsfw erogirl"
+				},
+				{
+					title: `${ holoero == true ? p:f}` + "E • Ero Holo",
+					rowId: ".nsfw holoero"
+				},
+				//{title: `${ erokitsune == true ? p:f}` + "E • Ero Kitsune", rowId: ".nsfw erokitsune"},
+				//{title: `${ eroneko == true ? p:f}` + "E • Ero Neko", rowId: ".nsfw eroneko"},
+				//{title: `${ eroyuri== true ? p:f}` + "E • Ero Yuri", rowId: ".nsfw eroyuri"},
+				{
+					title: `${ feet == true ? p:f}` + "F • Feet",
+					rowId: ".nsfw feet"
+				},
+				{
+					title: `${ femdom == true ? p:f}` + "F • Femdom",
+					rowId: ".nsfw femdom"
+				},
+				//{title: `${ futanari == true ? p:f}` + "F • Futanari", rowId: ".nsfw futanari"},
+				//{title: `${ girlsolo == true ? p:f}` + "G • Girl Solo", rowId: ".nsfw girlsolo"},
+				{
+					title: `${ hentai == true ? p:f}` + "H • Hentai",
+					rowId: ".nsfw hentai"
+				},
+				{
+					title: `${ holo == true ? p:f}` + "H • Holo",
+					rowId: ".nsfw holo"
+				},
+				//{title: `${ kitsune == true ? p:f}` + "K • Kitsune", rowId: ".nsfw kitsune"},
+				//{title: `${ kuni == true ? p:f}` + "K • Kuni", rowId: ".nsfw kuni"},
+				{
+					title: `${ loli == true ? p:f}` + "L • Loli",
+					rowId: ".nsfw loli"
+				},
+				{
+					title: `${ manga== true ? p:f}` + "M • Manga",
+					rowId: ".nsfw manga"
+				},
+				{
+					title: `${ milf == true ? p:f}` + "M • Milf",
+					rowId: ".nsfw milf"
+				},
+				{
+					title: `${ mstrb == true ? p:f}` + "M • Mstrb",
+					rowId: ".nsfw mstrb"
+				},
+				{
+					title: `${ neko == true ? p:f}` + "N • Neko",
+					rowId: ".nsfw neko"
+				},
+				{
+					title: `${ oppai == true ? p:f}` + "O • Oppai",
+					rowId: ".nsfw oppai"
+				},
+				{
+					title: `${ panties == true ? p:f}` + "P • Panties",
+					rowId: ".nsfw panties"
+				},
+				{
+					title: `${ pussy == true ? p:f}` + "P • Pussy",
+					rowId: ".nsfw pussy"
+				},
+				//{title: `${ spank == true ? p:f}` + "S • Spank", rowId: ".nsfw spank"},
+				{
+					title: `${ tentacles == true ? p:f}` + "T • Tentacles",
+					rowId: ".nsfw tentacles"
+				},
+				{
+					title: `${ thighs == true ? p:f}` + "T • Thighs",
+					rowId: ".nsfw thighs"
+				},
+				//{title: `${ tits == true ? p:f}` + "T • Tits", rowId: ".nsfw tits"},
+				{
+					title: `${ trap == true ? p:f}` + "T • Trap",
+					rowId: ".nsfw trap"
+				},
+				{
+					title: `${ uniform == true ? p:f}` + "U • Uniform",
+					rowId: ".nsfw uniform"
+				},
+				{
+					title: `${ waifu == true ? p:f}` + "W • Waifu",
+					rowId: ".nsfw waifu"
+				},
+				{
+					title: `${ yaoi == true ? p:f}` + "Y • Yaoi",
+					rowId: ".nsfw yaoi"
+				},
+				{
+					title: `${ yuri == true ? p:f}` + "Y • Yuri",
+					rowId: ".nsfw yuri"
+				},
 		]
 	}, ]
 
@@ -279,7 +279,7 @@ let handler = async (m, {
 						], m)
 					}
 					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + args[0] + xapi)).buffer(), [
-						[next, `${usedPrefix}${args[0]}`]
+						[next, `${usedPrefix}nsfw ${args[0]}`]
 					], m)
 					break
 
@@ -291,7 +291,7 @@ let handler = async (m, {
 						], m)
 					}
 					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + args[0] + xapi)).buffer(), [
-						[next, `${usedPrefix}${args[0]}`]
+						[next, `${usedPrefix}nsfw ${args[0]}`]
 					], m)
 					break
 
@@ -304,7 +304,7 @@ let handler = async (m, {
 					}
 					let bj = await (await fetch(`https://api.waifu.pics/nsfw/blowjob`)).json()
 					conn.sendButton(m.chat, tekk, fot, bj.url, [
-						[next, `${usedPrefix}${args[0]}`]
+						[next, `${usedPrefix}nsfw ${args[0]}`]
 					], m)
 					break
 
@@ -316,7 +316,7 @@ let handler = async (m, {
 						], m)
 					}
 					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + args[0] + xapi)).buffer(), [
-						[next, `${usedPrefix}${args[0]}`]
+						[next, `${usedPrefix}nsfw ${args[0]}`]
 					], m)
 					break
 
@@ -328,7 +328,7 @@ let handler = async (m, {
 						], m)
 					}
 					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + args[0] + xapi)).buffer(), [
-						[next, `${usedPrefix}${args[0]}`]
+						[next, `${usedPrefix}nsfw ${args[0]}`]
 					], m)
 					break
 
@@ -340,7 +340,7 @@ let handler = async (m, {
 						], m)
 					}
 					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + args[0] + xapi)).buffer(), [
-						[next, `${usedPrefix}${args[0]}`]
+						[next, `${usedPrefix}nsfw ${args[0]}`]
 					], m)
 					break
 
@@ -352,7 +352,7 @@ let handler = async (m, {
 						], m)
 					}
 					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + args[0] + xapi)).buffer(), [
-						[next, `${usedPrefix}${args[0]}`]
+						[next, `${usedPrefix}nsfw ${args[0]}`]
 					], m)
 					break
 
@@ -364,7 +364,7 @@ let handler = async (m, {
 						], m)
 					}
 					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + args[0] + xapi)).buffer(), [
-						[next, `${usedPrefix}${args[0]}`]
+						[next, `${usedPrefix}nsfw ${args[0]}`]
 					], m)
 					break
 
@@ -376,7 +376,7 @@ let handler = async (m, {
 						], m)
 					}
 					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + args[0] + xapi)).buffer(), [
-						[next, `${usedPrefix}${args[0]}`]
+						[next, `${usedPrefix}nsfw ${args[0]}`]
 					], m)
 					break
 
@@ -388,7 +388,7 @@ let handler = async (m, {
 						], m)
 					}
 					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + args[0] + xapi)).buffer(), [
-						[next, `${usedPrefix}${args[0]}`]
+						[next, `${usedPrefix}nsfw ${args[0]}`]
 					], m)
 					break
 
@@ -400,7 +400,7 @@ let handler = async (m, {
 						], m)
 					}
 					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + args[0] + xapi)).buffer(), [
-						[next, `${usedPrefix}${args[0]}`]
+						[next, `${usedPrefix}nsfw ${args[0]}`]
 					], m)
 					break
 
@@ -412,7 +412,7 @@ let handler = async (m, {
 						], m)
 					}
 					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + args[0] + xapi)).buffer(), [
-						[next, `${usedPrefix}${args[0]}`]
+						[next, `${usedPrefix}nsfw ${args[0]}`]
 					], m)
 					break
 
@@ -424,7 +424,7 @@ let handler = async (m, {
 						], m)
 					}
 					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + args[0] + xapi)).buffer(), [
-						[next, `${usedPrefix}${args[0]}`]
+						[next, `${usedPrefix}nsfw ${args[0]}`]
 					], m)
 					break
 
@@ -436,7 +436,7 @@ let handler = async (m, {
 						], m)
 					}
 					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + args[0] + xapi)).buffer(), [
-						[next, `${usedPrefix}${args[0]}`]
+						[next, `${usedPrefix}nsfw ${args[0]}`]
 					], m)
 					break
 
@@ -448,7 +448,7 @@ let handler = async (m, {
 						], m)
 					}
 					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + args[0] + xapi)).buffer(), [
-						[next, `${usedPrefix}${args[0]}`]
+						[next, `${usedPrefix}nsfw ${args[0]}`]
 					], m)
 					break
 
@@ -460,7 +460,7 @@ let handler = async (m, {
 						], m)
 					}
 					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + args[0] + xapi)).buffer(), [
-						[next, `${usedPrefix}${args[0]}`]
+						[next, `${usedPrefix}nsfw ${args[0]}`]
 					], m)
 					break
 
@@ -472,7 +472,7 @@ let handler = async (m, {
 						], m)
 					}
 					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + args[0] + xapi)).buffer(), [
-						[next, `${usedPrefix}${args[0]}`]
+						[next, `${usedPrefix}nsfw ${args[0]}`]
 					], m)
 					break
 
@@ -484,7 +484,7 @@ let handler = async (m, {
 						], m)
 					}
 					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + args[0] + xapi)).buffer(), [
-						[next, `${usedPrefix}${args[0]}`]
+						[next, `${usedPrefix}nsfw ${args[0]}`]
 					], m)
 					break
 
@@ -496,7 +496,7 @@ let handler = async (m, {
 						], m)
 					}
 					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + args[0] + xapi)).buffer(), [
-						[next, `${usedPrefix}${args[0]}`]
+						[next, `${usedPrefix}nsfw ${args[0]}`]
 					], m)
 					break
 
@@ -508,7 +508,7 @@ let handler = async (m, {
 						], m)
 					}
 					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + args[0] + xapi)).buffer(), [
-						[next, `${usedPrefix}${args[0]}`]
+						[next, `${usedPrefix}nsfw ${args[0]}`]
 					], m)
 					break
 
@@ -520,7 +520,7 @@ let handler = async (m, {
 						], m)
 					}
 					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + args[0] + xapi)).buffer(), [
-						[next, `${usedPrefix}${args[0]}`]
+						[next, `${usedPrefix}nsfw ${args[0]}`]
 					], m)
 					break
 
@@ -532,7 +532,7 @@ let handler = async (m, {
 						], m)
 					}
 					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + args[0] + xapi)).buffer(), [
-						[next, `${usedPrefix}${args[0]}`]
+						[next, `${usedPrefix}nsfw ${args[0]}`]
 					], m)
 					break
 
@@ -544,7 +544,7 @@ let handler = async (m, {
 						], m)
 					}
 					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + args[0] + xapi)).buffer(), [
-						[next, `${usedPrefix}${args[0]}`]
+						[next, `${usedPrefix}nsfw ${args[0]}`]
 					], m)
 					break
 
@@ -556,7 +556,7 @@ let handler = async (m, {
 						], m)
 					}
 					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + args[0] + xapi)).buffer(), [
-						[next, `${usedPrefix}${args[0]}`]
+						[next, `${usedPrefix}nsfw ${args[0]}`]
 					], m)
 					break
 
@@ -568,7 +568,7 @@ let handler = async (m, {
 						], m)
 					}
 					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + args[0] + xapi)).buffer(), [
-						[next, `${usedPrefix}${args[0]}`]
+						[next, `${usedPrefix}nsfw ${args[0]}`]
 					], m)
 					break
 
@@ -580,7 +580,7 @@ let handler = async (m, {
 						], m)
 					}
 					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + args[0] + xapi)).buffer(), [
-						[next, `${usedPrefix}${args[0]}`]
+						[next, `${usedPrefix}nsfw ${args[0]}`]
 					], m)
 					break
 
@@ -592,7 +592,7 @@ let handler = async (m, {
 						], m)
 					}
 					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + args[0] + xapi)).buffer(), [
-						[next, `${usedPrefix}${args[0]}`]
+						[next, `${usedPrefix}nsfw ${args[0]}`]
 					], m)
 					break
 
@@ -604,7 +604,7 @@ let handler = async (m, {
 						], m)
 					}
 					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + args[0] + xapi)).buffer(), [
-						[next, `${usedPrefix}${args[0]}`]
+						[next, `${usedPrefix}nsfw ${args[0]}`]
 					], m)
 					break
 
@@ -616,7 +616,7 @@ let handler = async (m, {
 						], m)
 					}
 					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + args[0] + api)).buffer(), [
-						[next, `${usedPrefix}${args[0]}`]
+						[next, `${usedPrefix}nsfw ${args[0]}`]
 					], m)
 					break
 
@@ -628,7 +628,7 @@ let handler = async (m, {
 						], m)
 					}
 					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + args[0] + api)).buffer(), [
-						[next, `${usedPrefix}${args[0]}`]
+						[next, `${usedPrefix}nsfw ${args[0]}`]
 					], m)
 					break
 
@@ -640,7 +640,7 @@ let handler = async (m, {
 						], m)
 					}
 					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + args[0] + api)).buffer(), [
-						[next, `${usedPrefix}${args[0]}`]
+						[next, `${usedPrefix}nsfw ${args[0]}`]
 					], m)
 					break
 
@@ -652,7 +652,7 @@ let handler = async (m, {
 						], m)
 					}
 					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + args[0] + api)).buffer(), [
-						[next, `${usedPrefix}${args[0]}`]
+						[next, `${usedPrefix}nsfw ${args[0]}`]
 					], m)
 					break
 
@@ -665,7 +665,7 @@ let handler = async (m, {
 					}
 					let tr = await (await fetch(`https://api.waifu.pics/nsfw/trap`)).json()
 					conn.sendButton(m.chat, tekk, fot, tr.url, [
-						[next, `${usedPrefix}${args[0]}`]
+						[next, `${usedPrefix}nsfw ${args[0]}`]
 					], m)
 					break
 
@@ -677,7 +677,7 @@ let handler = async (m, {
 						], m)
 					}
 					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + args[0] + api)).buffer(), [
-						[next, `${usedPrefix}${args[0]}`]
+						[next, `${usedPrefix}nsfw ${args[0]}`]
 					], m)
 					break
 
@@ -690,7 +690,7 @@ let handler = async (m, {
 					}
 					let wf = await (await fetch(`https://api.waifu.pics/nsfw/waifu`)).json()
 					conn.sendButton(m.chat, tekk, fot, wf.url, [
-						[next, `${usedPrefix}${args[0]}`]
+						[next, `${usedPrefix}nsfw ${args[0]}`]
 					], m)
 					break
 
@@ -702,7 +702,7 @@ let handler = async (m, {
 						], m)
 					}
 					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + args[0] + api)).buffer(), [
-						[next, `${usedPrefix}${args[0]}`]
+						[next, `${usedPrefix}nsfw ${args[0]}`]
 					], m)
 					break
 
@@ -714,7 +714,7 @@ let handler = async (m, {
 						], m)
 					}
 					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + args[0] + api)).buffer(), [
-						[next, `${usedPrefix}${args[0]}`]
+						[next, `${usedPrefix}nsfw ${args[0]}`]
 					], m)
 					break
 
