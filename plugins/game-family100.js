@@ -1,10 +1,10 @@
 import { family100 } from '@bochilteam/scraper'
 const winScore = 4999
-async function handler(m) {
+async function handler(m,{conn}) {
     this.game = this.game ? this.game : {}
     let id = 'family100_' + m.chat
     if (id in this.game) {
-        this.reply(m.chat, 'Masih ada kuis yang belum terjawab di chat ini', this.game[id].msg)
+        conn.reply(m.chat, 'Masih ada kuis yang belum terjawab di chat ini', this.game[id].msg)
         throw false
     }
     const json = await family100()
@@ -17,7 +17,7 @@ Terdapat *${json.jawaban.length}* jawaban${json.jawaban.find(v => v.includes(' '
     `.trim()
     this.game[id] = {
         id,
-        msg: await this.sendButton(m.chat, caption, author, null, [['Nyerah', 'nyerah']], m),
+        msg: await conn.sendButton(m.chat, caption, author, null, [['Nyerah', 'nyerah']], m),
         ...json,
         terjawab: Array.from(json.jawaban, () => false),
         winScore,

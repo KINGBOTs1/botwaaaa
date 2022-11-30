@@ -2,19 +2,19 @@ import similarity from 'similarity'
 import db from '../lib/database.js'
 
 const threshold = 0.72
-export async function before(m) {
+export async function before(m,{conn}) {
     let id = m.chat
     if (!m.quoted || !m.quoted.fromMe || !m.quoted.isBaileys || !m.text || !/Ketik.*hint/i.test(m.quoted.text) || /.*hint/i.test(m.text))
         return !0
     this.tebakgambar = this.tebakgambar ? this.tebakgambar : {}
     if (!(id in this.tebakgambar))
-        return this.sendButton(m.chat, 'Soal itu telah berakhir', author, null, buttonTebakgambar, m)
+        return conn.sendButton(m.chat, 'Soal itu telah berakhir', author, null, buttonTebakgambar, m)
     if (m.quoted.id == this.tebakgambar[id][0].id) {
         let isSurrender = /^((me)?nyerah|surr?ender)$/i.test(m.text)
         if (isSurrender) {
             clearTimeout(this.tebakgambar[id][3])
             delete this.tebakgambar[id]
-            return this.sendButton(m.chat, '*Yah Menyerah :( !*', author, null, buttonTebakgambar, m)
+            return conn.sendButton(m.chat, '*Yah Menyerah :( !*', author, null, buttonTebakgambar, m)
         }
         let json = JSON.parse(JSON.stringify(this.tebakgambar[id][1]))
         // m.reply(JSON.stringify(json, null, '\t'))
@@ -26,7 +26,7 @@ export async function before(m) {
         } else if (similarity(m.text.toLowerCase(), json.jawaban.toLowerCase().trim()) >= threshold)
             m.reply(`*Dikit Lagi!*`)
         else
-            this.sendButton(m.chat, `*Salah!*`, author, null, [
+            conn.sendButton(m.chat, `*Salah!*`, author, null, [
                 ['hint', '/hint'],
                 ['nyerah', 'menyerah']
             ], m)
