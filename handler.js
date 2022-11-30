@@ -865,6 +865,7 @@ Untuk mematikan fitur ini, ketik
 
 
 global.dfail = (type, m, conn) => {
+    let txtdaf =  `${nmsr} Silahkan daftar ke database terlebih dahulu untuk menggunakan bot ini lebih lanjut *Ketik:*\n\n*.daftar*`
     let imgr = flaaa.getRandom()
     let nmsr = `👋 Hai *@${m.sender.split("@")[0]}*, `
     let msg = {
@@ -884,8 +885,6 @@ ${nmsr} Perintah ini hanya dapat digunakan di Chat Pribadi !`,
 ${nmsr} Perintah ini hanya untuk *Admin* grup !`,
         botAdmin: `*${htki} 𝗜𝗡𝗙𝗢 ${htka}*\n
 ${nmsr} Jadikan bot sebagai *Admin* untuk menggunakan perintah ini !`,
-        unreg: `*${htki} 𝗦𝗘𝗥𝗩𝗘𝗥 ${htka}*\n
-${nmsr} Silahkan daftar ke database terlebih dahulu untuk menggunakan bot ini lebih lanjut *Ketik:*\n\n*.daftar*`,
         nsfw: `*${htki} 𝗜𝗡𝗙𝗢 ${htka}*\n
 ${nmsr} NSFW tidak aktif, Silahkan hubungi Team Bot Discussion untuk mengaktifkan fitur ini !`,
         rpg: `*${htki} 𝗜𝗡𝗙𝗢 ${htka}*\n
@@ -893,7 +892,11 @@ ${nmsr} RPG tidak aktif, Silahkan hubungi Team Bot Discussion Untuk mengaktifkan
         restrict: `*${htki} 𝗜𝗡𝗙𝗢 ${htka}*\n
 ${nmsr} Fitur ini di *disable* !`
     }[type]
-    if (msg) return conn.sendButton(m.chat, hiasan, msg, `${imgr + 'Accses Danied'}`, [['OWNER BOT', '.owner'],['DAFTAR', '.daftar']],m)
+    if (db.data.users[m.sender].premiumTime < 1) return conn.sendButton(m.chat, txtdaf, botdate, [
+							['DAFTAR', '.daftar'],
+							['OWNER', '.owner nomor']
+						], m)
+    if (msg) return conn.sendButton(m.chat, hiasan, msg, `${imgr + 'Accses Danied'}`, [['OWNER BOT', '.owner'],['MENU', 'menu']],m)
 }
 
 let file = Helper.__filename(import.meta.url, true)
