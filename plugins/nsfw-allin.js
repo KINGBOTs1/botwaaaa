@@ -266,7 +266,7 @@ let handler = async (m, {
 							['ᴏᴡɴᴇʀ', '.owner nomor']
 						], m)
 					}
-					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + command + xapi)).buffer(), [
+					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + args[0] + xapi)).buffer(), [
 						[next, `${usedPrefix}nsfw ${args[0]}`]
 					], m)
 					break
@@ -278,8 +278,8 @@ let handler = async (m, {
 							['ᴏᴡɴᴇʀ', '.owner nomor']
 						], m)
 					}
-					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + command + xapi)).buffer(), [
-						[next, `${usedPrefix}nsfw ${args[0]}`]
+					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + args[0] + xapi)).buffer(), [
+						[next, `${usedPrefix}${args[0]}`]
 					], m)
 					break
 
@@ -290,8 +290,8 @@ let handler = async (m, {
 							['ᴏᴡɴᴇʀ', '.owner nomor']
 						], m)
 					}
-					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + command + xapi)).buffer(), [
-						[next, `${usedPrefix}nsfw ${args[0]}`]
+					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + args[0] + xapi)).buffer(), [
+						[next, `${usedPrefix}${args[0]}`]
 					], m)
 					break
 
@@ -304,7 +304,7 @@ let handler = async (m, {
 					}
 					let bj = await (await fetch(`https://api.waifu.pics/nsfw/blowjob`)).json()
 					conn.sendButton(m.chat, tekk, fot, bj.url, [
-						[next, `${usedPrefix}nsfw ${args[0]}`]
+						[next, `${usedPrefix}${args[0]}`]
 					], m)
 					break
 
@@ -315,8 +315,8 @@ let handler = async (m, {
 							['ᴏᴡɴᴇʀ', '.owner nomor']
 						], m)
 					}
-					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + command + xapi)).buffer(), [
-						[next, `${usedPrefix}nsfw ${args[0]}`]
+					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + args[0] + xapi)).buffer(), [
+						[next, `${usedPrefix}${args[0]}`]
 					], m)
 					break
 
@@ -327,8 +327,8 @@ let handler = async (m, {
 							['ᴏᴡɴᴇʀ', '.owner nomor']
 						], m)
 					}
-					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + command + xapi)).buffer(), [
-						[next, `${usedPrefix}nsfw ${args[0]}`]
+					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + args[0] + xapi)).buffer(), [
+						[next, `${usedPrefix}${args[0]}`]
 					], m)
 					break
 
@@ -339,8 +339,8 @@ let handler = async (m, {
 							['ᴏᴡɴᴇʀ', '.owner nomor']
 						], m)
 					}
-					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + command + xapi)).buffer(), [
-						[next, `${usedPrefix}nsfw ${args[0]}`]
+					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + args[0] + xapi)).buffer(), [
+						[next, `${usedPrefix}${args[0]}`]
 					], m)
 					break
 
@@ -351,8 +351,8 @@ let handler = async (m, {
 							['ᴏᴡɴᴇʀ', '.owner nomor']
 						], m)
 					}
-					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + command + xapi)).buffer(), [
-						[next, `${usedPrefix}nsfw ${args[0]}`]
+					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + args[0] + xapi)).buffer(), [
+						[next, `${usedPrefix}${args[0]}`]
 					], m)
 					break
 
@@ -363,8 +363,8 @@ let handler = async (m, {
 							['ᴏᴡɴᴇʀ', '.owner nomor']
 						], m)
 					}
-					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + command + xapi)).buffer(), [
-						[next, `${usedPrefix}nsfw ${args[0]}`]
+					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + args[0] + xapi)).buffer(), [
+						[next, `${usedPrefix}${args[0]}`]
 					], m)
 					break
 
@@ -375,8 +375,8 @@ let handler = async (m, {
 							['ᴏᴡɴᴇʀ', '.owner nomor']
 						], m)
 					}
-					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + command + xapi)).buffer(), [
-						[next, `${usedPrefix}nsfw ${args[0]}`]
+					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + args[0] + xapi)).buffer(), [
+						[next, `${usedPrefix}${args[0]}`]
 					], m)
 					break
 
@@ -387,8 +387,8 @@ let handler = async (m, {
 							['ᴏᴡɴᴇʀ', '.owner nomor']
 						], m)
 					}
-					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + command + xapi)).buffer(), [
-						[next, `${usedPrefix}nsfw ${args[0]}`]
+					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + args[0] + xapi)).buffer(), [
+						[next, `${usedPrefix}${args[0]}`]
 					], m)
 					break
 
@@ -399,8 +399,8 @@ let handler = async (m, {
 							['ᴏᴡɴᴇʀ', '.owner nomor']
 						], m)
 					}
-					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + command + xapi)).buffer(), [
-						[next, `${usedPrefix}nsfw ${args[0]}`]
+					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + args[0] + xapi)).buffer(), [
+						[next, `${usedPrefix}${args[0]}`]
 					], m)
 					break
 
@@ -411,8 +411,8 @@ let handler = async (m, {
 							['ᴏᴡɴᴇʀ', '.owner nomor']
 						], m)
 					}
-					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + command + xapi)).buffer(), [
-						[next, `${usedPrefix}nsfw ${args[0]}`]
+					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + args[0] + xapi)).buffer(), [
+						[next, `${usedPrefix}${args[0]}`]
 					], m)
 					break
 
@@ -423,8 +423,8 @@ let handler = async (m, {
 							['ᴏᴡɴᴇʀ', '.owner nomor']
 						], m)
 					}
-					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + command + xapi)).buffer(), [
-						[next, `${usedPrefix}nsfw ${args[0]}`]
+					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + args[0] + xapi)).buffer(), [
+						[next, `${usedPrefix}${args[0]}`]
 					], m)
 					break
 
@@ -435,8 +435,8 @@ let handler = async (m, {
 							['ᴏᴡɴᴇʀ', '.owner nomor']
 						], m)
 					}
-					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + command + xapi)).buffer(), [
-						[next, `${usedPrefix}nsfw ${args[0]}`]
+					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + args[0] + xapi)).buffer(), [
+						[next, `${usedPrefix}${args[0]}`]
 					], m)
 					break
 
@@ -447,8 +447,8 @@ let handler = async (m, {
 							['ᴏᴡɴᴇʀ', '.owner nomor']
 						], m)
 					}
-					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + command + xapi)).buffer(), [
-						[next, `${usedPrefix}nsfw ${args[0]}`]
+					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + args[0] + xapi)).buffer(), [
+						[next, `${usedPrefix}${args[0]}`]
 					], m)
 					break
 
@@ -459,8 +459,8 @@ let handler = async (m, {
 							['ᴏᴡɴᴇʀ', '.owner nomor']
 						], m)
 					}
-					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + command + xapi)).buffer(), [
-						[next, `${usedPrefix}nsfw ${args[0]}`]
+					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + args[0] + xapi)).buffer(), [
+						[next, `${usedPrefix}${args[0]}`]
 					], m)
 					break
 
@@ -471,8 +471,8 @@ let handler = async (m, {
 							['ᴏᴡɴᴇʀ', '.owner nomor']
 						], m)
 					}
-					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + command + xapi)).buffer(), [
-						[next, `${usedPrefix}nsfw ${args[0]}`]
+					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + args[0] + xapi)).buffer(), [
+						[next, `${usedPrefix}${args[0]}`]
 					], m)
 					break
 
@@ -483,8 +483,8 @@ let handler = async (m, {
 							['ᴏᴡɴᴇʀ', '.owner nomor']
 						], m)
 					}
-					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + command + xapi)).buffer(), [
-						[next, `${usedPrefix}nsfw ${args[0]}`]
+					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + args[0] + xapi)).buffer(), [
+						[next, `${usedPrefix}${args[0]}`]
 					], m)
 					break
 
@@ -495,8 +495,8 @@ let handler = async (m, {
 							['ᴏᴡɴᴇʀ', '.owner nomor']
 						], m)
 					}
-					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + command + xapi)).buffer(), [
-						[next, `${usedPrefix}nsfw ${args[0]}`]
+					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + args[0] + xapi)).buffer(), [
+						[next, `${usedPrefix}${args[0]}`]
 					], m)
 					break
 
@@ -507,8 +507,8 @@ let handler = async (m, {
 							['ᴏᴡɴᴇʀ', '.owner nomor']
 						], m)
 					}
-					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + command + xapi)).buffer(), [
-						[next, `${usedPrefix}nsfw ${args[0]}`]
+					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + args[0] + xapi)).buffer(), [
+						[next, `${usedPrefix}${args[0]}`]
 					], m)
 					break
 
@@ -519,8 +519,8 @@ let handler = async (m, {
 							['ᴏᴡɴᴇʀ', '.owner nomor']
 						], m)
 					}
-					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + command + xapi)).buffer(), [
-						[next, `${usedPrefix}nsfw ${args[0]}`]
+					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + args[0] + xapi)).buffer(), [
+						[next, `${usedPrefix}${args[0]}`]
 					], m)
 					break
 
@@ -531,8 +531,8 @@ let handler = async (m, {
 							['ᴏᴡɴᴇʀ', '.owner nomor']
 						], m)
 					}
-					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + command + xapi)).buffer(), [
-						[next, `${usedPrefix}nsfw ${args[0]}`]
+					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + args[0] + xapi)).buffer(), [
+						[next, `${usedPrefix}${args[0]}`]
 					], m)
 					break
 
@@ -543,8 +543,8 @@ let handler = async (m, {
 							['ᴏᴡɴᴇʀ', '.owner nomor']
 						], m)
 					}
-					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + command + xapi)).buffer(), [
-						[next, `${usedPrefix}nsfw ${args[0]}`]
+					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + args[0] + xapi)).buffer(), [
+						[next, `${usedPrefix}${args[0]}`]
 					], m)
 					break
 
@@ -555,8 +555,8 @@ let handler = async (m, {
 							['ᴏᴡɴᴇʀ', '.owner nomor']
 						], m)
 					}
-					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + command + xapi)).buffer(), [
-						[next, `${usedPrefix}nsfw ${args[0]}`]
+					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + args[0] + xapi)).buffer(), [
+						[next, `${usedPrefix}${args[0]}`]
 					], m)
 					break
 
@@ -567,8 +567,8 @@ let handler = async (m, {
 							['ᴏᴡɴᴇʀ', '.owner nomor']
 						], m)
 					}
-					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + command + xapi)).buffer(), [
-						[next, `${usedPrefix}nsfw ${args[0]}`]
+					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + args[0] + xapi)).buffer(), [
+						[next, `${usedPrefix}${args[0]}`]
 					], m)
 					break
 
@@ -579,8 +579,8 @@ let handler = async (m, {
 							['ᴏᴡɴᴇʀ', '.owner nomor']
 						], m)
 					}
-					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + command + xapi)).buffer(), [
-						[next, `${usedPrefix}nsfw ${args[0]}`]
+					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + args[0] + xapi)).buffer(), [
+						[next, `${usedPrefix}${args[0]}`]
 					], m)
 					break
 
@@ -591,8 +591,8 @@ let handler = async (m, {
 							['ᴏᴡɴᴇʀ', '.owner nomor']
 						], m)
 					}
-					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + command + xapi)).buffer(), [
-						[next, `${usedPrefix}nsfw ${args[0]}`]
+					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + args[0] + xapi)).buffer(), [
+						[next, `${usedPrefix}${args[0]}`]
 					], m)
 					break
 
@@ -603,8 +603,8 @@ let handler = async (m, {
 							['ᴏᴡɴᴇʀ', '.owner nomor']
 						], m)
 					}
-					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + command + xapi)).buffer(), [
-						[next, `${usedPrefix}nsfw ${args[0]}`]
+					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + args[0] + xapi)).buffer(), [
+						[next, `${usedPrefix}${args[0]}`]
 					], m)
 					break
 
@@ -615,8 +615,8 @@ let handler = async (m, {
 							['ᴏᴡɴᴇʀ', '.owner nomor']
 						], m)
 					}
-					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + command + api)).buffer(), [
-						[next, `${usedPrefix}nsfw ${args[0]}`]
+					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + args[0] + api)).buffer(), [
+						[next, `${usedPrefix}${args[0]}`]
 					], m)
 					break
 
@@ -627,8 +627,8 @@ let handler = async (m, {
 							['ᴏᴡɴᴇʀ', '.owner nomor']
 						], m)
 					}
-					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + command + api)).buffer(), [
-						[next, `${usedPrefix}nsfw ${args[0]}`]
+					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + args[0] + api)).buffer(), [
+						[next, `${usedPrefix}${args[0]}`]
 					], m)
 					break
 
@@ -639,8 +639,8 @@ let handler = async (m, {
 							['ᴏᴡɴᴇʀ', '.owner nomor']
 						], m)
 					}
-					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + command + api)).buffer(), [
-						[next, `${usedPrefix}nsfw ${args[0]}`]
+					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + args[0] + api)).buffer(), [
+						[next, `${usedPrefix}${args[0]}`]
 					], m)
 					break
 
@@ -651,8 +651,8 @@ let handler = async (m, {
 							['ᴏᴡɴᴇʀ', '.owner nomor']
 						], m)
 					}
-					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + command + api)).buffer(), [
-						[next, `${usedPrefix}nsfw ${args[0]}`]
+					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + args[0] + api)).buffer(), [
+						[next, `${usedPrefix}${args[0]}`]
 					], m)
 					break
 
@@ -665,7 +665,7 @@ let handler = async (m, {
 					}
 					let tr = await (await fetch(`https://api.waifu.pics/nsfw/trap`)).json()
 					conn.sendButton(m.chat, tekk, fot, tr.url, [
-						[next, `${usedPrefix}nsfw ${args[0]}`]
+						[next, `${usedPrefix}${args[0]}`]
 					], m)
 					break
 
@@ -676,8 +676,8 @@ let handler = async (m, {
 							['ᴏᴡɴᴇʀ', '.owner nomor']
 						], m)
 					}
-					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + command + api)).buffer(), [
-						[next, `${usedPrefix}nsfw ${args[0]}`]
+					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + args[0] + api)).buffer(), [
+						[next, `${usedPrefix}${args[0]}`]
 					], m)
 					break
 
@@ -690,7 +690,7 @@ let handler = async (m, {
 					}
 					let wf = await (await fetch(`https://api.waifu.pics/nsfw/waifu`)).json()
 					conn.sendButton(m.chat, tekk, fot, wf.url, [
-						[next, `${usedPrefix}nsfw ${args[0]}`]
+						[next, `${usedPrefix}${args[0]}`]
 					], m)
 					break
 
@@ -701,8 +701,8 @@ let handler = async (m, {
 							['ᴏᴡɴᴇʀ', '.owner nomor']
 						], m)
 					}
-					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + command + api)).buffer(), [
-						[next, `${usedPrefix}nsfw ${args[0]}`]
+					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + args[0] + api)).buffer(), [
+						[next, `${usedPrefix}${args[0]}`]
 					], m)
 					break
 
@@ -713,8 +713,8 @@ let handler = async (m, {
 							['ᴏᴡɴᴇʀ', '.owner nomor']
 						], m)
 					}
-					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + command + api)).buffer(), [
-						[next, `${usedPrefix}nsfw ${args[0]}`]
+					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + args[0] + api)).buffer(), [
+						[next, `${usedPrefix}${args[0]}`]
 					], m)
 					break
 
