@@ -1,13 +1,751 @@
-import fetch from 'node-fetch'
+//   •-- MADE BY --•
+//   | FANGZ
+//   •-------------•
+// CREDITS ! JANGAN DIUBAH, JANGAN DIHAPUS !!
 
-let handler = async (m, { conn, command }) => {
-	let url = `https://revita.herokuapp.com/api/nsfw/${command}?apikey=ApiRevita`
-	conn.sendButton(m.chat, '(≧ω≦)', '', await(await fetch(url)).buffer(), [['🔁Next🔁',`.${command}`]],m)
+
+//------ FUNCTION & MODULE
+function pickRandom(list) {
+	return list[Math.floor(Math.random() * list.length)]
 }
-handler.command = handler.help = ['ahegao', 'ass', 'bdsm', 'blowjob', 'cuckold', 'cum', 'ero', 'femdom', 'foot', 'gangbang', 'glasses', 'hentai',
-'gifs', 'jahy', 'manga', 'mstb', 'neko', 'orgy', 'panties', 'pussy', 'neko2', 'tentacles', 'things', 'yuri', 'zettai']
-handler.tags = ['anime']
-handler.premium = true
 
+let {
+	MessageType
+} = (await import('@adiwajshing/baileys')).default
+import fetch from 'node-fetch'
+import neko from 'nekos.life'
+//---------------------------------
+let handler = async (m, {
+	conn,
+	command,
+	args,
+	usedPrefix,
+	DevMode
+}) => {
+
+	// ------- OTHER ------
+	if (global.db.data.chats[m.chat].nsfw == false && m.isGroup) return conn.sendButton(m.chat, '📣 Fitur NSFW Belum dinyalakan di group', botdate, null, [
+		['📛ᴇɴᴀʙʟᴇ', '.on nsfw']
+	], m)
+
+	let type = (args[0] || '').toLowerCase()
+	let _type = (args[0] || '').toLowerCase()
+	let ch = db.data.chats[m.chat].premnsfw
+	//--------------------------
+
+	//---------------------SOURCE
+
+	//> Default
+	let res = 'https://saipulanuar.ga/api/nsfwloli'
+	let api = '?apikey=danzz'
+
+	//> Lolhuman
+	let xres = 'https://revita.herokuapp.com/api/nsfw/'
+	let xapi = '?apikey=ApiRevita'
+
+	//> Xteam
+
+	//--------------------------------
+
+	// ••••••••••••••••• OPTIONS •••••••••••
+
+	// > Example :
+	// OPTIONS
+	// • false = Free
+	// • true = premium
+
+	//+- Contoh: -+
+	// let nsfww = (ch == true ? false : <Options, pilih true atau false>)
+
+	//### *FREE* ###
+	// let nsfww = (ch == true ? false : false)
+
+	//### *PREM* ###
+	// let nsfww = (ch == true ? false : true)
+
+	let ahegao = (ch == true ? false : true)
+	let anal = (ch == true ? false : true)
+	let ass = (ch == true ? false : true)
+	let blowjob = (ch == true ? false : true)
+	let cums = (ch == true ? false : true)
+	let ecchi = (ch == true ? false : true)
+	let ero = (ch == true ? false : true)
+	let erofeet = (ch == true ? false : true)
+	let erogirl = (ch == true ? false : true)
+	let holoero = (ch == true ? false : true)
+	let erokitsune = (ch == true ? false : true)
+	let eroneko = (ch == true ? false : true)
+	let eroyuri = (ch == true ? false : true)
+	let feet = (ch == true ? false : true)
+	let femdom = (ch == true ? false : true)
+	let futanari = (ch == true ? false : true)
+	let girlsolo = (ch == true ? false : true)
+	let hentai = (ch == true ? false : true)
+	let holo = (ch == true ? false : true)
+	let kitsune = (ch == true ? false : true)
+	let kuni = (ch == true ? false : true)
+	let loli = (ch == true ? false : true)
+	let manga = (ch == true ? false : true)
+	let milf = (ch == true ? false : true)
+	let mstrb = (ch == true ? false : true)
+	let neko = (ch == true ? false : true)
+	let panties = (ch == true ? false : true)
+	let pussy = (ch == true ? false : true)
+	let oppai = (ch == true ? false : true)
+	let spank = (ch == true ? false : true)
+	let tentacles = (ch == true ? false : true)
+	let thighs = (ch == true ? false : true)
+	let tits = (ch == true ? false : true)
+	let trap = (ch == true ? false : true)
+	let uniform = (ch == true ? false : true)
+	let waifu = (ch == true ? false : true)
+	let yaoi = (ch == true ? false : true)
+	let yuri = (ch == true ? false : true)
+	//-------------------------------------
+
+	//---------- TEXT -----------
+	let next = 'ɴ ᴇ x ᴛ'
+	let fot = botdate
+	let txtprem = '📮Fitur ini khusus User Premium\nUntuk menggunakan fitur ini upgrade premium anda ! 📞'
+	let p = '🅟 | '
+	let f = 'Ⓕ | '
+
+	let tekk = `\`\`\`➩ Random Image Nsfw ${args[0] ? args[0].capitalize() : false}\`\`\` `
+	let teks = `┊ 📮 Silahkan Pilih Dibawah!
+┊› Atau ketik ${usedPrefix}nsfw blowjob 
+❏──···––`
+	//---------------------------
+
+	//--------- BUTTON SELECTIONS ----------
+	const sections = [{
+		title: 'HENTAI MENU',
+		rows: [{
+				title: `${ ahegao == true ? p : f}` + "A • Ahegao",
+				rowId: ".ahegao"
+			},
+			{
+				title: `${ anal == true ? p:f}` + "A • Anal",
+				rowId: ".anal"
+			},
+			{
+				title: `${ ass == true ? p:f}` + "A • Ass",
+				rowId: ".ass"
+			},
+			{
+				title: `${ blowjob == true ? p:f}` + "B • BlowJob",
+				rowId: ".blowjob"
+			},
+			{
+				title: `${ cums == true ? p:f}` + "C • Cumsluts",
+				rowId: ".cums"
+			},
+			{
+				title: `${ ecchi == true ? p:f}` + "E • Ecchi",
+				rowId: ".ecchi"
+			},
+			{
+				title: `${ ero == true ? p:f}` + "E • Ero",
+				rowId: ".ero"
+			},
+			//{title: `${ erofeet == true ? p:f}` + "E • Ero Feet", rowId: ".erofeet"},
+			{
+				title: `${ erogirl == true ? p:f}` + "E • Ero Girl",
+				rowId: ".erogirl"
+			},
+			{
+				title: `${ holoero == true ? p:f}` + "E • Ero Holo",
+				rowId: ".holoero"
+			},
+			//{title: `${ erokitsune == true ? p:f}` + "E • Ero Kitsune", rowId: ".erokitsune"},
+			//{title: `${ eroneko == true ? p:f}` + "E • Ero Neko", rowId: ".eroneko"},
+			//{title: `${ eroyuri== true ? p:f}` + "E • Ero Yuri", rowId: ".eroyuri"},
+			{
+				title: `${ feet == true ? p:f}` + "F • Feet",
+				rowId: ".feet"
+			},
+			{
+				title: `${ femdom == true ? p:f}` + "F • Femdom",
+				rowId: ".femdom"
+			},
+			//{title: `${ futanari == true ? p:f}` + "F • Futanari", rowId: ".futanari"},
+			//{title: `${ girlsolo == true ? p:f}` + "G • Girl Solo", rowId: ".girlsolo"},
+			{
+				title: `${ hentai == true ? p:f}` + "H • Hentai",
+				rowId: ".hentai"
+			},
+			{
+				title: `${ holo == true ? p:f}` + "H • Holo",
+				rowId: ".holo"
+			},
+			//{title: `${ kitsune == true ? p:f}` + "K • Kitsune", rowId: ".kitsune"},
+			//{title: `${ kuni == true ? p:f}` + "K • Kuni", rowId: ".kuni"},
+			{
+				title: `${ loli == true ? p:f}` + "L • Loli",
+				rowId: ".loli"
+			},
+			{
+				title: `${ manga== true ? p:f}` + "M • Manga",
+				rowId: ".manga"
+			},
+			{
+				title: `${ milf == true ? p:f}` + "M • Milf",
+				rowId: ".milf"
+			},
+			{
+				title: `${ mstrb == true ? p:f}` + "M • Mstrb",
+				rowId: ".mstrb"
+			},
+			{
+				title: `${ neko == true ? p:f}` + "N • Neko",
+				rowId: ".neko"
+			},
+			{
+				title: `${ oppai == true ? p:f}` + "O • Oppai",
+				rowId: ".oppai"
+			},
+			{
+				title: `${ panties == true ? p:f}` + "P • Panties",
+				rowId: ".panties"
+			},
+			{
+				title: `${ pussy == true ? p:f}` + "P • Pussy",
+				rowId: ".pussy"
+			},
+			//{title: `${ spank == true ? p:f}` + "S • Spank", rowId: ".spank"},
+			{
+				title: `${ tentacles == true ? p:f}` + "T • Tentacles",
+				rowId: ".tentacles"
+			},
+			{
+				title: `${ thighs == true ? p:f}` + "T • Thighs",
+				rowId: ".thighs"
+			},
+			//{title: `${ tits == true ? p:f}` + "T • Tits", rowId: ".tits"},
+			{
+				title: `${ trap == true ? p:f}` + "T • Trap",
+				rowId: ".trap"
+			},
+			{
+				title: `${ uniform == true ? p:f}` + "U • Uniform",
+				rowId: ".uniform"
+			},
+			{
+				title: `${ waifu == true ? p:f}` + "W • Waifu",
+				rowId: ".waifu"
+			},
+			{
+				title: `${ yaoi == true ? p:f}` + "Y • Yaoi",
+				rowId: ".yaoi"
+			},
+			{
+				title: `${ yuri == true ? p:f}` + "Y • Yuri",
+				rowId: ".yuri"
+			},
+		]
+	}, ]
+
+	const listMessage = {
+		text: teks,
+		footer: '┏- - - - -  INFO - - - - -\n┊ 🅟 = Premium\n┊ Ⓕ = Free\n┗•',
+		title: `❏––––[ *NSFW* ]–––`,
+		buttonText: "- -NSFW- -",
+		sections
+	}
+	//--------------------------------
+
+
+	//------------ CASE NSFW ! ------------
+	try {
+		if (/(nsfw|hentai)/i.test(command)) {
+			const count = args[1] && args[1].length > 0 ? Math.min(99999999, Math.max(parseInt(args[1]), 1)) : !args[1] || args.length < 3 ? 1 : Math.min(1, count)
+			switch (type) {
+				case 'ahegao':
+					if (ahegao == true) {
+						if (db.data.users[m.sender].premiumTime < 1) return conn.sendButton(m.chat, txtprem, botdate, [
+							['ʙᴜʏ ᴘʀᴇᴍɪᴜᴍ', '.premium'],
+							['ᴏᴡɴᴇʀ', '.owner nomor']
+						], m)
+					}
+					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + command + xapi)).buffer(), [
+						[next, `${usedPrefix}nsfw ${args[0]}`]
+					], m)
+					break
+
+				case 'anal':
+					if (anal == true) {
+						if (db.data.users[m.sender].premiumTime < 1) return conn.sendButton(m.chat, txtprem, botdate, [
+							['ʙᴜʏ ᴘʀᴇᴍɪᴜᴍ', '.premium'],
+							['ᴏᴡɴᴇʀ', '.owner nomor']
+						], m)
+					}
+					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + command + xapi)).buffer(), [
+						[next, `${usedPrefix}nsfw ${args[0]}`]
+					], m)
+					break
+
+				case 'ass':
+					if (ass == true) {
+						if (db.data.users[m.sender].premiumTime < 1) return conn.sendButton(m.chat, txtprem, botdate, [
+							['ʙᴜʏ ᴘʀᴇᴍɪᴜᴍ', '.premium'],
+							['ᴏᴡɴᴇʀ', '.owner nomor']
+						], m)
+					}
+					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + command + xapi)).buffer(), [
+						[next, `${usedPrefix}nsfw ${args[0]}`]
+					], m)
+					break
+
+				case 'blowjob':
+					if (blowjob == true) {
+						if (db.data.users[m.sender].premiumTime < 1) return conn.sendButton(m.chat, txtprem, botdate, [
+							['ʙᴜʏ ᴘʀᴇᴍɪᴜᴍ', '.premium'],
+							['ᴏᴡɴᴇʀ', '.owner nomor']
+						], m)
+					}
+					let bj = await (await fetch(`https://api.waifu.pics/nsfw/blowjob`)).json()
+					conn.sendButton(m.chat, tekk, fot, bj.url, [
+						[next, `${usedPrefix}nsfw ${args[0]}`]
+					], m)
+					break
+
+				case 'cums':
+					if (cums == true) {
+						if (db.data.users[m.sender].premiumTime < 1) return conn.sendButton(m.chat, txtprem, botdate, [
+							['ʙᴜʏ ᴘʀᴇᴍɪᴜᴍ', '.premium'],
+							['ᴏᴡɴᴇʀ', '.owner nomor']
+						], m)
+					}
+					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + command + xapi)).buffer(), [
+						[next, `${usedPrefix}nsfw ${args[0]}`]
+					], m)
+					break
+
+				case 'ecchi':
+					if (ecchi == true) {
+						if (db.data.users[m.sender].premiumTime < 1) return conn.sendButton(m.chat, txtprem, botdate, [
+							['ʙᴜʏ ᴘʀᴇᴍɪᴜᴍ', '.premium'],
+							['ᴏᴡɴᴇʀ', '.owner nomor']
+						], m)
+					}
+					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + command + xapi)).buffer(), [
+						[next, `${usedPrefix}nsfw ${args[0]}`]
+					], m)
+					break
+
+				case 'ero':
+					if (ero == true) {
+						if (db.data.users[m.sender].premiumTime < 1) return conn.sendButton(m.chat, txtprem, botdate, [
+							['ʙᴜʏ ᴘʀᴇᴍɪᴜᴍ', '.premium'],
+							['ᴏᴡɴᴇʀ', '.owner nomor']
+						], m)
+					}
+					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + command + xapi)).buffer(), [
+						[next, `${usedPrefix}nsfw ${args[0]}`]
+					], m)
+					break
+
+				case 'erofeet':
+					if (erofeet == true) {
+						if (db.data.users[m.sender].premiumTime < 1) return conn.sendButton(m.chat, txtprem, botdate, [
+							['ʙᴜʏ ᴘʀᴇᴍɪᴜᴍ', '.premium'],
+							['ᴏᴡɴᴇʀ', '.owner nomor']
+						], m)
+					}
+					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + command + xapi)).buffer(), [
+						[next, `${usedPrefix}nsfw ${args[0]}`]
+					], m)
+					break
+
+				case 'erogirl':
+					if (erogirl == true) {
+						if (db.data.users[m.sender].premiumTime < 1) return conn.sendButton(m.chat, txtprem, botdate, [
+							['ʙᴜʏ ᴘʀᴇᴍɪᴜᴍ', '.premium'],
+							['ᴏᴡɴᴇʀ', '.owner nomor']
+						], m)
+					}
+					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + command + xapi)).buffer(), [
+						[next, `${usedPrefix}nsfw ${args[0]}`]
+					], m)
+					break
+
+				case 'holoero':
+					if (holoero == true) {
+						if (db.data.users[m.sender].premiumTime < 1) return conn.sendButton(m.chat, txtprem, botdate, [
+							['ʙᴜʏ ᴘʀᴇᴍɪᴜᴍ', '.premium'],
+							['ᴏᴡɴᴇʀ', '.owner nomor']
+						], m)
+					}
+					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + command + xapi)).buffer(), [
+						[next, `${usedPrefix}nsfw ${args[0]}`]
+					], m)
+					break
+
+				case 'erokitsune':
+					if (erokitsune == true) {
+						if (db.data.users[m.sender].premiumTime < 1) return conn.sendButton(m.chat, txtprem, botdate, [
+							['ʙᴜʏ ᴘʀᴇᴍɪᴜᴍ', '.premium'],
+							['ᴏᴡɴᴇʀ', '.owner nomor']
+						], m)
+					}
+					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + command + xapi)).buffer(), [
+						[next, `${usedPrefix}nsfw ${args[0]}`]
+					], m)
+					break
+
+				case 'eroneko':
+					if (eroneko == true) {
+						if (db.data.users[m.sender].premiumTime < 1) return conn.sendButton(m.chat, txtprem, botdate, [
+							['ʙᴜʏ ᴘʀᴇᴍɪᴜᴍ', '.premium'],
+							['ᴏᴡɴᴇʀ', '.owner nomor']
+						], m)
+					}
+					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + command + xapi)).buffer(), [
+						[next, `${usedPrefix}nsfw ${args[0]}`]
+					], m)
+					break
+
+				case 'eroyuri':
+					if (eroyuri == true) {
+						if (db.data.users[m.sender].premiumTime < 1) return conn.sendButton(m.chat, txtprem, botdate, [
+							['ʙᴜʏ ᴘʀᴇᴍɪᴜᴍ', '.premium'],
+							['ᴏᴡɴᴇʀ', '.owner nomor']
+						], m)
+					}
+					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + command + xapi)).buffer(), [
+						[next, `${usedPrefix}nsfw ${args[0]}`]
+					], m)
+					break
+
+				case 'feet':
+					if (feet == true) {
+						if (db.data.users[m.sender].premiumTime < 1) return conn.sendButton(m.chat, txtprem, botdate, [
+							['ʙᴜʏ ᴘʀᴇᴍɪᴜᴍ', '.premium'],
+							['ᴏᴡɴᴇʀ', '.owner nomor']
+						], m)
+					}
+					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + command + xapi)).buffer(), [
+						[next, `${usedPrefix}nsfw ${args[0]}`]
+					], m)
+					break
+
+				case 'femdom':
+					if (femdom == true) {
+						if (db.data.users[m.sender].premiumTime < 1) return conn.sendButton(m.chat, txtprem, botdate, [
+							['ʙᴜʏ ᴘʀᴇᴍɪᴜᴍ', '.premium'],
+							['ᴏᴡɴᴇʀ', '.owner nomor']
+						], m)
+					}
+					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + command + xapi)).buffer(), [
+						[next, `${usedPrefix}nsfw ${args[0]}`]
+					], m)
+					break
+
+				case 'futanari':
+					if (futanari == true) {
+						if (db.data.users[m.sender].premiumTime < 1) return conn.sendButton(m.chat, txtprem, botdate, [
+							['ʙᴜʏ ᴘʀᴇᴍɪᴜᴍ', '.premium'],
+							['ᴏᴡɴᴇʀ', '.owner nomor']
+						], m)
+					}
+					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + command + xapi)).buffer(), [
+						[next, `${usedPrefix}nsfw ${args[0]}`]
+					], m)
+					break
+
+				case 'girlsolo':
+					if (girlsolo == true) {
+						if (db.data.users[m.sender].premiumTime < 1) return conn.sendButton(m.chat, txtprem, botdate, [
+							['ʙᴜʏ ᴘʀᴇᴍɪᴜᴍ', '.premium'],
+							['ᴏᴡɴᴇʀ', '.owner nomor']
+						], m)
+					}
+					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + command + xapi)).buffer(), [
+						[next, `${usedPrefix}nsfw ${args[0]}`]
+					], m)
+					break
+
+				case 'hentai':
+					if (hentai == true) {
+						if (db.data.users[m.sender].premiumTime < 1) return conn.sendButton(m.chat, txtprem, botdate, [
+							['ʙᴜʏ ᴘʀᴇᴍɪᴜᴍ', '.premium'],
+							['ᴏᴡɴᴇʀ', '.owner nomor']
+						], m)
+					}
+					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + command + xapi)).buffer(), [
+						[next, `${usedPrefix}nsfw ${args[0]}`]
+					], m)
+					break
+
+				case 'holo':
+					if (holo == true) {
+						if (db.data.users[m.sender].premiumTime < 1) return conn.sendButton(m.chat, txtprem, botdate, [
+							['ʙᴜʏ ᴘʀᴇᴍɪᴜᴍ', '.premium'],
+							['ᴏᴡɴᴇʀ', '.owner nomor']
+						], m)
+					}
+					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + command + xapi)).buffer(), [
+						[next, `${usedPrefix}nsfw ${args[0]}`]
+					], m)
+					break
+
+				case 'kitsune':
+					if (kitsune == true) {
+						if (db.data.users[m.sender].premiumTime < 1) return conn.sendButton(m.chat, txtprem, botdate, [
+							['ʙᴜʏ ᴘʀᴇᴍɪᴜᴍ', '.premium'],
+							['ᴏᴡɴᴇʀ', '.owner nomor']
+						], m)
+					}
+					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + command + xapi)).buffer(), [
+						[next, `${usedPrefix}nsfw ${args[0]}`]
+					], m)
+					break
+
+				case 'kuni':
+					if (kuni == true) {
+						if (db.data.users[m.sender].premiumTime < 1) return conn.sendButton(m.chat, txtprem, botdate, [
+							['ʙᴜʏ ᴘʀᴇᴍɪᴜᴍ', '.premium'],
+							['ᴏᴡɴᴇʀ', '.owner nomor']
+						], m)
+					}
+					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + command + xapi)).buffer(), [
+						[next, `${usedPrefix}nsfw ${args[0]}`]
+					], m)
+					break
+
+				case 'loli':
+					if (loli == true) {
+						if (db.data.users[m.sender].premiumTime < 1) return conn.sendButton(m.chat, txtprem, botdate, [
+							['ʙᴜʏ ᴘʀᴇᴍɪᴜᴍ', '.premium'],
+							['ᴏᴡɴᴇʀ', '.owner nomor']
+						], m)
+					}
+					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + command + xapi)).buffer(), [
+						[next, `${usedPrefix}nsfw ${args[0]}`]
+					], m)
+					break
+
+				case 'manga':
+					if (manga == true) {
+						if (db.data.users[m.sender].premiumTime < 1) return conn.sendButton(m.chat, txtprem, botdate, [
+							['ʙᴜʏ ᴘʀᴇᴍɪᴜᴍ', '.premium'],
+							['ᴏᴡɴᴇʀ', '.owner nomor']
+						], m)
+					}
+					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + command + xapi)).buffer(), [
+						[next, `${usedPrefix}nsfw ${args[0]}`]
+					], m)
+					break
+
+				case 'milf':
+					if (milf == true) {
+						if (db.data.users[m.sender].premiumTime < 1) return conn.sendButton(m.chat, txtprem, botdate, [
+							['ʙᴜʏ ᴘʀᴇᴍɪᴜᴍ', '.premium'],
+							['ᴏᴡɴᴇʀ', '.owner nomor']
+						], m)
+					}
+					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + command + xapi)).buffer(), [
+						[next, `${usedPrefix}nsfw ${args[0]}`]
+					], m)
+					break
+
+				case 'mstrb':
+					if (mstrb == true) {
+						if (db.data.users[m.sender].premiumTime < 1) return conn.sendButton(m.chat, txtprem, botdate, [
+							['ʙᴜʏ ᴘʀᴇᴍɪᴜᴍ', '.premium'],
+							['ᴏᴡɴᴇʀ', '.owner nomor']
+						], m)
+					}
+					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + command + xapi)).buffer(), [
+						[next, `${usedPrefix}nsfw ${args[0]}`]
+					], m)
+					break
+
+				case 'neko':
+					if (neko == true) {
+						if (db.data.users[m.sender].premiumTime < 1) return conn.sendButton(m.chat, txtprem, botdate, [
+							['ʙᴜʏ ᴘʀᴇᴍɪᴜᴍ', '.premium'],
+							['ᴏᴡɴᴇʀ', '.owner nomor']
+						], m)
+					}
+					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + command + xapi)).buffer(), [
+						[next, `${usedPrefix}nsfw ${args[0]}`]
+					], m)
+					break
+
+				case 'oppai':
+					if (oppai == true) {
+						if (db.data.users[m.sender].premiumTime < 1) return conn.sendButton(m.chat, txtprem, botdate, [
+							['ʙᴜʏ ᴘʀᴇᴍɪᴜᴍ', '.premium'],
+							['ᴏᴡɴᴇʀ', '.owner nomor']
+						], m)
+					}
+					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + command + xapi)).buffer(), [
+						[next, `${usedPrefix}nsfw ${args[0]}`]
+					], m)
+					break
+
+				case 'panties':
+					if (panties == true) {
+						if (db.data.users[m.sender].premiumTime < 1) return conn.sendButton(m.chat, txtprem, botdate, [
+							['ʙᴜʏ ᴘʀᴇᴍɪᴜᴍ', '.premium'],
+							['ᴏᴡɴᴇʀ', '.owner nomor']
+						], m)
+					}
+					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + command + xapi)).buffer(), [
+						[next, `${usedPrefix}nsfw ${args[0]}`]
+					], m)
+					break
+
+				case 'pussy':
+					if (pussy == true) {
+						if (db.data.users[m.sender].premiumTime < 1) return conn.sendButton(m.chat, txtprem, botdate, [
+							['ʙᴜʏ ᴘʀᴇᴍɪᴜᴍ', '.premium'],
+							['ᴏᴡɴᴇʀ', '.owner nomor']
+						], m)
+					}
+					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + command + xapi)).buffer(), [
+						[next, `${usedPrefix}nsfw ${args[0]}`]
+					], m)
+					break
+
+				case 'spank':
+					if (spank == true) {
+						if (db.data.users[m.sender].premiumTime < 1) return conn.sendButton(m.chat, txtprem, botdate, [
+							['ʙᴜʏ ᴘʀᴇᴍɪᴜᴍ', '.premium'],
+							['ᴏᴡɴᴇʀ', '.owner nomor']
+						], m)
+					}
+					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + command + api)).buffer(), [
+						[next, `${usedPrefix}nsfw ${args[0]}`]
+					], m)
+					break
+
+				case 'tentacles':
+					if (tentacles == true) {
+						if (db.data.users[m.sender].premiumTime < 1) return conn.sendButton(m.chat, txtprem, botdate, [
+							['ʙᴜʏ ᴘʀᴇᴍɪᴜᴍ', '.premium'],
+							['ᴏᴡɴᴇʀ', '.owner nomor']
+						], m)
+					}
+					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + command + api)).buffer(), [
+						[next, `${usedPrefix}nsfw ${args[0]}`]
+					], m)
+					break
+
+				case 'tits':
+					if (tits == true) {
+						if (db.data.users[m.sender].premiumTime < 1) return conn.sendButton(m.chat, txtprem, botdate, [
+							['ʙᴜʏ ᴘʀᴇᴍɪᴜᴍ', '.premium'],
+							['ᴏᴡɴᴇʀ', '.owner nomor']
+						], m)
+					}
+					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + command + api)).buffer(), [
+						[next, `${usedPrefix}nsfw ${args[0]}`]
+					], m)
+					break
+
+				case 'thighs':
+					if (thighs == true) {
+						if (db.data.users[m.sender].premiumTime < 1) return conn.sendButton(m.chat, txtprem, botdate, [
+							['ʙᴜʏ ᴘʀᴇᴍɪᴜᴍ', '.premium'],
+							['ᴏᴡɴᴇʀ', '.owner nomor']
+						], m)
+					}
+					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + command + api)).buffer(), [
+						[next, `${usedPrefix}nsfw ${args[0]}`]
+					], m)
+					break
+
+				case 'trap':
+					if (trap == true) {
+						if (db.data.users[m.sender].premiumTime < 1) return conn.sendButton(m.chat, txtprem, botdate, [
+							['ʙᴜʏ ᴘʀᴇᴍɪᴜᴍ', '.premium'],
+							['ᴏᴡɴᴇʀ', '.owner nomor']
+						], m)
+					}
+					let tr = await (await fetch(`https://api.waifu.pics/nsfw/trap`)).json()
+					conn.sendButton(m.chat, tekk, fot, tr.url, [
+						[next, `${usedPrefix}nsfw ${args[0]}`]
+					], m)
+					break
+
+				case 'uniform':
+					if (uniform == true) {
+						if (db.data.users[m.sender].premiumTime < 1) return conn.sendButton(m.chat, txtprem, botdate, [
+							['ʙᴜʏ ᴘʀᴇᴍɪᴜᴍ', '.premium'],
+							['ᴏᴡɴᴇʀ', '.owner nomor']
+						], m)
+					}
+					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + command + api)).buffer(), [
+						[next, `${usedPrefix}nsfw ${args[0]}`]
+					], m)
+					break
+
+				case 'waifu':
+					if (waifu == true) {
+						if (db.data.users[m.sender].premiumTime < 1) return conn.sendButton(m.chat, txtprem, botdate, [
+							['ʙᴜʏ ᴘʀᴇᴍɪᴜᴍ', '.premium'],
+							['ᴏᴡɴᴇʀ', '.owner nomor']
+						], m)
+					}
+					let wf = await (await fetch(`https://api.waifu.pics/nsfw/waifu`)).json()
+					conn.sendButton(m.chat, tekk, fot, wf.url, [
+						[next, `${usedPrefix}nsfw ${args[0]}`]
+					], m)
+					break
+
+				case 'yaoi':
+					if (yuri == true) {
+						if (db.data.users[m.sender].premiumTime < 1) return conn.sendButton(m.chat, txtprem, botdate, [
+							['ʙᴜʏ ᴘʀᴇᴍɪᴜᴍ', '.premium'],
+							['ᴏᴡɴᴇʀ', '.owner nomor']
+						], m)
+					}
+					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + command + api)).buffer(), [
+						[next, `${usedPrefix}nsfw ${args[0]}`]
+					], m)
+					break
+
+				case 'yuri':
+					if (yuri == true) {
+						if (db.data.users[m.sender].premiumTime < 1) return conn.sendButton(m.chat, txtprem, botdate, [
+							['ʙᴜʏ ᴘʀᴇᴍɪᴜᴍ', '.premium'],
+							['ᴏᴡɴᴇʀ', '.owner nomor']
+						], m)
+					}
+					conn.sendButton(m.chat, tekk, fot, await (await fetch(xres + command + api)).buffer(), [
+						[next, `${usedPrefix}nsfw ${args[0]}`]
+					], m)
+					break
+
+				default:
+					return await conn.sendMessage(m.chat, listMessage, {
+						quoted: m,
+						contextInfo: {
+							mentionedJid: [m.sender]
+						}
+					})
+			}
+		} else if (/hentong/i.test(command)) {
+			const count = args[2] && args[2].length > 0 ? Math.min(99999999, Math.max(parseInt(args[2]), 1)) : !args[2] || args.length < 4 ? 1 : Math.min(1, count)
+			switch (_type) {
+				case 'A':
+					break
+				case '':
+					break
+				default:
+					return conn.sendButton(m.chat, caption, fot, null, [`⋮☰ Menu`, `.menu`], m)
+			}
+		}
+	} catch (err) {
+		m.reply("Error\n\n\n" + err.stack)
+	}
+	//-----------------------------
+
+}
+
+handler.help = ['nsfw <type>', 'hentai <type>']
+handler.tags = ['nsfw', 'premium']
+handler.command = /^(nsfw|hentai)/i
 
 export default handler
