@@ -1,3 +1,4 @@
+import db from '../lib/database.js'
 let timeout = 60000
 let poin = 500
 let poin_lose = -100

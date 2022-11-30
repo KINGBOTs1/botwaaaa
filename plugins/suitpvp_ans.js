@@ -1,3 +1,4 @@
+import db from '../lib/database.js'
 let handler = m => m
 handler.before = async function (m) {
   this.suit = this.suit ? this.suit : {}

@@ -1,3 +1,4 @@
+import db from '../lib/database.js'
 let handler = async (m, { text, usedPrefix }) => {
     let salah = `Pilihan Yang Tersedia\n\nGunting, Kertas, Batu\n\n${usedPrefix}suit gunting\n\nKasih Spasi!`
     if (!text) throw salah
@@ -16,21 +17,21 @@ let handler = async (m, { text, usedPrefix }) => {
         m.reply(`Seri!\nkamu: ${text}\nᴹᴿ᭄ King Of Bear ×፝֟͜×: ${astro}`)
     } else if (text == 'batu') {
         if (astro == 'gunting') {
-            global.db.data.users[m.sender].money += 1000
+            db.data.users[m.sender].money += 1000
             m.reply(`Kamu Menang!\n+1000 Money\nKamu: ${text}\nᴹᴿ᭄ King Of Bear ×፝֟͜×: ${astro}`)
         } else {
             m.reply(`Kamu Kalah!\nKamu: ${text}\nᴹᴿ᭄ King Of Bear ×፝֟͜×: ${astro}`)
         }
     } else if (text == 'gunting') {
         if (astro == 'kertas') {
-            global.db.data.users[m.sender].money += 1000
+            db.data.users[m.sender].money += 1000
             m.reply(`Kamu Menang!\n+1000 Money\nKamu: ${text}\nᴹᴿ᭄ King Of Bear ×፝֟͜×: ${astro}`)
         } else {
             m.reply(`Kamu Kalah!\nKamu: ${text}\nᴹᴿ᭄ King Of Bear ×፝֟͜×: ${astro}`)
         }
     } else if (text == 'kertas') {
         if (astro == 'batu') {
-            global.db.data.users[m.sender].money += 1000
+            db.data.users[m.sender].money += 1000
             m.reply(`Kamu Menang! \n+1000 Money\nKamu: ${text}\nᴹᴿ᭄ King Of Bear ×፝֟͜×: ${astro}`)
         } else {
             m.reply(`Kamu Kalah!\nKamu: ${text}\nᴹᴿ᭄ King Of Bear ×፝֟͜×: ${astro}`)
