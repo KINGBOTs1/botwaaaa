@@ -25,7 +25,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
             'sourceUrl': 'https://youtube.com/channel/UC1oSMQCd3XKVxYwSh4RE2Nw'
         }
     },
-    'caption': te,
+    'caption': teks,
     'footer': botdate,
     'buttons': [
 {'buttonId':`.orderr + ${cap}`,'buttonText':{'displayText':'💬 ORDER NOW'},'type':1},

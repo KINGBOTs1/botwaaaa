@@ -15,7 +15,7 @@ if (!text) throw `
 .order <id>|<server>|<username>|<order apa>`
 let [id, server, usrnm,ordr] = text.split `|`
   let cap = `
-┏━━❉* ORDER * ❉━━┓
+┏━━❉ *ORDER* ❉━━┓
 ┃  *ID:* ${encodeURIComponent(id ? id : '')}
 ┃  *SERVER:* ${encodeURIComponent(server ? server : '')}
 ┃  *USERNAME:* ${encodeURIComponent(usrnm ? usrnm : '')}
