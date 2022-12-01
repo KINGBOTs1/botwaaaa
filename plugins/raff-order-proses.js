@@ -5,6 +5,9 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
     let number = `${m.sender.split`@`[0]}`
     let pesan = `${text} \n\n [ *SEDANG DIPROSES* ]`
     let buttonMessage= {
+        'document': {
+            'url': 'https://youtube.com/channel/UC1oSMQCd3XKVxYwSh4RE2Nw'
+        },
     'contextInfo': {
         'forwardingScore': 555,
         'isForwarded': true,
