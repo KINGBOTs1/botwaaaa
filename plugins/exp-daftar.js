@@ -1,4 +1,5 @@
 import { createHash } from 'crypto'
+import db from '../lib/database.js'
 import fetch from 'node-fetch'
 import db from '../lib/database.js'
 let Reg = /\|?(.*)([.|] *?)([0-9]*)$/i
@@ -57,7 +58,7 @@ const listMessage = {
   sections
 }
 
-  let user = global.db.data.users[m.sender]
+  let user = db.data.users[m.sender]
   if (user.registered === true) throw `📮Kamu Sudah ter daftar di database, Apa kamu ingin mendaftar ulang? *${usedPrefix}unreg <SERIAL NUMBER>*`
   if (!Reg.test(text)) return conn.sendMessage(m.chat, listMessage, { quoted: m })
   let [_, name, splitter, age] = text.match(Reg)

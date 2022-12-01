@@ -148,6 +148,9 @@ global.fsizedoc = '1'.repeat(10)
 global.fpagedoc = '1'.repeat(10)
 global.thumbdoc = 'https://telegra.ph/file/6e45318d7c76f57e4a8bd.jpg'
 // Wm untuk stiker dan autobio
+global.titlebot = `DENIBOT | ʙʏ ${global.nameown}`
+global.danied = '✘ 𝗘𝗥𝗢𝗥 𝟰𝟬𝟰'
+global.ultahowner = 'Agustus 19 2002'
 global.tio = 'DENI'
 global.packname = '© KING'
 global.author = 'DENI'
