@@ -28,7 +28,6 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
 ],
 'headerType':6}
     await conn.sendMessage(m.chat,buttonMessage, { quoted:m})
-    m.reply('☑️ Pesan Telah terkirim ke Owner!\n_*Menunggu confirmasi Dari Owner...*_')
 }
 handler.command = /^(orderr)$/i
 export default handler
