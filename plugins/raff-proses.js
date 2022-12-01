@@ -8,9 +8,10 @@ let [number, pesan] = text.split `|`
     
     let user = db.data.users[m.sender]
 
+    let own = global.nomorown
     let korban = `${number}`
     var nomor = m.sender
-    let spam1 = `📫Dari : wa.me/${korban}\n💬Pesan : ${pesan}`
+    let spam1 = `📫Dari : wa.me/${own}\n💬Pesan : ${pesan}`
 
     conn.reply(korban + '@s.whatsapp.net', spam1, m)
 
