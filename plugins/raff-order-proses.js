@@ -2,8 +2,8 @@ import fetch from 'node-fetch'
 let handler = async (m, { conn, text, usedPrefix, command }) => {
     if (text.length < 1 ) throw `Laporan terlalu pendek, minimal 10 karakter!`
     if (text.length > 1000) throw `Laporan terlalu panjang, maksimal 1000 karakter!`
-    let kirim = `*- @${m.sender.split`@`[0]}*`
-    let teks = `${text}\n ${kirim}`
+    let number = `*- @${m.sender.split`@`[0]}*`
+    let pesan = `${text}`
     let buttonMessage= {
 'document': {
     'url': 'https://youtube.com/channel/UC1oSMQCd3XKVxYwSh4RE2Nw'
@@ -25,10 +25,10 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
             'sourceUrl': 'https://youtube.com/channel/UC1oSMQCd3XKVxYwSh4RE2Nw'
         }
     },
-    'caption': teks,
+    'caption': pesan,
     'footer': botdate,
     'buttons': [
-{'buttonId':`.orderr + ${cap}`,'buttonText':{'displayText':'💬 ORDER NOW'},'type':1},
+{'buttonId':`.email +${number}|${pesan}`,'buttonText':{'displayText':'💬 ORDER NOW'},'type':1},
 ],
 'headerType':6}
     await conn.sendMessage(m.chat,buttonMessage, { quoted:m})
