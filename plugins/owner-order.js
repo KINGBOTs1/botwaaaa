@@ -1,5 +1,6 @@
 let handler = async (m, { conn, text, usedPrefix, command }) => {
     if (!text) throw `
+.order
 ┏━━❉ *ORDER* ❉━━┓
 ┃  *ID* :  
 ┃  *SERVER* : 
@@ -8,7 +9,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
 ┗━━━━━━━━━━━━━━`
     if (text.length < 1 ) throw `Laporan terlalu pendek, minimal 10 karakter!`
     if (text.length > 1000) throw `Laporan terlalu panjang, maksimal 1000 karakter!`
-    let teks = `*${htki} ${command.toUpperCase()} ${htka}*\n📮 : ${text}\n*- @${m.sender.split`@`[0]}*`
+    let teks = `* ${text}\n*- @${m.sender.split`@`[0]}*`
     conn.reply(global.nomorown + '@s.whatsapp.net', m.quoted ? teks + m.quoted.text : teks, null, {
         contextInfo: {
             mentionedJid: [m.sender]
@@ -16,5 +17,5 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
     })
     m.reply('☑️ Pesan Telah terkirim ke Owner!\n_*Menunggu confirmasi Dari Owner...*_')
 }
-handler.command = /^(order)$/i
+handler.command = /^(orderr)$/i
 export default handler
