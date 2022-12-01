@@ -3,7 +3,7 @@ import fetch from 'node-fetch'
 import db from '../lib/database.js'
 let Reg = /\|?(.*)([.|] *?)([0-9]*)$/i
 
-let handler = async function (m, { text, usedPrefix, command }) {
+let handler = async function (m, { text, usedPrefix, command,conn }) {
 	function pickRandom(list) {
   return list[Math.floor(Math.random() * list.length)]
 }

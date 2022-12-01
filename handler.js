@@ -893,7 +893,7 @@ ${nmsr} RPG tidak aktif, Silahkan hubungi Team Bot Discussion Untuk mengaktifkan
         restrict: `*${htki} 𝗜𝗡𝗙𝗢 ${htka}*\n
 ${nmsr} Fitur ini di *disable* !`
     }[type]
-    if (db.data.users[m.sender].premiumTime < 1) return conn.sendButton(m.chat, txtdaf, botdate, [
+    if (db.data.users[m.sender].register = false) return conn.sendButton(m.chat, txtdaf, botdate, [
 							['DAFTAR', '.daftar'],
 							['OWNER', '.owner nomor']
 						], m)
