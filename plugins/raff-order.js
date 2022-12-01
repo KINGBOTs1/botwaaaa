@@ -12,32 +12,19 @@ text }) {
   return list[Math.floor(Math.random() * list.length)]
 }
 if (!text) throw `
-.order
-┏━━❉ *ORDER* ❉━━┓
-┃  *ID* :  
-┃  *SERVER* : 
-┃  *USERNAME* : 
-┃  *ORDER* :
-┗━━━━━━━━━━━━━━`
+.order <id>|<server>|<username>|<order apa>`
 let [id, server, usrnm,ordr] = text.split `|`
   let cap = `
-  ━━━━ 「 *Successful Registration* 」━━━
-  .
-╭━━「 *ORDER* 」
-│▸ *ID:* ${encodeURIComponent(id ? id : '')}
-│▸ *SERVER:* ${encodeURIComponent(server ? server : '')}
-│▸ *USERNAME:* ${encodeURIComponent(usrnm ? usrnm : '')}
-│▸ *SERVER:* ${encodeURIComponent(server ? server : '')}
-│▸ *USERNAME:* ${encodeURIComponent(ordr ? ordr : '')}
-╰═┅═━––––––๑
+┏━━❉* ORDER * ❉━━┓
+┃  *ID:* ${encodeURIComponent(id ? id : '')}
+┃  *SERVER:* ${encodeURIComponent(server ? server : '')}
+┃  *USERNAME:* ${encodeURIComponent(usrnm ? usrnm : '')}
+┃  *SERVER:* ${encodeURIComponent(server ? server : '')}
+┃  *ORDER:* ${encodeURIComponent(ordr ? ordr : '')}
+┗━━━━━━━━━━━━━━
 
 `
   let buttonMessage= {
-'document':{'url':'https://youtube.com/channel/UC1oSMQCd3XKVxYwSh4RE2Nw'},
-'mimetype':global.ddocx,
-'fileName':'▢━━━━「 Registrasi 」━━━━▢',
-'fileLength':fsizedoc,
-'pageCount':fpagedoc,
 'contextInfo':{
 'forwardingScore':555,
 'isForwarded':true,
@@ -47,18 +34,18 @@ let [id, server, usrnm,ordr] = text.split `|`
 'previewType':'pdf',
 'title':global.titlebot,
 'body':global.titlebot,
-'thumbnail':await(await fetch('https://telegra.ph/file/8a1c663c84751c10baf65.jpg')).buffer(),
+'thumbnail':await(await fetch('https://telegra.ph/file/7a7c3c601a73e65060cd9.jpg')).buffer(),
 'sourceUrl':'https://youtube.com/channel/UC1oSMQCd3XKVxYwSh4RE2Nw'}},
 'caption':cap,
 'footer':botdate,
 'buttons':[
-{'buttonId':`.orderr + ${cap}`,'buttonText':{'displayText':'💬 ORDER NOW'},'type':1},
+{'buttonId':`.orderr + ${caption}`,'buttonText':{'displayText':'💬 ORDER NOW'},'type':1},
 ],
 'headerType':6}
     await conn.sendMessage(m.chat,buttonMessage, { quoted:m})
 }
-handler.help = ['daftar', 'register'].map(v => v + ' <nama>.<umur>')
-handler.tags = ['xp']
+handler.help = ['order']
+handler.tags = ['store']
 
 handler.command = /^(order?)$/i
 
