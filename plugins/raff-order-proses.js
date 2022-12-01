@@ -28,7 +28,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
     'caption': pesan,
     'footer': botdate,
     'buttons': [
-{'buttonId':`.email +${number}|${pesan}`,'buttonText':{'displayText':'💬 ORDER NOW'},'type':1},
+{'buttonId':`.email +${number}|${pesan}`,'buttonText':{'displayText':'💬 PROSES'},'type':1},
 ],
 'headerType':6}
     await conn.sendMessage(m.chat,buttonMessage, { quoted:m})
