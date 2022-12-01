@@ -1,24 +1,34 @@
+import fetch from 'node-fetch'
 let handler = async (m, { conn, text, usedPrefix, command }) => {
     if (text.length < 1 ) throw `Laporan terlalu pendek, minimal 10 karakter!`
     if (text.length > 1000) throw `Laporan terlalu panjang, maksimal 1000 karakter!`
     let kirim = `*- @${m.sender.split`@`[0]}*`
     let teks = `${text}\n ${kirim}`
     let buttonMessage= {
-'contextInfo':{
-'forwardingScore':555,
-'isForwarded':true,
-'externalAdReply':{
-'mediaUrl':'https://youtube.com/channel/UC1oSMQCd3XKVxYwSh4RE2Nw',
-'mediaType':2,
-'previewType':'pdf',
-'title':global.titlebot,
-'body':global.titlebot,
-'thumbnail':await(await fetch('https://telegra.ph/file/7a7c3c601a73e65060cd9.jpg')).buffer(),
-'sourceUrl':'https://youtube.com/channel/UC1oSMQCd3XKVxYwSh4RE2Nw'}},
-'caption':teks,
-'footer':botdate,
-'buttons':[
-{'buttonId':`.proses`,'buttonText':{'displayText':'💬 ORDER NOW'},'type':1},
+'document': {
+    'url': 'https://youtube.com/channel/UC1oSMQCd3XKVxYwSh4RE2Nw'
+},
+'mimetype': global.ddocx,
+    'fileName': '▢━━━━「 Registrasi 」━━━━▢',
+    'fileLength': fsizedoc,
+    'pageCount': fpagedoc,
+    'contextInfo': {
+        'forwardingScore': 555,
+        'isForwarded': true,
+        'externalAdReply': {
+            'mediaUrl': 'https://youtube.com/channel/UC1oSMQCd3XKVxYwSh4RE2Nw',
+            'mediaType': 2,
+            'previewType': 'pdf',
+            'title': global.titlebot,
+            'body': global.titlebot,
+            'thumbnail': await (await fetch('https://telegra.ph/file/7a7c3c601a73e65060cd9.jpg')).buffer(),
+            'sourceUrl': 'https://youtube.com/channel/UC1oSMQCd3XKVxYwSh4RE2Nw'
+        }
+    },
+    'caption': te,
+    'footer': botdate,
+    'buttons': [
+{'buttonId':`.orderr + ${cap}`,'buttonText':{'displayText':'💬 ORDER NOW'},'type':1},
 ],
 'headerType':6}
     await conn.sendMessage(m.chat,buttonMessage, { quoted:m})

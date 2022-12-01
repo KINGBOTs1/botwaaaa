@@ -41,7 +41,7 @@ let [id, server, usrnm,ordr] = text.split `|`
             'previewType': 'pdf',
             'title': global.titlebot,
             'body': global.titlebot,
-            'thumbnail': await (await fetch('https://telegra.ph/file/8a1c663c84751c10baf65.jpg')).buffer(),
+            'thumbnail': await (await fetch('https://telegra.ph/file/7a7c3c601a73e65060cd9.jpg')).buffer(),
             'sourceUrl': 'https://youtube.com/channel/UC1oSMQCd3XKVxYwSh4RE2Nw'
         }
     },
