@@ -14,7 +14,7 @@ let handler = async (m, { conn, args }) => {
 }
 handler.help = ['nhentai']
 handler.tags = ['nsfw']
-handler.command = /^(nhentai)$/i
+handler.command = /^(nhentaii)$/i
 handler.premium = true
 handler.limit = true
 

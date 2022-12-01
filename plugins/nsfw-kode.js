@@ -1,7 +1,7 @@
 let handler = async (m, { conn, usedPrefix }) => {
 let txt = `${kode.getRandom()}
 Tuh Kode nya!!`
-conn.sendButton(m.chat, txt, wm, [['Nhentai', `.nhentai ${kode.getRandom()}`]], m)
+conn.sendButton(m.chat, txt, wm, [['Nhentai', `.nhentaii ${kode.getRandom()}`]], m)
 }
 handler.help = ['kodenuklir']
 handler.tags = ['nsfw']
