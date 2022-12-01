@@ -13,6 +13,6 @@ let handler = async (m, { conn }) => {
 }
 handler.help = ['bokep']
 handler.tags = ['premium']
-handler.command = ['bokep22']
+handler.command = ['bokep2']
 
 export default handler
