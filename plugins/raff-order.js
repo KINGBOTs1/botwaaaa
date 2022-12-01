@@ -12,7 +12,8 @@ text }) {
   return list[Math.floor(Math.random() * list.length)]
 }
 if (!text) throw `
-.order <id>|<server>|<username>|<order apa>`
+.order <id>|<server>|<username>|<order apa>\n\n
+*CONTOH* .order 99128654|2145|K I N G|344 DM`
 let [id, server, usrnm,ordr] = text.split `|`
   let cap = `
 ┏━━❉ *ORDER* ❉━━┓
