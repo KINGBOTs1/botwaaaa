@@ -6,7 +6,7 @@ let handler = async function (m, { args }) {
   let sn = createHash('md5').update(m.sender).digest('hex')
   if (args[0] !== sn) throw '🚫Serial Number salah'
   user.registered = false
-  m.reply('📛Kamu Berhasil keluar dari database\n\nᴹᴿ᭄ King Of Bear ×፝֟͜×')
+  m.reply('📛Kamu Berhasil keluar dari database\n\nBOT ×፝֟͜×')
 }
 handler.help = ['', 'ister'].map(v => 'unreg' + v + ' <SN|SERIAL NUMBER>')
 handler.tags = ['xp']

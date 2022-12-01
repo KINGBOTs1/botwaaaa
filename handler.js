@@ -894,6 +894,12 @@ ${nmsr} RPG tidak aktif, Silahkan hubungi Team Bot Discussion Untuk mengaktifkan
         restrict: `*${htki} 𝗜𝗡𝗙𝗢 ${htka}*\n
 ${nmsr} Fitur ini di *disable* !`
     }[type]
+    if (msg == unreg){
+        return conn.sendButton(m.chat, hiasan, msg, `${imgr + 'Accses Danied'}`, [
+            ['OWNER BOT', '.owner'],
+            ['DAFTAR', '.daftar']
+        ], m)
+    } 
     if (msg) return conn.sendButton(m.chat, hiasan, msg, `${imgr + 'Accses Danied'}`, [['OWNER BOT', '.owner'],['MENU', 'menu']],m)
 }
 

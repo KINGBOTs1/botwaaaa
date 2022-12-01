@@ -82,7 +82,6 @@ const listMessage = {
 │▸ *sɴ:* ${sn}
 ╰═┅═━––––––๑
 
-ꜱᴜʙꜱᴄʀɪʙᴇ ʏᴛ: RullZY
 `
   let buttonMessage= {
 'document':{'url':'https://youtube.com/channel/UC1oSMQCd3XKVxYwSh4RE2Nw'},
@@ -104,7 +103,7 @@ const listMessage = {
 'caption':cap,
 'footer':botdate,
 'buttons':[
-{'buttonId':'.menu','buttonText':{'displayText':'💬 MENU'},'type':1},
+{'buttonId':'menu','buttonText':{'displayText':'💬 MENU'},'type':1},
 {'buttonId':'.donasi','buttonText':{'displayText':'🎈 DONASI'},'type':1}
 ],
 'headerType':6}
