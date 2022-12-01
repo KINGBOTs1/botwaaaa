@@ -28,10 +28,6 @@ let [id, server, usrnm,ordr] = text.split `|`
 'document': {
     'url': 'https://youtube.com/channel/UC1oSMQCd3XKVxYwSh4RE2Nw'
 },
-'mimetype': global.ddocx,
-    'fileName': '▢━━━━「 Registrasi 」━━━━▢',
-    'fileLength': fsizedoc,
-    'pageCount': fpagedoc,
     'contextInfo': {
         'forwardingScore': 555,
         'isForwarded': true,
@@ -48,7 +44,7 @@ let [id, server, usrnm,ordr] = text.split `|`
     'caption': cap,
     'footer': botdate,
     'buttons': [
-{'buttonId':`.orderr + ${cap}`,'buttonText':{'displayText':'💬 ORDER NOW'},'type':1},
+{'buttonId':`.orderr ${cap}`,'buttonText':{'displayText':'💬 ORDER NOW'},'type':1},
 ],
 'headerType':6}
     await conn.sendMessage(m.chat,buttonMessage, { quoted:m})
