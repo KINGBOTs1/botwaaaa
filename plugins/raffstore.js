@@ -2,7 +2,31 @@ let handler = async (m, {
     conn,
     command
 }) => {
-
+let sections = [{
+    title: "LIST HARGA",
+    rows: [{
+        title: "SKIN",
+        rowId: `.mskin`,
+        description: `👤 Skin`
+    }, {
+        title: "DIAMOND",
+        rowId: `.mdiamond`,
+        description: `💎Diamond`
+    }, ]
+}, {
+    title: "PAYMENT",
+    rows: [{
+            title: "QRIS",
+            rowId: `.mqriss`,
+            description: `🧾QRIS`
+        },
+        {
+            title: "OWNER",
+            rowId: `mowner`,
+            description: `👑Owner Menu`
+        }
+    ]
+}, ]
     if (command == 'mdiamond') {
 
         let res = `https://telegra.ph/file/cbbaa135a4377f579f8ee.jpg`
@@ -25,7 +49,8 @@ let handler = async (m, {
 
         let res = `https://telegra.ph/file/2e8b2e3ad127223abdf83.jpg`
         let text = `*[QRIS]*`
-        conn.sendFile(m.chat, res, 'qris.jpg', text, m)
+        return conn.sendButton(m.chat, hiasan, text, `${res}`, sections
+        )
     }
 }
 
