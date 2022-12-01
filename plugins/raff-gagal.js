@@ -17,7 +17,7 @@ let [number, pesan] = text.split `|`
         buttons: [{
             'buttonId': `raff`,
             'buttonText': {
-                'displayText': ' *RAFFSTORE* '
+                'displayText': ' RAFFSTORE '
             },
             'type': 1
         }, ],

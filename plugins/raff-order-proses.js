@@ -8,13 +8,13 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
         buttons: [{
             'buttonId': `.raffproses ${number}|${pesan}`,
             'buttonText': {
-                'displayText': ' *PROSES* '
+                'displayText': ' PROSES '
             },
             'type': 1
         }, {
             'buttonId': `.raffgagal ${number}|${pesan}`,
             'buttonText': {
-                'displayText': ' *BATAL* '
+                'displayText': ' BATAL '
             },
             'type': 1
         }, ],
