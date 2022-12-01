@@ -12,7 +12,6 @@ const templateButtons = [
             image: {
                 url: "https://telegra.ph/file/cbbaa135a4377f579f8ee.jpg"
             },
-            footer: date,
             templateButtons: templateButtons,
         }
         await conn.sendMessage(m.chat, tio, m)
@@ -25,7 +24,6 @@ const templateButtons = [
             image: {
                 url: "https://telegra.ph/file/7480070877a505c40590c.jpg"
             },
-            footer: date,
             templateButtons: templateButtons,
         }
         await conn.sendMessage(m.chat, tio, m)
