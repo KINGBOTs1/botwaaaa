@@ -3,11 +3,8 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
     if (text.length < 1 ) throw `Laporan terlalu pendek, minimal 10 karakter!`
     if (text.length > 1000) throw `Laporan terlalu panjang, maksimal 1000 karakter!`
     let number = `${m.sender.split`@`[0]}`
-    let pesan = `${text} *SEDANG DIPROSES*`
+    let pesan = `${text} \n\n [ *SEDANG DIPROSES* ]`
     let buttonMessage= {
-'document': {
-    'url': 'https://youtube.com/channel/UC1oSMQCd3XKVxYwSh4RE2Nw'
-},
     'contextInfo': {
         'forwardingScore': 555,
         'isForwarded': true,

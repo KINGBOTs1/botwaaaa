@@ -10,7 +10,7 @@ let [number, pesan] = text.split `|`
 
     let korban = `${number}`
     var nomor = m.sender
-    let spam1 = `*「 📧 EMAIL 」*\n\n📫Dari : wa.me/${korban}\n💬Pesan : ${pesan}\n\n *${global.wm}*`
+    let spam1 = `📫Dari : wa.me/${korban}\n💬Pesan : ${pesan}`
 
     conn.reply(korban + '@s.whatsapp.net', spam1, m)
 
