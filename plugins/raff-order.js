@@ -17,11 +17,11 @@ if (!text) throw `
 let [id, server, usrnm,ordr] = text.split `|`
   let cap = `
 ┏━━❉ *ORDER* ❉━━┓
-┃  *ID:* ${encodeURIComponent(id ? id : '')}
-┃  *SERVER:* ${encodeURIComponent(server ? server : '')}
-┃  *USERNAME:* ${encodeURIComponent(usrnm ? usrnm : '')}
-┃  *SERVER:* ${encodeURIComponent(server ? server : '')}
-┃  *ORDER:* ${encodeURIComponent(ordr ? ordr : '')}
+┃  *ID:* ${id ? id : ''}
+┃  *SERVER:* ${server ? server : ''}
+┃  *USERNAME:* ${usrnm ? usrnm : ''}
+┃  *SERVER:* ${server ? server : ''}
+┃  *ORDER:* ${ordr ? ordr : ''}
 ┗━━━━━━━━━━━━━━
 
 `
