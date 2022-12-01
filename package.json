@@ -94,7 +94,7 @@
         "url-regex-safe": "^3.0.0",
         "waifu.pics-wrapper": "^1.0.0",
         "wa-sticker-formatter": "^4.3.2",
-        "xfarr-api": "^1.0.3",
+        "xfarr-api": "github:xfar05/xfarr-api",
         "yargs": "^17.3.1",
         "yarn": "^1.22.19",
         "zip-a-folder": "^1.1.5",
