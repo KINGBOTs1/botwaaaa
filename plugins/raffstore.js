@@ -49,7 +49,7 @@ let sections = [{
 
         let res = `https://telegra.ph/file/2e8b2e3ad127223abdf83.jpg`
         let text = `*[QRIS]*`
-        return conn.sendButton(m.chat, hiasan, text, `${res}`, sections
+        return conn.sendButtonDoc(m.chat, hiasan, text, `${res}`, sections
         )
     }
 }
