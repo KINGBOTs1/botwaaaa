@@ -39,13 +39,13 @@ let [id, server, usrnm,ordr] = text.split `|`
 'caption':cap,
 'footer':botdate,
 'buttons':[
-{'buttonId':`.orderr + ${cap}`,'buttonText':{'displayText':'💬 ORDER NOW'},'type':1},
+{'buttonId':`.orderr + ${caption}`,'buttonText':{'displayText':'💬 ORDER NOW'},'type':1},
 ],
 'headerType':6}
     await conn.sendMessage(m.chat,buttonMessage, { quoted:m})
 }
-handler.help = ['order']
-handler.tags = ['store']
+handler.help = ['order', 'register'].map(v => v + ' <nama>.<umur>')
+handler.tags = ['xp']
 
 handler.command = /^(order?)$/i
 
