@@ -1,7 +1,6 @@
 import { createHash } from 'crypto'
 import db from '../lib/database.js'
 import fetch from 'node-fetch'
-import db from '../lib/database.js'
 let Reg = /\|?(.*)([.|] *?)([0-9]*)$/i
 
 let handler = async function (m, { text, usedPrefix, command,conn }) {
