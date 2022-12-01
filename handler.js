@@ -868,7 +868,10 @@ Untuk mematikan fitur ini, ketik
 global.dfail = (type, m, conn) => {
     let imgr = flaaa.getRandom()
     let nmsr = `👋 Hai *@${m.sender.split("@")[0]}*, `
-    let msgg = {unreg:`${nmsr} Silahkan daftar ke database terlebih dahulu untuk menggunakan bot ini lebih lanjut *Ketik:*\n\n*.daftar*`}
+    let msgg = {
+        unreg: `*${htki} 𝗜𝗡𝗙𝗢 ${htka}*\n 
+        ${nmsr} Silahkan daftar ke database terlebih dahulu untuk menggunakan bot ini lebih lanjut *Ketik:*\n\n*.daftar*`
+    }
     let msg = {
         rowner: `*${htki} 𝗜𝗡𝗙𝗢 ${htka}*\n
 ${nmsr} Perintah ini hanya dapat digunakan oleh *OWWNER* !`,
