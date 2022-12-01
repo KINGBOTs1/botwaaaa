@@ -11,9 +11,9 @@ let [number, pesan] = text.split `|`
     let own = global.nomorown
     let korban = `${number}`
     var nomor = m.sender
-    let spam1 = `${pesan} \n\n [ *SEDANG DIPROSES* ]\n`
+    let spam1 = `${pesan} \n\n [ *DIBATALKAN* ]\n`
 
-    conn.reply(korban + '@s.whatsapp.net', spam1, null,{
+    conn.reply(korban + '@s.whatsapp.net', spam1, null, {
         buttons: [{
             'buttonId': `raff`,
             'buttonText': {
@@ -27,7 +27,7 @@ let [number, pesan] = text.split `|`
     conn.reply(m.chat, logs, m)
 }
 
-handler.command = /^(raffproses)$/i
+handler.command = /^(raffgagal)$/i
 handler.rowner = false
 handler.limit = true
 handler.premium = false
