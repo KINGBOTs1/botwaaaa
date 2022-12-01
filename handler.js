@@ -868,6 +868,8 @@ Untuk mematikan fitur ini, ketik
 global.dfail = (type, m, conn) => {
     let imgr = flaaa.getRandom()
     let nmsr = `👋 Hai *@${m.sender.split("@")[0]}*, `
+    let blm= `*${htki} 𝗜𝗡𝗙𝗢 ${htka}*\n 
+${nmsr} Silahkan daftar ke database terlebih dahulu untuk menggunakan bot ini lebih lanjut *Ketik:*\n\n*.daftar*`
     let msg = {
         rowner: `*${htki} 𝗜𝗡𝗙𝗢 ${htka}*\n
 ${nmsr} Perintah ini hanya dapat digunakan oleh *OWWNER* !`,
@@ -894,8 +896,8 @@ ${nmsr} RPG tidak aktif, Silahkan hubungi Team Bot Discussion Untuk mengaktifkan
         restrict: `*${htki} 𝗜𝗡𝗙𝗢 ${htka}*\n
 ${nmsr} Fitur ini di *disable* !`
     }[type]
-    if (msg == unreg){
-        return conn.sendButton(m.chat, hiasan, msg, `${imgr + 'Accses Danied'}`, [
+    if (db.data.users[m.sender].registered = false) {
+        return conn.sendButton(m.chat, hiasan, blm, `${imgr + 'Accses Danied'}`, [
             ['OWNER BOT', '.owner'],
             ['DAFTAR', '.daftar']
         ], m)
