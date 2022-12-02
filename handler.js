@@ -1,4 +1,5 @@
 import { smsg } from './lib/simple.js'
+import { smsg } from './lib/simple-old.js'
 import { plugins } from './lib/plugins.js'
 import { format } from 'util'
 import { fileURLToPath } from 'url'
