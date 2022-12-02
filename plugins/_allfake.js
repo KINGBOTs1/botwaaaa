@@ -5,7 +5,7 @@ import fetch from 'node-fetch'
 import moment from 'moment-timezone'
 
 let handler = m => m
-handler.all = async function (m, {conn}) {
+handler.all = async function (m) {
     let sapa = ['Hai', 'Ohayo', 'Kyaa', 'Halo', 'Nyann'].getRandom()
     let name = await conn.getName(m.sender) 
 	let pp = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
