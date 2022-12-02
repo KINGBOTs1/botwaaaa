@@ -31,11 +31,13 @@ global.hiasan = '꒦ ͝ ꒷ ͝ ꒦ ͝ ꒷ ͝ ꒦ ͝ ꒷ ͝ ꒦ ͝ ꒷ ͝ ꒦ ͝ 
 global.thumbEror = 'https://telegra.ph/file/430b8f1ae35c655bfee93.jpg'
 /*⫘⫘⫘⫘ GLOBAL NOMOR ⫘⫘⫘⫘⫘*/
 global.nomorbot = '6285172081982' //Nomor Bot mu
-global.nomorown2 = '82144323683' //Nomormu
 global.nomorown = '6282144323683' //Nomormu
 global.namebot = 'King' //Nama bot mu
 global.nameown = 'DENI' //Nama mu
-
+global.nameown1 = 'DENI'
+global.nameown2 = 'KING BOT'
+global.nomorown1 = '6282144323683'
+global.nomorown2 = '6282144323683'
 global.owner = [
  //Owner3
   ['6282144323683', 'DENI', true] //Ini buat kamu!
