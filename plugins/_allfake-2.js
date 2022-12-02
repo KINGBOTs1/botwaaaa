@@ -15,8 +15,7 @@ let sapa = ['Hai', 'Ohayo', 'Kyaa', 'Halo', 'Nyann'].getRandom()
 	let pp = await conn.profilePictureUrl(who, 'image').catch(_ => hwaifu.getRandom())
 	
     // jpegThumbnail
-    let _situm = await conn.resize(thumbnailUrl.getRandom(), 300, 150)
-    let sipp = await conn.resize(pp, 150, 150)
+    
 
     global.miku = 'https://telegra.ph/file/2362fdd0ac773d5733bc5.jpg'
 
