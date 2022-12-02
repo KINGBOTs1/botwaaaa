@@ -244,7 +244,7 @@ let handler = async (m, {
         }
         if (teks == '404') {
             return conn.sendMessage(m.chat, listMessage, {
-                quoted: m,
+                quoted: fkontak,
                 mentions: await conn.parseMention(tek),
                 contextInfo: {
                     forwardingScore: 99999,
