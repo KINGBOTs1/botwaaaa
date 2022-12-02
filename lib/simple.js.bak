@@ -683,7 +683,7 @@ END:VCARD`.trim()
                         fileName: global.ucapan,
                         fileLength: 999999999999999,
                         pageCount: 999,
-                        jpegThumbnail: global.thumbdoc,
+                        jpegThumbnail: terkadang,
                         caption: content,
                         footer: footerText,
                         mentions: await conn.parseMention(content + footerText),
