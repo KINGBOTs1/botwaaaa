@@ -205,7 +205,7 @@ let handler = async (m, {
         }
         let mpt = clockString(_mpt)
         //section
-        const sections = global.sections
+        let sections = global.sections
         let usrs = db.data.users[m.sender]
         /**************************** TIME *********************/
         let wib = moment.tz('Asia/Jakarta').format('HH:mm:ss')

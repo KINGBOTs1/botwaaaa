@@ -204,7 +204,7 @@ let handler = async (m, {
             }) * 1000
         }
         let mpt = clockString(_mpt)
-        sections = [{
+        let sections = [{
             title: "LIST HARGA",
             rows: [{
                 title: "SKIN",
@@ -263,7 +263,7 @@ let handler = async (m, {
         }
         if (teks == '404') {
             return conn.sendMessage(m.chat, listMessage, {
-                quoted: m,
+                quoted: fkontak,
                 mentions: await conn.parseMention(tek),
                 contextInfo: {
                     forwardingScore: 99999,
@@ -665,8 +665,7 @@ let handler = async (m, {
         throw e
     }
 }
-handler.help = ['menu', 'help', '?']
-handler.tags = ['main']
+
 handler.customPrefix = /^raff|raffstore$/i // ketik bot (tanpa prefix)
 handler.command = new RegExp
 handler.register = true
