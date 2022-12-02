@@ -208,24 +208,6 @@ let handler = async (m, {
         const sections = global.sections
         let usrs = db.data.users[m.sender]
         /**************************** TIME *********************/
-        let fkontak = {
-            key: {
-                fromMe: false,
-                participant: `0@s.whatsapp.net`,
-                ...(m.chat ? {
-                    remoteJid: `status@broadcast`
-                } : {})
-            },
-            message: {
-                'contactMessage': {
-                    'displayName': wm,
-                    'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:XL;${wm},;;;\nFN:${wm},\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabell:Ponsel\nEND:VCARD`,
-                    'jpegThumbnail': fs.readFileSync('./thumbnail.jpg'),
-                    thumbnail: fs.readFileSync('./thumbnail.jpg'),
-                    sendEphemeral: true
-                }
-            }
-        }
         let wib = moment.tz('Asia/Jakarta').format('HH:mm:ss')
         let wibh = moment.tz('Asia/Jakarta').format('HH')
         let wibm = moment.tz('Asia/Jakarta').format('mm')
@@ -255,14 +237,14 @@ let handler = async (m, {
 ┗━━━━━━━━━━━━━━
 `
         const listMessage = {
-            title: tek,
+            text: tek,
             mentions: await conn.parseMention(tek),
             buttonText: `*MENU*`,
             sections
         }
         if (teks == '404') {
             return conn.sendMessage(m.chat, listMessage, {
-                quoted: fkontak,
+                quoted: m,
                 mentions: await conn.parseMention(tek),
                 contextInfo: {
                     forwardingScore: 99999,
