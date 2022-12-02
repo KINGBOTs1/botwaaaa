@@ -1,5 +1,4 @@
 //By Papah-Chan
-import { smsg } from './lib/simple.js'
 import fs from 'fs'
 import fetch from 'node-fetch'
 import moment from 'moment-timezone'
@@ -7,7 +6,7 @@ import moment from 'moment-timezone'
 let handler = m => m
 handler.all = async function (m,{conn}) {
     let sapa = ['Hai', 'Ohayo', 'Kyaa', 'Halo', 'Nyann'].getRandom()
-    let name = await conn.getName(m.sender) 
+    
 	let pp = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 	try {
 		pp = await conn.profilePictureUrl(m.sender, 'image')
@@ -23,11 +22,7 @@ handler.all = async function (m,{conn}) {
 		
 		const _uptime = process.uptime() * 1000
         
-		// Ini untuk command crator/owner
-		global.kontak2 = [
-         [owner[0], await conn.getName(owner[0] + '6281361281833@s.whatsapp.net'), 'ᴅᴇᴠᴇʟᴏᴩᴇʀ ʙᴏᴛ', 'fahriadison12@gmail.com', true],
-         [owner[1], await conn.getName(owner[1] + '@s.whatsapp.net'), 'ᴅᴇᴠᴇʟᴏᴩᴇʀ ʙᴏᴛ', 'fahriadison12@gmail.com', true], // Kalo mau di tambah tinggal copy 1baris ini di tempel di bawahnya trs di edit dikit!
-        ]
+		
         
 		// ucapan ini mah
 		global.ucapan = ucapan()
@@ -35,23 +30,6 @@ handler.all = async function (m,{conn}) {
 		// pesan sementara
 		global.ephemeral = '86400' // 86400 = 24jam, kalo ingin di hilangkan ganti '86400' jadi 'null' atau ''
 		
-		// externalAdReply atau text with thumbnail. gatau bahasa Inggris? coba translate!
-		global.adReply = {
-			contextInfo: {
-				forwardingScore: 9999,
-				//isForwarded: true, // ini biar ada tulisannya diteruskan berkali-kali, jika ingin di hilangkan ganti true menjadi false
-				externalAdReply: { // Bagian ini sesuka kalian berkreasi :'v
-                    showAdAttribution: true,
-					title: global.ucapan,
-					body: '👋 ' + sapa + " Kak :> " + name,
-					mediaUrl: sgc,
-					description: 'simple bot esm',
-					previewType: "PHOTO",
-					thumbnail: await (await fetch(pp)).buffer(),
-					sourceUrl: "https://github.com/FahriAdison",					
-				}
-			}
-		}
 		global.fakeig = {
          contextInfo: { externalAdReply: { showAdAttribution: true,
             mediaUrl: "https://Instagram.com/bot_whangsaf",
