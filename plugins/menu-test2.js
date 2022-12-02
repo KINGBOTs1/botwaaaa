@@ -7,6 +7,7 @@ import {
 import {
     join
 } from 'path'
+import db from '../lib/database.js'
 import {
     xpRange
 } from '../lib/levelling.js'
@@ -49,14 +50,14 @@ let handler = async (m, {
         role,
         registered,
         money
-    } = global.db.data.users[m.sender]
+    } = db.data.users[m.sender]
     let {
         min,
         xp,
         max
     } = xpRange(level, global.multiplier)
     let name = await conn.getName(m.sender)
-    let premium = global.db.data.users[m.sender].premiumTime
+    let premium = db.data.users[m.sender].premiumTime
     let prems = `${premium > 0 ? 'Premium': 'Free'}`
     let platform = os.platform()
     let vn = './media/yntkts'
@@ -102,8 +103,8 @@ let handler = async (m, {
 
     //---------------------
 
-    let totalreg = Object.keys(global.db.data.users).length
-    let rtotalreg = Object.values(global.db.data.users).filter(user => user.registered == true).length
+    let totalreg = Object.keys(db.data.users).length
+    let rtotalreg = Object.values(db.data.users).filter(user => user.registered == true).length
     let help = Object.values(global.plugins).filter(plugin => !plugin.disabled).map(plugin => {
         return {
             help: Array.isArray(plugin.tags) ? plugin.help : [plugin.help],
@@ -460,7 +461,7 @@ let handler = async (m, {
         ┊ 「 *S t a t u sI n f o 比* 」
         ┊⧠ *ᴜᴘᴛɪᴍᴇ:* ${mpt}
         ┊⧠ *ᴛɪᴍᴇ:* ${moment.tz('Asia/Jakarta').format('HH')} H${moment.tz('Asia/Jakarta').format('mm')} M${moment.tz('Asia/Jakarta').format('ss')} S
-        ┊⧠ *ᴜsᴇʀs:* ${Object.keys(global.db.data.users).length}
+        ┊⧠ *ᴜsᴇʀs:* ${Object.keys(db.data.users).length}
         ┊⧠ *ʟɪᴍɪᴛ:* ${usrs.limit}
         ┊⧠ *ʟᴇᴠᴇʟ:* ${usrs.level}
         ┊⧠ *ʀᴏʟᴇ:* ${usrs.role}${usrs.premiumTime > 1 ? `
