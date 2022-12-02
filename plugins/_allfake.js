@@ -1,5 +1,5 @@
 //By Papah-Chan
-
+import { smsg } from './lib/simple.js'
 import fs from 'fs'
 import fetch from 'node-fetch'
 import moment from 'moment-timezone'
